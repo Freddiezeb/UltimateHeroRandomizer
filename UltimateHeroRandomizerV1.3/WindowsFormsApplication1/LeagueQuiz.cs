@@ -153,7 +153,10 @@ namespace WindowsFormsApplication1
                 correctAnswer = radioButton1;
             }
             GetQuestionAndAnswers();
-
+            if (a == 13)
+            {
+                
+            }
         }
 
         private void GetQuestionAndAnswers()
