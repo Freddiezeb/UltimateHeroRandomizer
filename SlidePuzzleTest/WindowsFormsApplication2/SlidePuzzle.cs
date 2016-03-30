@@ -12,9 +12,13 @@ namespace WindowsFormsApplication2
 {
     public partial class SlidePuzzle : Form
     {
+
+        float time = 0;
+
         public SlidePuzzle()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -258,6 +262,11 @@ namespace WindowsFormsApplication2
                 pictureBox9.Image = Properties.Resources.puzzle_test_03;
                 pictureBox9.BackColor = Color.White;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
