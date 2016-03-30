@@ -13,11 +13,14 @@ namespace WindowsFormsApplication2
     public partial class SlidePuzzle : Form
     {
 
-        float time = 0;
+        int ticks;
+        bool isPressed = false;
 
         public SlidePuzzle()
         {
             InitializeComponent();
+
+            timer1.Start();
 
         }
 
@@ -42,7 +45,7 @@ namespace WindowsFormsApplication2
             pictureBox7.Image = Properties.Resources.puzzle_test_02;
             pictureBox8.Image = Properties.Resources.puzzle_test_06;
             pictureBox9.Image = Properties.Resources.puzzle_test_09;
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -201,6 +204,7 @@ namespace WindowsFormsApplication2
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+
             if (pictureBox4.BackColor == Color.White)
             {
                 pictureBox4.Image = pictureBox7.Image;
@@ -220,6 +224,7 @@ namespace WindowsFormsApplication2
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+
             if (pictureBox5.BackColor == Color.White)
             {
                 pictureBox5.Image = pictureBox8.Image;
@@ -247,6 +252,7 @@ namespace WindowsFormsApplication2
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
+
             if (pictureBox6.BackColor == Color.White)
             {
                 pictureBox6.Image = pictureBox9.Image;
@@ -266,6 +272,29 @@ namespace WindowsFormsApplication2
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isPressed == true)
+                ticks++;
+            
+            label1.Text = "Timer: " + ticks.ToString();
+
+        }
+
+        private void label1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void startbutton_Click(object sender, EventArgs e)
+        {
+            isPressed = true;
+
+            pictureBox2.Enabled = true;
+            pictureBox6.Enabled = true;
 
         }
     }

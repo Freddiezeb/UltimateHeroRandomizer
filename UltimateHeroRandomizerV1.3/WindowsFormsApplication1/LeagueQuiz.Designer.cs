@@ -115,6 +115,7 @@
             this.ScoreLabel.Size = new System.Drawing.Size(61, 20);
             this.ScoreLabel.TabIndex = 6;
             this.ScoreLabel.Text = "Score:";
+            this.ScoreLabel.Click += new System.EventHandler(this.ScoreLabel_Click);
             // 
             // ExitButton
             // 
