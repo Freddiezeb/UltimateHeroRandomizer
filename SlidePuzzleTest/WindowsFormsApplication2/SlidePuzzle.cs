@@ -13,14 +13,15 @@ namespace WindowsFormsApplication2
     public partial class SlidePuzzle : Form
     {
 
-        int ticks;
-        bool isPressed = false;
+        int ticks, timerTicks = 6;
+        bool isPressed, isShowing, isCounting;
 
         public SlidePuzzle()
         {
             InitializeComponent();
 
             timer1.Start();
+            windowTimer.Start();
 
         }
 
@@ -45,6 +46,8 @@ namespace WindowsFormsApplication2
             pictureBox7.Image = Properties.Resources.puzzle_test_02;
             pictureBox8.Image = Properties.Resources.puzzle_test_06;
             pictureBox9.Image = Properties.Resources.puzzle_test_09;
+            pictureBox10.Image = Properties.Resources.Fuck_you;
+
 
         }
 
@@ -282,6 +285,11 @@ namespace WindowsFormsApplication2
             
             label1.Text = "Timer: " + ticks.ToString();
 
+            if (isShowing == true)
+                this.Size = new Size(447, 532);
+
+            if (isShowing == false)
+                this.Size = new Size(447, 312);
         }
 
         private void label1_MouseClick(object sender, MouseEventArgs e)
@@ -295,6 +303,47 @@ namespace WindowsFormsApplication2
 
             pictureBox2.Enabled = true;
             pictureBox6.Enabled = true;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            isShowing = true;
+            isCounting = true;
+
+            
+            
+        }
+
+        private void SlidePuzzle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SlidePuzzle_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void windowTimer_Tick(object sender, EventArgs e)
+        {
+            if (isCounting == true)
+            {
+                timerTicks--;
+            }
+            if (timerTicks == 0)
+            {
+                isShowing = false;
+                isCounting = false;
+                timerTicks = 6;
+            }
+
+            label2.Text = "Time Left: " + timerTicks.ToString();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }

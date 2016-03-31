@@ -63,6 +63,16 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fuck_you {
+            get {
+                object obj = ResourceManager.GetObject("Fuck_you", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap puzzle_test_01 {
             get {
                 object obj = ResourceManager.GetObject("puzzle_test_01", resourceCulture);

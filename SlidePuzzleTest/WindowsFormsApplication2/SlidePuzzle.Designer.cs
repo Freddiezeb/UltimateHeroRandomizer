@@ -41,6 +41,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.startbutton = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.windowButton = new System.Windows.Forms.Button();
+            this.windowTimer = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -50,12 +54,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 125);
+            this.pictureBox1.Location = new System.Drawing.Point(128, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 0;
@@ -66,7 +71,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Aqua;
             this.pictureBox2.Enabled = false;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 125);
+            this.pictureBox2.Location = new System.Drawing.Point(184, 67);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 1;
@@ -76,7 +81,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Location = new System.Drawing.Point(240, 125);
+            this.pictureBox3.Location = new System.Drawing.Point(240, 67);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.TabIndex = 2;
@@ -86,7 +91,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox4.Location = new System.Drawing.Point(128, 181);
+            this.pictureBox4.Location = new System.Drawing.Point(128, 123);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 3;
@@ -96,7 +101,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox5.Location = new System.Drawing.Point(184, 181);
+            this.pictureBox5.Location = new System.Drawing.Point(184, 123);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(50, 50);
             this.pictureBox5.TabIndex = 4;
@@ -107,7 +112,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Aqua;
             this.pictureBox6.Enabled = false;
-            this.pictureBox6.Location = new System.Drawing.Point(240, 181);
+            this.pictureBox6.Location = new System.Drawing.Point(240, 123);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(50, 50);
             this.pictureBox6.TabIndex = 5;
@@ -117,7 +122,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox7.Location = new System.Drawing.Point(128, 237);
+            this.pictureBox7.Location = new System.Drawing.Point(128, 179);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(50, 50);
             this.pictureBox7.TabIndex = 6;
@@ -127,7 +132,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox8.Location = new System.Drawing.Point(184, 237);
+            this.pictureBox8.Location = new System.Drawing.Point(184, 179);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(50, 50);
             this.pictureBox8.TabIndex = 7;
@@ -137,7 +142,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox9.Location = new System.Drawing.Point(240, 237);
+            this.pictureBox9.Location = new System.Drawing.Point(240, 179);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(50, 50);
             this.pictureBox9.TabIndex = 8;
@@ -147,7 +152,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 70);
+            this.label1.Location = new System.Drawing.Point(181, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 15;
@@ -162,7 +167,7 @@
             // 
             // startbutton
             // 
-            this.startbutton.Location = new System.Drawing.Point(172, 24);
+            this.startbutton.Location = new System.Drawing.Point(172, 12);
             this.startbutton.Name = "startbutton";
             this.startbutton.Size = new System.Drawing.Size(75, 23);
             this.startbutton.TabIndex = 16;
@@ -170,11 +175,48 @@
             this.startbutton.UseVisualStyleBackColor = true;
             this.startbutton.Click += new System.EventHandler(this.startbutton_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Aqua;
+            this.pictureBox10.Location = new System.Drawing.Point(128, 311);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(162, 162);
+            this.pictureBox10.TabIndex = 17;
+            this.pictureBox10.TabStop = false;
+            // 
+            // windowButton
+            // 
+            this.windowButton.Location = new System.Drawing.Point(172, 235);
+            this.windowButton.Name = "windowButton";
+            this.windowButton.Size = new System.Drawing.Size(82, 23);
+            this.windowButton.TabIndex = 18;
+            this.windowButton.Text = "Show picture";
+            this.windowButton.UseVisualStyleBackColor = true;
+            this.windowButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // windowTimer
+            // 
+            this.windowTimer.Interval = 1000;
+            this.windowTimer.Tick += new System.EventHandler(this.windowTimer_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(181, 278);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Time Left:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // SlidePuzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 434);
+            this.ClientSize = new System.Drawing.Size(431, 274);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.windowButton);
+            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.startbutton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox9);
@@ -189,6 +231,8 @@
             this.Name = "SlidePuzzle";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.SlidePuzzle_Click);
+            this.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.SlidePuzzle_ChangeUICues);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -198,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,6 +262,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button startbutton;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button windowButton;
+        private System.Windows.Forms.Timer windowTimer;
+        private System.Windows.Forms.Label label2;
     }
 }
 
