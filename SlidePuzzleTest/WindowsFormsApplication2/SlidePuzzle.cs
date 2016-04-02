@@ -37,15 +37,15 @@ namespace WindowsFormsApplication2
             pictureBox8.BackColor = Color.Aqua;
             pictureBox9.BackColor = Color.Aqua;
 
-            pictureBox1.Image = Properties.Resources.puzzle_test_01;
+            pictureBox1.Image = Properties.Resources.puzzle_test_09;
             pictureBox2.Image = Properties.Resources.puzzle_test_05;
             pictureBox3.Image = Properties.Resources.puzzle_test_03;
             pictureBox4.Image = Properties.Resources.puzzle_test_08;
             pictureBox5.Image = Properties.Resources.puzzle_test_04;
-            pictureBox6.Image = Properties.Resources.puzzle_test_07;
+            pictureBox6.Image = Properties.Resources.puzzle_test_01;
             pictureBox7.Image = Properties.Resources.puzzle_test_02;
-            pictureBox8.Image = Properties.Resources.puzzle_test_06;
-            pictureBox9.Image = Properties.Resources.puzzle_test_09;
+            pictureBox8.Image = Properties.Resources.puzzle_test_07;
+            pictureBox9.Image = Properties.Resources.puzzle_test_06;
             pictureBox10.Image = Properties.Resources.Fuck_you;
 
 
