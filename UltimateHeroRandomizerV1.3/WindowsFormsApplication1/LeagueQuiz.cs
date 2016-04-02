@@ -28,17 +28,17 @@ namespace WindowsFormsApplication1
 
         int questionCount;
 
-        string a, b, c;
+        string qText, answer1, answer2, answer3, answer4;
 
         public LeagueQuiz()
         {
             InitializeComponent();
 
-            label1.Hide();
-            radioButton1.Hide();
-            radioButton2.Hide();
-            radioButton3.Hide();
-            radioButton4.Hide();
+            questionLabel.Hide();
+            answerButton1.Hide();
+            answerButton2.Hide();
+            answerButton3.Hide();
+            answerButton4.Hide();
             button1.Hide();
 
             ScoreLabel.Hide();
@@ -46,7 +46,6 @@ namespace WindowsFormsApplication1
             correctButton = new RadioButton();
 
             ScoreLabel.Text = "Score:" + score.ToString() + " points";
-
 
 
         }
@@ -59,40 +58,66 @@ namespace WindowsFormsApplication1
                 score = score + 10;
                 ScoreLabel.Text = "Score:" + score.ToString() + " points";
 
- 
-                    MessageBox.Show("NICEU");
-                    CheckReset();
+                MessageBox.Show("NICEU");
+                CheckReset();
 
             }
             else
             {
-                MessageBox.Show("Wrong answer, try again!");
+                MessageBox.Show("Wrong answer!");
                 score = score - 5;
                 ScoreLabel.Text = "Score:" + score.ToString() + " points";
+                CheckReset();
             }
 
-
-
-            qManager.SECOND(ref a, ref b, ref c, ref correctAnswer);
-
-            GetCorrectAnswer();
             questionCount++;
-
             ResetQuiz();
 
-            this.label1.Text = a;
-            this.radioButton1.Text = b;
-            this.radioButton2.Text = c;
+            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
 
+            GetCorrectAnswer();
+
+            GetStringInfo();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            qManager = new QuestionManager();
+
+            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
+
+            GetCorrectAnswer();
+
+            GetStringInfo();
+
+            this.questionLabel.Show();
+            this.answerButton1.Show();
+            this.answerButton2.Show();
+            this.answerButton3.Show();
+            this.answerButton4.Show();
+            this.button1.Show();
+
+            this.ScoreLabel.Show();
+
+            comboBox1.Hide();
+            button2.Hide();
+        }
+
+        private void GetStringInfo()
+        {
+            this.questionLabel.Text = qText;
+            this.answerButton1.Text = answer1;
+            this.answerButton2.Text = answer2;
+            this.answerButton3.Text = answer3;
+            this.answerButton4.Text = answer4;
+        }
 
         private void CheckReset()
         {
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            radioButton3.Checked = false;
-            radioButton4.Checked = false;
+            answerButton1.Checked = false;
+            answerButton2.Checked = false;
+            answerButton3.Checked = false;
+            answerButton4.Checked = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -122,52 +147,34 @@ namespace WindowsFormsApplication1
         {
             if (correctAnswer == 1)
             {
-                correctButton = radioButton1;
+                correctButton = answerButton1;
             }
             if (correctAnswer == 2)
             {
-                correctButton = radioButton2;
+                correctButton = answerButton2;
             }
             if (correctAnswer == 3)
             {
-                correctButton = radioButton3;
+                correctButton = answerButton3;
             }
             if (correctAnswer == 4)
             {
-                correctButton = radioButton4;
+                correctButton = answerButton4;
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            qManager = new QuestionManager();
 
-            qManager.SECOND(ref a, ref b, ref c, ref correctAnswer);
-
-            GetCorrectAnswer();
-
-            this.label1.Text = a;
-            this.radioButton1.Text = b;
-            this.radioButton2.Text = c;
-            this.label1.Show();
-            this.radioButton1.Show();
-            this.radioButton2.Show();
-            this.button1.Show();
-
-            comboBox1.Hide();
-            button2.Hide();
-        }
 
         public void ResetQuiz()
         {
-            if (questionCount > value)
+            if (questionCount == value)
             {
-                MessageBox.Show("Well Done, The Quiz Is Finished!");
-                label1.Hide();
-                radioButton1.Hide();
-                radioButton2.Hide();
-                radioButton3.Hide();
-                radioButton4.Hide();
+                MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + score);
+                questionLabel.Hide();
+                answerButton1.Hide();
+                answerButton2.Hide();
+                answerButton3.Hide();
+                answerButton4.Hide();
                 button1.Hide();
 
                 ScoreLabel.Hide();
@@ -177,8 +184,10 @@ namespace WindowsFormsApplication1
 
                 questionCount = 0;
 
-            } 
+            }
         }
+
+
 
     }
 }

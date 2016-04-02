@@ -21,25 +21,24 @@ namespace WindowsFormsApplication1
         {
             rnd = new Random();
             questions = new LeagueQuestion[totalQuestions];
-
             QuestionInfo();
 
         }
 
-        public void SECOND(ref string a, ref string b, ref string c, ref int correctAnswer)
+        public void LoadQuestion(ref string qText, ref string answer1, ref string answer2, ref string answer3, ref string answer4, ref int correctAnswerNr)
         {
 
             for (int i = 0; i < questions.Length; i++)
             {
 
                 i = rnd.Next(0, totalQuestions);
-
-
-
-                a = questions[i].q1;
-                b = questions[i].a1;
-                c = questions[i].a2;
-                correctAnswer = questions[i].correctAnswer;
+          
+                qText = questions[i].q;
+                answer1 = questions[i].a1;
+                answer2 = questions[i].a2;
+                answer3 = questions[i].a3;
+                answer4 = questions[i].a4;
+                correctAnswerNr = questions[i].correctAnswer;
 
 
                 if (!questions[i].answered)
@@ -47,35 +46,32 @@ namespace WindowsFormsApplication1
                     questions[i].answered = true;
                     break;
                 }
-
-
             }
         }
 
         public void QuestionInfo()
         {
 
-            questions[0] = new LeagueQuestion("What champion has poision darts?", "Teemo", "Olaf", ref answered, 2);
-            questions[1] = new LeagueQuestion("Which champion was relased first?", "Yorick", "Renekton", ref answered, 2);
-            questions[2] = new LeagueQuestion("What is the name of the blind monk?", "Lee Sin", "Ashe", ref answered, 1);
-            questions[3] = new LeagueQuestion("What character has an ability to heal?", "Zilean", "Soraka", ref answered, 2);
-            questions[4] = new LeagueQuestion("What champion has a Spirit Guard skin?", "Udyr", "Janna", ref answered, 1);
+            questions[0] = new LeagueQuestion("What champion has poision darts?", "Teemo", "Olaf", "Zed", "Jayce", ref answered, 1);
+            questions[1] = new LeagueQuestion("What champion was relased first?", "Yorick", "Gnar", "Jhin", "Renekton", ref answered, 4);
+            questions[2] = new LeagueQuestion("What champion is also known as \n\"the Card Master?\"", "Yasuo", "Jayce", "Talon", "Twisted Fate", ref answered, 4);
+            questions[3] = new LeagueQuestion("What character has an ability to heal?", "Zilean", "Soraka", "Riven", "Ryze", ref answered, 2);
+            questions[4] = new LeagueQuestion("What champion has a Spirit Guard skin?", "Udyr", "Janna", "Rengar", "Vi", ref answered, 1);
 
 
-            questions[5] = new LeagueQuestion("What company name of the owners of LoL", "Riot Games", "Dice", ref answered, 1);
-            questions[6] = new LeagueQuestion("League of?", "Draaaven", "Poppy", ref answered, 1);
-            questions[7] = new LeagueQuestion("What champ have an urf skin?", "Maokai", "Tahm Kench", ref answered, 2);
-            questions[8] = new LeagueQuestion("What rank is the highest?", "Challenger", "Master", ref answered, 1);
-            questions[9] = new LeagueQuestion("What character has no friends?", "Tristana", "Amumu", ref answered, 2);
+            questions[5] = new LeagueQuestion("What company released League of Legends?", "Ubisoft", "Riot Games", "EA DICE", "Valve", ref answered, 2);
+            questions[6] = new LeagueQuestion("What champion is also known as \n\"the Spider Queen?\"", "Xin Zhao", "Zyra", "Elise", "Urgot", ref answered, 3);
+            questions[7] = new LeagueQuestion("What champ have an urf skin?", "Talon", "Wukong", "Maokai", "Tahm Kench", ref answered, 4);
+            questions[8] = new LeagueQuestion("What rank is the highest?", "Platinum", "Diamond", "Challenger", "Master", ref answered, 3);
+            questions[9] = new LeagueQuestion("What character has no friends?", "Tristana", "Amumu", "Teemo", "Jarvan IV", ref answered, 2);
 
-            questions[10] = new LeagueQuestion("Who have a bird called Valor?", "Quinn", "Ashe", ref answered, 1);
-            questions[11] = new LeagueQuestion("What champion is insvisible?", "Olaf", "Evelynn", ref answered, 2);
-            questions[12] = new LeagueQuestion("Who is better?", "Youngbuck", "Faker", ref answered, 1);
-            questions[13] = new LeagueQuestion("What of these used to be a summoners spell?", "Though Skin", "Fortify", ref answered, 2);
-            questions[14] = new LeagueQuestion("Who can summon shadows of himself?", "Zed", "Yasuo", ref answered, 1);
+            questions[10] = new LeagueQuestion("What champion have a bird called Valor?", "Quinn", "Ashe","Urgot","Swain", ref answered, 1);
+            questions[11] = new LeagueQuestion("What champion is insvisible?", "Olaf", "Evelynn","Yorick", "Zac", ref answered, 2);
+            questions[12] = new LeagueQuestion("What champion is also known as \n\"the Tidal Trickster?\"", "Shaco", "Fizz", "Riven", "Ezreal", ref answered, 2);
+            questions[13] = new LeagueQuestion("What champion is also known as \n\"the Sinister Blade?\"", "Katarina", "Fiora", "Garen", "Aatrox", ref answered, 1);
+            questions[14] = new LeagueQuestion("What champion is also known as \n\"the Iron Revenant?\"", "Trundle", "Mordekaiser", "Taric", "Rumble", ref answered, 2);
 
 
-            //questions[15] = new LeagueQuestion("CCFF", "QWE", "SAD", ref answered, 2);
         }
     }
 }

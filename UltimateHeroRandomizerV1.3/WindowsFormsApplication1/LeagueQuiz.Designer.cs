@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.answerButton1 = new System.Windows.Forms.RadioButton();
+            this.answerButton2 = new System.Windows.Forms.RadioButton();
+            this.answerButton3 = new System.Windows.Forms.RadioButton();
+            this.answerButton4 = new System.Windows.Forms.RadioButton();
+            this.questionLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
@@ -41,69 +41,78 @@
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // answerButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(541, 249);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.answerButton1.AutoSize = true;
+            this.answerButton1.BackColor = System.Drawing.Color.Transparent;
+            this.answerButton1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton1.ForeColor = System.Drawing.Color.White;
+            this.answerButton1.Location = new System.Drawing.Point(514, 244);
+            this.answerButton1.Name = "answerButton1";
+            this.answerButton1.Size = new System.Drawing.Size(14, 13);
+            this.answerButton1.TabIndex = 0;
+            this.answerButton1.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // answerButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(541, 268);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.answerButton2.AutoSize = true;
+            this.answerButton2.BackColor = System.Drawing.Color.Transparent;
+            this.answerButton2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton2.ForeColor = System.Drawing.Color.White;
+            this.answerButton2.Location = new System.Drawing.Point(514, 263);
+            this.answerButton2.Name = "answerButton2";
+            this.answerButton2.Size = new System.Drawing.Size(14, 13);
+            this.answerButton2.TabIndex = 1;
+            this.answerButton2.UseVisualStyleBackColor = false;
+            this.answerButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton3
+            // answerButton3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(541, 287);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.answerButton3.AutoSize = true;
+            this.answerButton3.BackColor = System.Drawing.Color.Transparent;
+            this.answerButton3.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton3.ForeColor = System.Drawing.Color.White;
+            this.answerButton3.Location = new System.Drawing.Point(514, 282);
+            this.answerButton3.Name = "answerButton3";
+            this.answerButton3.Size = new System.Drawing.Size(14, 13);
+            this.answerButton3.TabIndex = 2;
+            this.answerButton3.UseVisualStyleBackColor = false;
             // 
-            // radioButton4
+            // answerButton4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(541, 306);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.UseVisualStyleBackColor = false;
+            this.answerButton4.AutoSize = true;
+            this.answerButton4.BackColor = System.Drawing.Color.Transparent;
+            this.answerButton4.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton4.ForeColor = System.Drawing.Color.White;
+            this.answerButton4.Location = new System.Drawing.Point(514, 301);
+            this.answerButton4.Name = "answerButton4";
+            this.answerButton4.Size = new System.Drawing.Size(14, 13);
+            this.answerButton4.TabIndex = 3;
+            this.answerButton4.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // questionLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(511, 209);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 4;
+            this.questionLabel.AutoSize = true;
+            this.questionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.questionLabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questionLabel.ForeColor = System.Drawing.Color.White;
+            this.questionLabel.Location = new System.Drawing.Point(474, 198);
+            this.questionLabel.Name = "questionLabel";
+            this.questionLabel.Size = new System.Drawing.Size(0, 20);
+            this.questionLabel.TabIndex = 4;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(514, 335);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(69, 33);
             this.button1.TabIndex = 5;
             this.button1.Text = "Answer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ScoreLabel
@@ -117,26 +126,33 @@
             this.ScoreLabel.Size = new System.Drawing.Size(61, 20);
             this.ScoreLabel.TabIndex = 6;
             this.ScoreLabel.Text = "Score:";
-            //this.ScoreLabel.Click += new System.EventHandler(this.ScoreLabel_Click);
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(566, 364);
+            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ExitButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.ForeColor = System.Drawing.Color.White;
+            this.ExitButton.Location = new System.Drawing.Point(1083, 28);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(83, 23);
+            this.ExitButton.Size = new System.Drawing.Size(85, 36);
             this.ExitButton.TabIndex = 7;
             this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ReturnButton
             // 
-            this.ReturnButton.Location = new System.Drawing.Point(624, 335);
+            this.ReturnButton.BackColor = System.Drawing.Color.Transparent;
+            this.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ReturnButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnButton.ForeColor = System.Drawing.Color.White;
+            this.ReturnButton.Location = new System.Drawing.Point(598, 335);
             this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(83, 23);
+            this.ReturnButton.Size = new System.Drawing.Size(70, 33);
             this.ReturnButton.TabIndex = 8;
             this.ReturnButton.Text = "Back";
-            this.ReturnButton.UseVisualStyleBackColor = true;
+            this.ReturnButton.UseVisualStyleBackColor = false;
             this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
             // comboBox1
@@ -146,20 +162,24 @@
             5,
             10,
             15});
-            this.comboBox1.Location = new System.Drawing.Point(528, 201);
+            this.comboBox1.Location = new System.Drawing.Point(541, 201);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(83, 21);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(541, 228);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 24);
+            this.button2.Size = new System.Drawing.Size(83, 29);
             this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Start Quiz";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LeagueQuiz
@@ -174,11 +194,11 @@
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.questionLabel);
+            this.Controls.Add(this.answerButton4);
+            this.Controls.Add(this.answerButton3);
+            this.Controls.Add(this.answerButton2);
+            this.Controls.Add(this.answerButton1);
             this.Name = "LeagueQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League of Quiz";
@@ -189,11 +209,11 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton answerButton1;
+        private System.Windows.Forms.RadioButton answerButton2;
+        private System.Windows.Forms.RadioButton answerButton3;
+        private System.Windows.Forms.RadioButton answerButton4;
+        private System.Windows.Forms.Label questionLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label ScoreLabel;
         private System.Windows.Forms.Button ExitButton;
