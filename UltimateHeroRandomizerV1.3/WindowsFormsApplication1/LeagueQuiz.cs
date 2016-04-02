@@ -140,7 +140,7 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            qManager = new QuestionManager(value);
+            qManager = new QuestionManager();
 
             qManager.SECOND(ref a, ref b, ref c, ref correctAnswer);
 
