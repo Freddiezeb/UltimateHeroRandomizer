@@ -290,7 +290,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;
-        private System.ServiceProcess.ServiceController serviceController1;
+        //private System.ServiceProcess.ServiceController serviceController1;
         private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
