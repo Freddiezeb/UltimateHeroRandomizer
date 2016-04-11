@@ -276,9 +276,6 @@ namespace WindowsFormsApplication1
             LoadRectangles();
 
 
-            int x = 0;
-            int y = 0;
-
             for (int i = 0; i < rectangles.GetLength(0); i++)
             {
 
