@@ -13,19 +13,16 @@ namespace WindowsFormsApplication1
     public partial class LeagueQuiz : Form
     {
 
-        RadioButton correctButton;
-
-
+        RadioButton correctButton;     
         QuestionManager qManager;
-
         League leagueMenu;
 
         int score = 0;
+        int comboBoxValue;
 
-        int value;
+        int ticks = 30;
 
         int correctAnswer;
-
         int questionCount;
 
         string qText, answer1, answer2, answer3, answer4;
@@ -33,21 +30,9 @@ namespace WindowsFormsApplication1
         public LeagueQuiz()
         {
             InitializeComponent();
-
-            questionLabel.Hide();
-            answerButton1.Hide();
-            answerButton2.Hide();
-            answerButton3.Hide();
-            answerButton4.Hide();
-            button1.Hide();
-
-            ScoreLabel.Hide();
-
+            qManager = new QuestionManager();
             correctButton = new RadioButton();
-
-            ScoreLabel.Text = "Score:" + score.ToString() + " points";
-
-
+            HideButtons();            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,10 +42,8 @@ namespace WindowsFormsApplication1
                 // Lägger till poängen för varje korrekt svar
                 score = score + 10;
                 ScoreLabel.Text = "Score:" + score.ToString() + " points";
-
                 MessageBox.Show("NICEU");
                 CheckReset();
-
             }
             else
             {
@@ -68,36 +51,19 @@ namespace WindowsFormsApplication1
                 score = score - 5;
                 ScoreLabel.Text = "Score:" + score.ToString() + " points";
                 CheckReset();
+                Console.WriteLine("WATTTT");
             }
-
+                       
             questionCount++;
             ResetQuiz();
+            LoadQuestions();
 
-            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
-
-            GetCorrectAnswer();
-
-            GetStringInfo();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            qManager = new QuestionManager();
-
-            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
-
-            GetCorrectAnswer();
-
-            GetStringInfo();
-
-            this.questionLabel.Show();
-            this.answerButton1.Show();
-            this.answerButton2.Show();
-            this.answerButton3.Show();
-            this.answerButton4.Show();
-            this.button1.Show();
-
-            this.ScoreLabel.Show();
+            LoadQuestions();
+            ShowButtons();
 
             comboBox1.Hide();
             button2.Hide();
@@ -130,7 +96,6 @@ namespace WindowsFormsApplication1
             ActiveForm.Hide();
             leagueMenu = new League();
             leagueMenu.Show();
-
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -140,7 +105,7 @@ namespace WindowsFormsApplication1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            value = (int)this.comboBox1.SelectedItem;
+            comboBoxValue = (int)this.comboBox1.SelectedItem;
         }
 
         private void GetCorrectAnswer()
@@ -167,27 +132,105 @@ namespace WindowsFormsApplication1
 
         public void ResetQuiz()
         {
-            if (questionCount == value)
+            if (questionCount == comboBoxValue || ticks < 1)
             {
                 MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + score);
-                questionLabel.Hide();
-                answerButton1.Hide();
-                answerButton2.Hide();
-                answerButton3.Hide();
-                answerButton4.Hide();
-                button1.Hide();
-
-                ScoreLabel.Hide();
-
-                comboBox1.Show();
-                button2.Show();
-
+                HideButtons();
+                button3.Show();
+                button4.Show();
+                ticks = 30;
                 questionCount = 0;
-
+                score = 0;
+                label1.Show();
+                label1.Text = "";
             }
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //ticks--;
 
+            //this.TimerLabel.Text = "Time Left: " + ticks;
+
+            //if (ticks < 1)
+            //{
+            //    timer1.Stop();
+            //    MessageBox.Show("Time's up! Your score: " + score);
+            //    ResetQuiz();
+            //}
+        }
+
+        private void SpeedMode()
+        {
+            TimerLabel.Show();
+            timer1.Start();
+            ShowButtons();
+            LoadQuestions();
+        }
+
+        private void NormalMode()
+        {
+            comboBox1.Show();
+            button2.Show();
+        }
+
+        private void LoadQuestions()
+        {
+            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
+            GetCorrectAnswer();
+            GetStringInfo();
+        }
+
+        private void HideButtons()
+        {
+            questionLabel.Hide();
+            answerButton1.Hide();
+            answerButton2.Hide();
+            answerButton3.Hide();
+            answerButton4.Hide();
+            button1.Hide();
+            button2.Hide();
+            TimerLabel.Hide();
+            comboBox1.Hide();
+            ScoreLabel.Hide();
+        }
+
+        private void ShowButtons()
+        {
+            questionLabel.Show();
+            answerButton1.Show();
+            answerButton2.Show();
+            answerButton3.Show();
+            answerButton4.Show();
+            button1.Show();
+            ScoreLabel.Show();
+        }
+
+        private void NormalMode_Click(object sender, EventArgs e)
+        {
+            NormalMode();
+            button3.Hide();
+            button4.Hide();
+            label1.Hide();
+        }
+
+        private void SpeedMode_Click(object sender, EventArgs e)
+        {
+            SpeedMode();
+            button3.Hide();
+            button4.Hide();
+            label1.Hide();
+        }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            label1.Text = "Choose how many questions you wish to\nanswer without time limit!";
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            label1.Text = "See how many questions you can answer\ncorrect in 30 seconds!";
+        }
 
     }
 }
