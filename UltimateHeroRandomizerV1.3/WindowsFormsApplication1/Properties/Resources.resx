@@ -124,22 +124,25 @@
   <data name="lolquiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lolquiz.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dota2 menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dota2 menu3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dota22test45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dota22test45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoLChampsCollage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoLChampsCollage2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dota2test6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dota2test6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dota2 menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dota2 menu3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lolmeny3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lolmeny3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dota22test45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dota22test45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dota2test6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dota2test6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Aatrox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aatrox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

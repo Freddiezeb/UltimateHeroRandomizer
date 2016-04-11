@@ -63,6 +63,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aatrox {
+            get {
+                object obj = ResourceManager.GetObject("Aatrox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dota2_menu3 {
             get {
                 object obj = ResourceManager.GetObject("dota2 menu3", resourceCulture);
