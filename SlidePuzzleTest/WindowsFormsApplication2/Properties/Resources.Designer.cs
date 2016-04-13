@@ -63,9 +63,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Fuck_you {
+        internal static System.Drawing.Bitmap _110_morphling {
             get {
-                object obj = ResourceManager.GetObject("Fuck_you", resourceCulture);
+                object obj = ResourceManager.GetObject("_110_morphling", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_01 {
+        internal static System.Drawing.Bitmap SPmorph1 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_01", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_02 {
+        internal static System.Drawing.Bitmap SPmorph2 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_02", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_03 {
+        internal static System.Drawing.Bitmap SPmorph3 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_03", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_04 {
+        internal static System.Drawing.Bitmap SPmorph4 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_04", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_05 {
+        internal static System.Drawing.Bitmap SPmorph5 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_05", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_06 {
+        internal static System.Drawing.Bitmap SPmorph6 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_06", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_07 {
+        internal static System.Drawing.Bitmap SPmorph7 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_07", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_08 {
+        internal static System.Drawing.Bitmap SPmorph8 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_08", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,19 @@ namespace WindowsFormsApplication2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puzzle_test_09 {
+        internal static System.Drawing.Bitmap SPmorph9 {
             get {
-                object obj = ResourceManager.GetObject("puzzle_test_09", resourceCulture);
+                object obj = ResourceManager.GetObject("SPmorph9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SPwhite {
+            get {
+                object obj = ResourceManager.GetObject("SPwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

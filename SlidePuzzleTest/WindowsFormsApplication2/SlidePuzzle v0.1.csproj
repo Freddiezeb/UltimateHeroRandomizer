@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SlidePuzzle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,14 +62,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,18 +79,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\puzzle_test_09.png" />
-    <None Include="Resources\puzzle_test_08.png" />
-    <None Include="Resources\puzzle_test_07.png" />
-    <None Include="Resources\puzzle_test_06.png" />
-    <None Include="Resources\puzzle_test_05.png" />
-    <None Include="Resources\puzzle_test_04.png" />
-    <None Include="Resources\puzzle_test_03.png" />
-    <None Include="Resources\puzzle_test_02.png" />
-    <None Include="Resources\puzzle_test_01.png" />
+    <None Include="Resources\SPmorph1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Fuck_you.jpg" />
+    <None Include="Resources\SPmorph2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPmorph9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110-morphling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPwhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
