@@ -37,16 +37,16 @@ namespace WindowsFormsApplication2
             pictureBox8.BackColor = Color.Aqua;
             pictureBox9.BackColor = Color.Aqua;
 
-            pictureBox1.Image = Properties.Resources.puzzle_test_09;
-            pictureBox2.Image = Properties.Resources.puzzle_test_05;
-            pictureBox3.Image = Properties.Resources.puzzle_test_03;
-            pictureBox4.Image = Properties.Resources.puzzle_test_08;
-            pictureBox5.Image = Properties.Resources.puzzle_test_04;
-            pictureBox6.Image = Properties.Resources.puzzle_test_01;
-            pictureBox7.Image = Properties.Resources.puzzle_test_02;
-            pictureBox8.Image = Properties.Resources.puzzle_test_07;
-            pictureBox9.Image = Properties.Resources.puzzle_test_06;
-            pictureBox10.Image = Properties.Resources.Fuck_you;
+            pictureBox1.Image = Properties.Resources.SPmorph9;
+            pictureBox2.Image = Properties.Resources.SPmorph5;
+            pictureBox3.Image = Properties.Resources.SPwhite;
+            pictureBox4.Image = Properties.Resources.SPmorph8;
+            pictureBox5.Image = Properties.Resources.SPmorph4;
+            pictureBox6.Image = Properties.Resources.SPmorph1;
+            pictureBox7.Image = Properties.Resources.SPmorph2;
+            pictureBox8.Image = Properties.Resources.SPmorph7;
+            pictureBox9.Image = Properties.Resources.SPmorph6;
+            pictureBox10.Image = Properties.Resources._110_morphling;
 
 
         }
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox2.Image = pictureBox1.Image;
                 pictureBox2.BackColor = Color.Aqua;
-                pictureBox1.Image = Properties.Resources.puzzle_test_03;
+                pictureBox1.Image = Properties.Resources.SPwhite;
                 pictureBox1.BackColor = Color.White;
             }
 
@@ -65,7 +65,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox4.Image = pictureBox1.Image;
                 pictureBox4.BackColor = Color.Aqua;
-                pictureBox1.Image = Properties.Resources.puzzle_test_03;
+                pictureBox1.Image = Properties.Resources.SPwhite;
                 pictureBox1.BackColor = Color.White;
             }
         }
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox1.Image = pictureBox2.Image;
                 pictureBox1.BackColor = Color.Aqua;
-                pictureBox2.Image = Properties.Resources.puzzle_test_03;
+                pictureBox2.Image = Properties.Resources.SPwhite;
                 pictureBox2.BackColor = Color.White;
             }
 
@@ -84,7 +84,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox3.Image = pictureBox2.Image;
                 pictureBox3.BackColor = Color.Aqua;
-                pictureBox2.Image = Properties.Resources.puzzle_test_03;
+                pictureBox2.Image = Properties.Resources.SPwhite;
                 pictureBox2.BackColor = Color.White;
             }
 
@@ -92,7 +92,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox5.Image = pictureBox2.Image;
                 pictureBox5.BackColor = Color.Aqua;
-                pictureBox2.Image = Properties.Resources.puzzle_test_03;
+                pictureBox2.Image = Properties.Resources.SPwhite;
                 pictureBox2.BackColor = Color.White;
             }
         }
@@ -103,7 +103,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox2.Image = pictureBox3.Image;
                 pictureBox2.BackColor = Color.Aqua;
-                pictureBox3.Image = Properties.Resources.puzzle_test_03;
+                pictureBox3.Image = Properties.Resources.SPwhite;
                 pictureBox3.BackColor = Color.White;
             }
 
@@ -111,7 +111,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox6.Image = pictureBox3.Image;
                 pictureBox6.BackColor = Color.Aqua;
-                pictureBox3.Image = Properties.Resources.puzzle_test_03;
+                pictureBox3.Image = Properties.Resources.SPwhite;
                 pictureBox3.BackColor = Color.White;
             }
         }
@@ -122,7 +122,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox1.Image = pictureBox4.Image;
                 pictureBox1.BackColor = Color.Aqua;
-                pictureBox4.Image = Properties.Resources.puzzle_test_03;
+                pictureBox4.Image = Properties.Resources.SPwhite;
                 pictureBox4.BackColor = Color.White;
             }
 
@@ -130,7 +130,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox5.Image = pictureBox4.Image;
                 pictureBox5.BackColor = Color.Aqua;
-                pictureBox4.Image = Properties.Resources.puzzle_test_03;
+                pictureBox4.Image = Properties.Resources.SPwhite;
                 pictureBox4.BackColor = Color.White;
             }
 
@@ -138,7 +138,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox7.Image = pictureBox4.Image;
                 pictureBox7.BackColor = Color.Aqua;
-                pictureBox4.Image = Properties.Resources.puzzle_test_03;
+                pictureBox4.Image = Properties.Resources.SPwhite;
                 pictureBox4.BackColor = Color.White;
             }
         }
@@ -149,7 +149,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox2.Image = pictureBox5.Image;
                 pictureBox2.BackColor = Color.Aqua;
-                pictureBox5.Image = Properties.Resources.puzzle_test_03;
+                pictureBox5.Image = Properties.Resources.SPwhite;
                 pictureBox5.BackColor = Color.White;
             }
 
@@ -157,7 +157,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox4.Image = pictureBox5.Image;
                 pictureBox4.BackColor = Color.Aqua;
-                pictureBox5.Image = Properties.Resources.puzzle_test_03;
+                pictureBox5.Image = Properties.Resources.SPwhite;
                 pictureBox5.BackColor = Color.White;
             }
 
@@ -165,7 +165,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox6.Image = pictureBox5.Image;
                 pictureBox6.BackColor = Color.Aqua;
-                pictureBox5.Image = Properties.Resources.puzzle_test_03;
+                pictureBox5.Image = Properties.Resources.SPwhite;
                 pictureBox5.BackColor = Color.White;
             }
 
@@ -173,7 +173,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox8.Image = pictureBox5.Image;
                 pictureBox8.BackColor = Color.Aqua;
-                pictureBox5.Image = Properties.Resources.puzzle_test_03;
+                pictureBox5.Image = Properties.Resources.SPwhite;
                 pictureBox5.BackColor = Color.White;
             }
         }
@@ -184,7 +184,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox3.Image = pictureBox6.Image;
                 pictureBox3.BackColor = Color.Aqua;
-                pictureBox6.Image = Properties.Resources.puzzle_test_03;
+                pictureBox6.Image = Properties.Resources.SPwhite;
                 pictureBox6.BackColor = Color.White;
             }
 
@@ -192,7 +192,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox5.Image = pictureBox6.Image;
                 pictureBox5.BackColor = Color.Aqua;
-                pictureBox6.Image = Properties.Resources.puzzle_test_03;
+                pictureBox6.Image = Properties.Resources.SPwhite;
                 pictureBox6.BackColor = Color.White;
             }
 
@@ -200,7 +200,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox9.Image = pictureBox6.Image;
                 pictureBox9.BackColor = Color.Aqua;
-                pictureBox6.Image = Properties.Resources.puzzle_test_03;
+                pictureBox6.Image = Properties.Resources.SPwhite;
                 pictureBox6.BackColor = Color.White;
             }
         }
@@ -212,7 +212,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox4.Image = pictureBox7.Image;
                 pictureBox4.BackColor = Color.Aqua;
-                pictureBox7.Image = Properties.Resources.puzzle_test_03;
+                pictureBox7.Image = Properties.Resources.SPwhite;
                 pictureBox7.BackColor = Color.White;
             }
 
@@ -220,7 +220,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox8.Image = pictureBox7.Image;
                 pictureBox8.BackColor = Color.Aqua;
-                pictureBox7.Image = Properties.Resources.puzzle_test_03;
+                pictureBox7.Image = Properties.Resources.SPwhite;
                 pictureBox7.BackColor = Color.White;
             }
         }
@@ -232,7 +232,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox5.Image = pictureBox8.Image;
                 pictureBox5.BackColor = Color.Aqua;
-                pictureBox8.Image = Properties.Resources.puzzle_test_03;
+                pictureBox8.Image = Properties.Resources.SPwhite;
                 pictureBox8.BackColor = Color.White;
             }
 
@@ -240,7 +240,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox7.Image = pictureBox8.Image;
                 pictureBox7.BackColor = Color.Aqua;
-                pictureBox8.Image = Properties.Resources.puzzle_test_03;
+                pictureBox8.Image = Properties.Resources.SPwhite;
                 pictureBox8.BackColor = Color.White;
             }
 
@@ -248,7 +248,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox9.Image = pictureBox8.Image;
                 pictureBox9.BackColor = Color.Aqua;
-                pictureBox8.Image = Properties.Resources.puzzle_test_03;
+                pictureBox8.Image = Properties.Resources.SPwhite;
                 pictureBox8.BackColor = Color.White;
             }
         }
@@ -260,7 +260,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox6.Image = pictureBox9.Image;
                 pictureBox6.BackColor = Color.Aqua;
-                pictureBox9.Image = Properties.Resources.puzzle_test_03;
+                pictureBox9.Image = Properties.Resources.SPwhite;
                 pictureBox9.BackColor = Color.White;
             }
 
@@ -268,7 +268,7 @@ namespace WindowsFormsApplication2
             {
                 pictureBox8.Image = pictureBox9.Image;
                 pictureBox8.BackColor = Color.Aqua;
-                pictureBox9.Image = Properties.Resources.puzzle_test_03;
+                pictureBox9.Image = Properties.Resources.SPwhite;
                 pictureBox9.BackColor = Color.White;
             }
         }
@@ -286,10 +286,10 @@ namespace WindowsFormsApplication2
             label1.Text = "Timer: " + ticks.ToString();
 
             if (isShowing == true)
-                this.Size = new Size(447, 532);
+                this.Size = new Size(1200, 600);
 
             if (isShowing == false)
-                this.Size = new Size(447, 312);
+                this.Size = new Size(630, 600);
         }
 
         private void label1_MouseClick(object sender, MouseEventArgs e)
@@ -310,9 +310,6 @@ namespace WindowsFormsApplication2
         {
             isShowing = true;
             isCounting = true;
-
-            
-            
         }
 
         private void SlidePuzzle_Click(object sender, EventArgs e)

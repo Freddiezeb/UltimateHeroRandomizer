@@ -60,9 +60,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(76, 66);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -71,9 +71,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Aqua;
             this.pictureBox2.Enabled = false;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(232, 66);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 150);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -81,9 +81,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Location = new System.Drawing.Point(240, 67);
+            this.pictureBox3.Location = new System.Drawing.Point(388, 66);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(150, 150);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -91,9 +91,9 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox4.Location = new System.Drawing.Point(128, 123);
+            this.pictureBox4.Location = new System.Drawing.Point(76, 222);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(150, 150);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
@@ -101,9 +101,9 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox5.Location = new System.Drawing.Point(184, 123);
+            this.pictureBox5.Location = new System.Drawing.Point(232, 222);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(150, 150);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
@@ -112,9 +112,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Aqua;
             this.pictureBox6.Enabled = false;
-            this.pictureBox6.Location = new System.Drawing.Point(240, 123);
+            this.pictureBox6.Location = new System.Drawing.Point(388, 222);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(150, 150);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -122,9 +122,9 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox7.Location = new System.Drawing.Point(128, 179);
+            this.pictureBox7.Location = new System.Drawing.Point(76, 378);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox7.Size = new System.Drawing.Size(150, 150);
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
@@ -132,9 +132,9 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox8.Location = new System.Drawing.Point(184, 179);
+            this.pictureBox8.Location = new System.Drawing.Point(232, 378);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox8.Size = new System.Drawing.Size(150, 150);
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
@@ -142,9 +142,9 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox9.Location = new System.Drawing.Point(240, 179);
+            this.pictureBox9.Location = new System.Drawing.Point(388, 378);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox9.Size = new System.Drawing.Size(150, 150);
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
@@ -152,7 +152,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 38);
+            this.label1.Location = new System.Drawing.Point(85, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 15;
@@ -167,7 +167,7 @@
             // 
             // startbutton
             // 
-            this.startbutton.Location = new System.Drawing.Point(172, 12);
+            this.startbutton.Location = new System.Drawing.Point(76, 24);
             this.startbutton.Name = "startbutton";
             this.startbutton.Size = new System.Drawing.Size(75, 23);
             this.startbutton.TabIndex = 16;
@@ -178,15 +178,15 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox10.Location = new System.Drawing.Point(128, 311);
+            this.pictureBox10.Location = new System.Drawing.Point(655, 66);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(162, 162);
+            this.pictureBox10.Size = new System.Drawing.Size(450, 450);
             this.pictureBox10.TabIndex = 17;
             this.pictureBox10.TabStop = false;
             // 
             // windowButton
             // 
-            this.windowButton.Location = new System.Drawing.Point(172, 235);
+            this.windowButton.Location = new System.Drawing.Point(456, 24);
             this.windowButton.Name = "windowButton";
             this.windowButton.Size = new System.Drawing.Size(82, 23);
             this.windowButton.TabIndex = 18;
@@ -202,7 +202,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(181, 278);
+            this.label2.Location = new System.Drawing.Point(837, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 19;
@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 274);
+            this.ClientSize = new System.Drawing.Size(614, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.windowButton);
             this.Controls.Add(this.pictureBox10);
