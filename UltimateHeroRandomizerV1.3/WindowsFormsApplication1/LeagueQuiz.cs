@@ -148,16 +148,16 @@ namespace WindowsFormsApplication1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //ticks--;
+            ticks--;
 
-            //this.TimerLabel.Text = "Time Left: " + ticks;
+            this.TimerLabel.Text = "Time Left: " + ticks;
 
-            //if (ticks < 1)
-            //{
-            //    timer1.Stop();
-            //    MessageBox.Show("Time's up! Your score: " + score);
-            //    ResetQuiz();
-            //}
+            if (ticks < 1)
+            {
+                timer1.Stop();
+                MessageBox.Show("Time's up! Your score: " + score);
+                ResetQuiz();
+            }
         }
 
         private void SpeedMode()

@@ -28,6 +28,8 @@ namespace WindowsFormsApplication1
         public void LoadQuestion(ref string qText, ref string answer1, ref string answer2, ref string answer3, ref string answer4, ref int correctAnswerNr)
         {
 
+            var allAreTheSame = questions.All(a => answered) || questions.All(a => !answered);
+
             for (int i = 0; i < questions.Length; i++)
             {
 
@@ -46,8 +48,20 @@ namespace WindowsFormsApplication1
                     questions[i].answered = true;
                     break;
                 }
+                if (i == 14 && questions[14].answered)
+                {
+                    i = 0;
+                }
+
+
+
+                if (allAreTheSame)
+                {
+                    Console.WriteLine("YOU DID IT :D ");
+                }
             }
         }
+
 
         public void QuestionInfo()
         {

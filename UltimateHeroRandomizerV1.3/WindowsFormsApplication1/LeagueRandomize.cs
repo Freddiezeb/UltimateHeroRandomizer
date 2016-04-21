@@ -19,6 +19,7 @@ namespace WindowsFormsApplication1
 
         League leagueMenu;
 
+
         string champName;
 
         int xValue = 0, yValue = 0;
@@ -29,6 +30,9 @@ namespace WindowsFormsApplication1
             ChampionsImage.Controls.Add(ChampionSelected);
             ChampionSelected.BackColor = Color.Transparent;
             ChampionSelected.Hide();
+
+
+
         }
 
         public void LoadRectangles()
@@ -275,8 +279,8 @@ namespace WindowsFormsApplication1
             LoadRectangles();
 
 
-            int x = 0;
-            int y = 0;
+            //int x = 0;
+            //int y = 0;
 
             for (int i = 0; i < rectangles.GetLength(0); i++)
             {

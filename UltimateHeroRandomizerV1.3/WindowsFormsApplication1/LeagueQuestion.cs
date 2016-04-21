@@ -17,13 +17,14 @@ namespace WindowsFormsApplication1
 
         public LeagueQuestion(string q, string a1, string a2, string a3, string a4, ref bool answered, int correctAnswer)
         {
-            this.correctAnswer = correctAnswer;
+
             this.q = q;
             this.a1 = a1;
             this.a2 = a2;
             this.a3 = a3;
             this.a4 = a4;
             this.answered = answered;
+            this.correctAnswer = correctAnswer;
         }
 
 
