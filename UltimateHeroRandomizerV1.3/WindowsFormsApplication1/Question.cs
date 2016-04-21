@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    class LeagueQuestion
+    class Question
     {
 
         public string q, a1, a2, a3, a4;
@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
 
         public int correctAnswer;
 
-        public LeagueQuestion(string q, string a1, string a2, string a3, string a4, ref bool answered, int correctAnswer)
+        public Question(string q, string a1, string a2, string a3, string a4, ref bool answered, int correctAnswer)
         {
 
             this.q = q;

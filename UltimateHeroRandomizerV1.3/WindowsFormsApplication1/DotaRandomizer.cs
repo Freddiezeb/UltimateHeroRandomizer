@@ -18,7 +18,6 @@ namespace WindowsFormsApplication1
 
         Random rnd = new Random();
 
-        Dota dotaMenu;
 
         string heroName;
 
@@ -468,8 +467,6 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-            dotaMenu = new Dota();
-            dotaMenu.Show();
         }
     }
 }

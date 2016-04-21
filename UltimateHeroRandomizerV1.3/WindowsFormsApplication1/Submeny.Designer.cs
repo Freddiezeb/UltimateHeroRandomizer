@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class League
+    partial class Submeny
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             this.ReturnButton.UseVisualStyleBackColor = false;
             this.ReturnButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // League
+            // Submeny
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,10 +84,9 @@
             this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.MinigamesButton);
             this.Controls.Add(this.RandomizeButton);
-            this.Name = "League";
+            this.Name = "Submeny";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League";
-            this.Load += new System.EventHandler(this.League_Load);
             this.ResumeLayout(false);
 
         }

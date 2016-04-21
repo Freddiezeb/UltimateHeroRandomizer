@@ -17,7 +17,9 @@ namespace WindowsFormsApplication1
 
         Random rnd = new Random();
 
-        League leagueMenu;
+        Submeny leagueMenu;
+
+        ChooseGame gameSelected;
 
 
         string champName;
@@ -474,7 +476,7 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-            leagueMenu = new League();
+            leagueMenu = new Submeny(ref gameSelected);
             leagueMenu.Show();
         }
 

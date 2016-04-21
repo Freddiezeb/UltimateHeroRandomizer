@@ -10,13 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class LeagueQuiz : Form
+    public partial class Quiz : Form
     {
-
+        //enum GameSelected
+        //{
+        //    League,
+        //    Dota,
+        //}
         RadioButton correctButton;     
         QuestionManager qManager;
-        League leagueMenu;
+        Submeny leagueMenu;
 
+        ChooseGame gameSelected;
         int score = 0;
         int comboBoxValue;
 
@@ -25,13 +30,44 @@ namespace WindowsFormsApplication1
         int correctAnswer;
         int questionCount;
 
+        public static bool leagueQuestions, dotaQuestions;
+
         string qText, answer1, answer2, answer3, answer4;
 
-        public LeagueQuiz()
+        public Quiz(ref ChooseGame gameSelected)
         {
             InitializeComponent();
+
+            switch (gameSelected)
+            {
+                case ChooseGame.League:
+                    leagueQuestions = true;
+                    break;
+                case ChooseGame.Dota:
+                    dotaQuestions = true;
+                    this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.dota2_menu3;
+                    this.questionLabel.Location = new System.Drawing.Point(103, 186);
+                    this.answerButton1.Location = new System.Drawing.Point(133, 226);
+                    this.answerButton2.Location = new System.Drawing.Point(133, 245);
+                    this.answerButton3.Location = new System.Drawing.Point(133, 264);
+                    this.answerButton4.Location = new System.Drawing.Point(133, 283);
+                    this.ScoreLabel.Location = new System.Drawing.Point(125, 350);
+                    this.AnswerButton.Location = new System.Drawing.Point(135, 310);
+
+                    this.StartQuizButton.Location = new System.Drawing.Point(140, 250);
+                    this.questionAmountBox.Location = new System.Drawing.Point(140, 220);
+
+                    this.NormalModeButton.Location = new System.Drawing.Point(80, 250);
+                    this.SpeedModeButton.Location = new System.Drawing.Point(220, 250);
+                    this.label1.Location = new System.Drawing.Point(80, 300);
+                    break;
+                default:
+                    break;
+            }
+
             qManager = new QuestionManager();
             correctButton = new RadioButton();
+
             HideButtons();            
         }
 
@@ -65,8 +101,8 @@ namespace WindowsFormsApplication1
             LoadQuestions();
             ShowButtons();
 
-            comboBox1.Hide();
-            button2.Hide();
+            questionAmountBox.Hide();
+            StartQuizButton.Hide();
         }
 
         private void GetStringInfo()
@@ -94,7 +130,7 @@ namespace WindowsFormsApplication1
         private void ReturnButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-            leagueMenu = new League();
+            leagueMenu = new Submeny(ref gameSelected);
             leagueMenu.Show();
         }
 
@@ -105,7 +141,7 @@ namespace WindowsFormsApplication1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBoxValue = (int)this.comboBox1.SelectedItem;
+            comboBoxValue = (int)this.questionAmountBox.SelectedItem;
         }
 
         private void GetCorrectAnswer()
@@ -136,8 +172,8 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + score);
                 HideButtons();
-                button3.Show();
-                button4.Show();
+                NormalModeButton.Show();
+                SpeedModeButton.Show();
                 ticks = 30;
                 questionCount = 0;
                 score = 0;
@@ -170,8 +206,8 @@ namespace WindowsFormsApplication1
 
         private void NormalMode()
         {
-            comboBox1.Show();
-            button2.Show();
+            questionAmountBox.Show();
+            StartQuizButton.Show();
         }
 
         private void LoadQuestions()
@@ -188,10 +224,10 @@ namespace WindowsFormsApplication1
             answerButton2.Hide();
             answerButton3.Hide();
             answerButton4.Hide();
-            button1.Hide();
-            button2.Hide();
+            AnswerButton.Hide();
+            StartQuizButton.Hide();
             TimerLabel.Hide();
-            comboBox1.Hide();
+            questionAmountBox.Hide();
             ScoreLabel.Hide();
         }
 
@@ -202,23 +238,23 @@ namespace WindowsFormsApplication1
             answerButton2.Show();
             answerButton3.Show();
             answerButton4.Show();
-            button1.Show();
+            AnswerButton.Show();
             ScoreLabel.Show();
         }
 
         private void NormalMode_Click(object sender, EventArgs e)
         {
             NormalMode();
-            button3.Hide();
-            button4.Hide();
+            NormalModeButton.Hide();
+            SpeedModeButton.Hide();
             label1.Hide();
         }
 
         private void SpeedMode_Click(object sender, EventArgs e)
         {
             SpeedMode();
-            button3.Hide();
-            button4.Hide();
+            NormalModeButton.Hide();
+            SpeedModeButton.Hide();
             label1.Hide();
         }
 

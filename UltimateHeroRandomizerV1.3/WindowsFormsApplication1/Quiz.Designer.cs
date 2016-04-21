@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class LeagueQuiz
+    partial class Quiz
     {
         /// <summary>
         /// Required designer variable.
@@ -34,16 +34,16 @@
             this.answerButton3 = new System.Windows.Forms.RadioButton();
             this.answerButton4 = new System.Windows.Forms.RadioButton();
             this.questionLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AnswerButton = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.ReturnButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.questionAmountBox = new System.Windows.Forms.ComboBox();
+            this.StartQuizButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TimerLabel = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.NormalModeButton = new System.Windows.Forms.Button();
+            this.SpeedModeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -107,19 +107,19 @@
             this.questionLabel.Size = new System.Drawing.Size(0, 20);
             this.questionLabel.TabIndex = 4;
             // 
-            // button1
+            // AnswerButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(523, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Answer";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AnswerButton.BackColor = System.Drawing.Color.Transparent;
+            this.AnswerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AnswerButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerButton.ForeColor = System.Drawing.Color.White;
+            this.AnswerButton.Location = new System.Drawing.Point(523, 335);
+            this.AnswerButton.Name = "AnswerButton";
+            this.AnswerButton.Size = new System.Drawing.Size(69, 33);
+            this.AnswerButton.TabIndex = 5;
+            this.AnswerButton.Text = "Answer";
+            this.AnswerButton.UseVisualStyleBackColor = false;
+            this.AnswerButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // ScoreLabel
             // 
@@ -161,32 +161,32 @@
             this.ReturnButton.UseVisualStyleBackColor = false;
             this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
-            // comboBox1
+            // questionAmountBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.questionAmountBox.FormattingEnabled = true;
+            this.questionAmountBox.Items.AddRange(new object[] {
             5,
             10,
             15});
-            this.comboBox1.Location = new System.Drawing.Point(557, 201);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(83, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.questionAmountBox.Location = new System.Drawing.Point(557, 201);
+            this.questionAmountBox.Name = "questionAmountBox";
+            this.questionAmountBox.Size = new System.Drawing.Size(83, 21);
+            this.questionAmountBox.TabIndex = 9;
+            this.questionAmountBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button2
+            // StartQuizButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(557, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 29);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Start Quiz";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.StartQuizButton.BackColor = System.Drawing.Color.Transparent;
+            this.StartQuizButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.StartQuizButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartQuizButton.ForeColor = System.Drawing.Color.White;
+            this.StartQuizButton.Location = new System.Drawing.Point(557, 228);
+            this.StartQuizButton.Name = "StartQuizButton";
+            this.StartQuizButton.Size = new System.Drawing.Size(83, 29);
+            this.StartQuizButton.TabIndex = 10;
+            this.StartQuizButton.Text = "Start Quiz";
+            this.StartQuizButton.UseVisualStyleBackColor = false;
+            this.StartQuizButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer1
             // 
@@ -205,35 +205,35 @@
             this.TimerLabel.TabIndex = 11;
             this.TimerLabel.Text = "Time Left:";
             // 
-            // button3
+            // NormalModeButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(487, 270);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 44);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Normal Mode\r\n";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.NormalMode_Click);
-            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
+            this.NormalModeButton.BackColor = System.Drawing.Color.Transparent;
+            this.NormalModeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.NormalModeButton.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NormalModeButton.ForeColor = System.Drawing.Color.White;
+            this.NormalModeButton.Location = new System.Drawing.Point(487, 270);
+            this.NormalModeButton.Name = "NormalModeButton";
+            this.NormalModeButton.Size = new System.Drawing.Size(116, 44);
+            this.NormalModeButton.TabIndex = 12;
+            this.NormalModeButton.Text = "Normal Mode\r\n";
+            this.NormalModeButton.UseVisualStyleBackColor = false;
+            this.NormalModeButton.Click += new System.EventHandler(this.NormalMode_Click);
+            this.NormalModeButton.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
-            // button4
+            // SpeedModeButton
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(619, 271);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 44);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Speed Mode";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.SpeedMode_Click);
-            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
+            this.SpeedModeButton.BackColor = System.Drawing.Color.Transparent;
+            this.SpeedModeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SpeedModeButton.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpeedModeButton.ForeColor = System.Drawing.Color.White;
+            this.SpeedModeButton.Location = new System.Drawing.Point(619, 271);
+            this.SpeedModeButton.Name = "SpeedModeButton";
+            this.SpeedModeButton.Size = new System.Drawing.Size(116, 44);
+            this.SpeedModeButton.TabIndex = 13;
+            this.SpeedModeButton.Text = "Speed Mode";
+            this.SpeedModeButton.UseVisualStyleBackColor = false;
+            this.SpeedModeButton.Click += new System.EventHandler(this.SpeedMode_Click);
+            this.SpeedModeButton.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // label1
             // 
@@ -246,28 +246,28 @@
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 14;
             // 
-            // LeagueQuiz
+            // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.lolquiz;
             this.ClientSize = new System.Drawing.Size(1196, 717);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.SpeedModeButton);
+            this.Controls.Add(this.NormalModeButton);
             this.Controls.Add(this.TimerLabel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.StartQuizButton);
+            this.Controls.Add(this.questionAmountBox);
             this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ScoreLabel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AnswerButton);
             this.Controls.Add(this.questionLabel);
             this.Controls.Add(this.answerButton4);
             this.Controls.Add(this.answerButton3);
             this.Controls.Add(this.answerButton2);
             this.Controls.Add(this.answerButton1);
-            this.Name = "LeagueQuiz";
+            this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League of Quiz";
             this.ResumeLayout(false);
@@ -282,17 +282,16 @@
         private System.Windows.Forms.RadioButton answerButton3;
         private System.Windows.Forms.RadioButton answerButton4;
         private System.Windows.Forms.Label questionLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AnswerButton;
         private System.Windows.Forms.Label ScoreLabel;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button ReturnButton;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox questionAmountBox;
+        private System.Windows.Forms.Button StartQuizButton;
         private System.Windows.Forms.Timer timer1;
-        //private System.ServiceProcess.ServiceController serviceController1;
         private System.Windows.Forms.Label TimerLabel;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button NormalModeButton;
+        private System.Windows.Forms.Button SpeedModeButton;
         private System.Windows.Forms.Label label1;
 
     }
