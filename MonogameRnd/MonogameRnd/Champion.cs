@@ -18,8 +18,11 @@ namespace MonogameRnd
         public SoundEffect selectionSound;
 
         public bool selected;
+        public bool randomized;
 
-        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound)
+        public int role;
+
+        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound, int role, ref bool randomized)
         {
             this.tex = tex;
             this.destRect = destRect;
@@ -27,6 +30,8 @@ namespace MonogameRnd
             this.sourceRect = sourceRect;
             this.selected = selected;
             this.selectionSound = selectionSound;
+            this.role = role;
+            this.randomized = randomized;
         }
 
         public void DrawChamps(SpriteBatch spriteBatch)
