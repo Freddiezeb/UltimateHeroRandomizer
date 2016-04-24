@@ -23,19 +23,26 @@ namespace MonogameRnd
             string[] names = new string[130];
 
             string[] role = new string[13];
- 
+
             StreamReader streamReader = new StreamReader("championNames.txt");
 
-            for (int i = 0; i < 130; i++)
+            while (!streamReader.EndOfStream)
             {
-                names[i] = streamReader.ReadLine();
+                for (int i = 0; i < 130; i++)
+                {
+                    names[i] = streamReader.ReadLine();
+                }
             }
+
 
             streamReader = new StreamReader("championRoles.txt");
 
-            for (int i = 0; i < 13; i++)
+            while (!streamReader.EndOfStream)
             {
-                role[i] = streamReader.ReadLine();
+                for (int i = 0; i < 13; i++)
+                {
+                    role[i] = streamReader.ReadLine();
+                }
             }
 
             for (int i = 0; i < 130; i++)
