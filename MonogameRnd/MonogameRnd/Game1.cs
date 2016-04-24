@@ -37,9 +37,6 @@ namespace MonogameRnd
         string name;
         string leName;
 
-
-        //MonoGameEx monogameEx;
-
         bool selected;
         bool clickedYet;
         bool visible = false;
@@ -50,12 +47,8 @@ namespace MonogameRnd
 
         Random rnd;
 
-
-        bool startTimer;
-
         public static SpriteFont font;
 
-        int selectedChampions = 0;
 
         int x = 200, y = 0;
 
@@ -141,9 +134,11 @@ namespace MonogameRnd
 
             buttonManager.ButtonUpdate(KeyMouseReader.mouseState);
 
-            champManager.ChampionSelected(Content, gameTime);
+
+
             if (!filterCreated)
             {
+                champManager.ChampionSelected(Content, gameTime);
                 foreach (SelectionRectangle rect in selectionRects)
                 {
                     if (rect.rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
@@ -160,24 +155,22 @@ namespace MonogameRnd
                 }
             }
 
+            if (filterManager.reset)
+            {
+                champManager.ResetFilter();
+            }
 
-            //switch (state)
-            //{
-            //    case RandomizeState.RandomizeAll:
-            //        break;
-            //    case RandomizeState.RandomizePersonFilter:
-            //        break;
-            //    default:
-            //        break;
-            //}
+
+
 
             filterManager.FilterMarker();
             champManager.GetChampionRole();
             champManager.FilterChampions(ref filterManager);
 
+
+
             if (buttonManager.createFilter)
             {
-                //state = RandomizeState.RandomizePersonFilter;
                 champManager.CreateChampionFilter();
                 for (int i = 0; i < selectionRects.Length; i++)
                 {
@@ -201,9 +194,9 @@ namespace MonogameRnd
             }
             if (buttonManager.restoreFilter)
             {
-                //state = RandomizeState.RandomizeAll;
                 champManager.ResetFilter();
                 buttonManager.restoreFilter = false;
+                filterCreated = false;
             }
 
             base.Update(gameTime);
@@ -230,11 +223,12 @@ namespace MonogameRnd
             filterManager.DrawBoxes(spriteBatch);
 
             buttonManager.Draw(spriteBatch);
+            champManager.DrawChampName(spriteBatch);
+
 
             spriteBatch.End();
             base.Draw(gameTime);
         }
-
 
 
 

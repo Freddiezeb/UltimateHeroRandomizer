@@ -42,7 +42,7 @@
     <Compile Include="ButtonManager.cs" />
     <Compile Include="Champion.cs" />
     <Compile Include="ChampionManager.cs" />
-    <Compile Include="ChampionRoles.cs" />
+    <Compile Include="ChampionInfo.cs" />
     <Compile Include="FilterBox.cs" />
     <Compile Include="FilterManager.cs" />
     <Compile Include="Game1.cs" />

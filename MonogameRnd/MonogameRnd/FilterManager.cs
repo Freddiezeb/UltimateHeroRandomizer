@@ -17,6 +17,8 @@ namespace MonogameRnd
 
         bool marked;
 
+        public bool reset;
+
         public bool assassin, marksman, mage, tank, fighter;
 
         public FilterManager(Texture2D texture)
@@ -46,6 +48,11 @@ namespace MonogameRnd
                     else
                     {
                         filterBoxes[i].marked = false;
+                        reset = true;
+                        marksman = false;
+                        mage = false;
+                        assassin = false;
+                        tank = false;
                     }
                 }
             }
@@ -54,6 +61,26 @@ namespace MonogameRnd
             {
                 marksman = true;
             }
+            if (filterBoxes[1].marked)
+            {
+                mage = true;
+            }
+            if (filterBoxes[2].marked)
+            {
+                assassin = true;
+            }
+            if (filterBoxes[3].marked)
+            {
+                fighter = true;
+            }
+            if (filterBoxes[4].marked)
+            {
+                tank = true;
+            }
+            //if (filterBoxes[5].marked)
+            //{
+            //    support = true;
+            //}
         }
 
         public void DrawBoxes(SpriteBatch spriteBatch)

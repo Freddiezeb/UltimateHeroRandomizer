@@ -28,9 +28,11 @@ namespace MonogameRnd
         string name;
         bool selected;
 
-
+        string THISNAME = "";
+        string roleName = "";
 
         SoundManager soundManager;
+        ChampionInfo championInfo;
 
         bool soundPlaying;
 
@@ -41,7 +43,7 @@ namespace MonogameRnd
         int pastIndex;
 
         bool randomized;
-        int role;
+        string role;
 
 
         SoundEffect selectionSound;
@@ -53,8 +55,7 @@ namespace MonogameRnd
             champions = new Champion[130];
 
             soundManager = new SoundManager();
-
-
+            championInfo = new ChampionInfo();
         }
 
         public void LoadChampions(ContentManager Content)
@@ -75,7 +76,7 @@ namespace MonogameRnd
                     sourceX = 0;
                     sourceY += 100;
                 }
-                
+
             }
 
             soundManager.LoadSounds(ref champions, Content);
@@ -92,6 +93,15 @@ namespace MonogameRnd
                     {
                         //c.selectionSound.Play(0.01f, 0, 0);
                         c.selected = true;
+
+                        THISNAME = c.name;
+
+                        if (c.role != null)
+                        {
+                            roleName = c.role;
+                        }
+
+
                     }
                     else
                     {
@@ -102,16 +112,6 @@ namespace MonogameRnd
 
             }
 
-            //if (timerstart)
-            //{
-            //    timer = gameTime.ElapsedGameTime.Milliseconds;
-            //}
-            //if (soundPlaying && timer > 100)
-            //{
-            //    soundPlaying = false;
-            //    timerstart = false;
-            //    timer = 0;
-            //}
 
             soundManager.LoadSounds(ref champions, Content);
         }
@@ -216,67 +216,19 @@ namespace MonogameRnd
             }
         }
 
-        public void GetChampionName()
-        {
-            champions[0].name = "Aatrox";
-            champions[1].name = "Ahri";
-            champions[2].name = "Akali";
-            champions[3].name = "Alistar";
-            champions[4].name = "Amumu";
-            champions[5].name = "Anivia";
-            champions[6].name = "Annie";
-            champions[7].name = "Ashe";
-            champions[8].name = "Azir";
-            champions[9].name = "Bard";
-            champions[10].name = "Blitzcrank";
-            champions[11].name = "Brand";
-            champions[12].name = "Braum";
-            champions[13].name = "Caitlyn";
-            champions[14].name = "Cassiopeia";
-            champions[15].name = "Cho Gath";
-            champions[16].name = "Corki";
-            champions[17].name = "Darius";
-            champions[18].name = "Diana";
-            champions[19].name = "Draven";
-            champions[20].name = "Dr. Mundo";
-            champions[21].name = "Ekko";
-            champions[22].name = "Elise";
-            champions[23].name = "Evelynn";
-            champions[24].name = "Ezreal";
-            champions[25].name = "Fiddlesticks";
-            champions[26].name = "Fiora";
-            champions[27].name = "Fizz";
-            champions[28].name = "Galio";
-            champions[29].name = "Gangplank";
-            champions[30].name = "Garen";
-            champions[31].name = "Gnar";
-            champions[32].name = "Gragas";
-            champions[33].name = "Graves";
-            champions[34].name = "Hecarim";
-            champions[35].name = "Heimerdinger";
-
-        }
 
         public void GetChampionRole()
         {
-            //Roles:
-            //1 = Marksman
-            //2 = Mage
-            //3 = Assassin
-            //4 = Fighter
-            //5 = Tank
+            championInfo.GetChampionInfo(ref champions);
+        }
 
-            champions[0].role = 1;
-            champions[1].role = 1;
-            champions[2].role = 1;
-            champions[3].role = 1;
-            champions[4].role = 1;
-            champions[5].role = 1;
-            champions[6].role = 1;
-            champions[7].role = 1;
-            champions[8].role = 1;
-            champions[9].role = 1;
 
+        public void DrawChampName(SpriteBatch spriteBatch)
+        {
+
+            spriteBatch.DrawString(Game1.font, THISNAME, Vector2.Zero, Color.Black);
+
+            spriteBatch.DrawString(Game1.font, roleName, new Vector2(0, 100), Color.White);
         }
 
         public void FilterChampions(ref FilterManager filterManager)
@@ -289,8 +241,8 @@ namespace MonogameRnd
             {
                 if (filterManager.marksman)
                 {
-                    if (champions[i].role == 1)
-                    {
+                    //if (champions[i].role == 1)
+                    //{
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
                         nr++;
@@ -300,7 +252,7 @@ namespace MonogameRnd
                             destY += 75;
                         }
 
-                    }
+                    //}
                     else
                     {
                         champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
@@ -310,9 +262,5 @@ namespace MonogameRnd
 
         }
 
-        //public void SelectionSound(ContentManager Content)
-        //{
-        //    champions[0].selectionSound = Content.Load<SoundEffect>("Aatrox");
-        //}
     }
 }

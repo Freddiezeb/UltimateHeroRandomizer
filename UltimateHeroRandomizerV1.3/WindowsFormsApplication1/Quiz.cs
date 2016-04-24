@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         //}
         RadioButton correctButton;     
         QuestionManager qManager;
-        Submeny leagueMenu;
+        Submeny subMeny;
 
         ChooseGame gameSelected;
         int score = 0;
@@ -42,9 +42,11 @@ namespace WindowsFormsApplication1
             {
                 case ChooseGame.League:
                     leagueQuestions = true;
+                    dotaQuestions = false;
                     break;
                 case ChooseGame.Dota:
                     dotaQuestions = true;
+                    leagueQuestions = false;
                     this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.dota2_menu3;
                     this.questionLabel.Location = new System.Drawing.Point(103, 186);
                     this.answerButton1.Location = new System.Drawing.Point(133, 226);
@@ -68,7 +70,10 @@ namespace WindowsFormsApplication1
             qManager = new QuestionManager();
             correctButton = new RadioButton();
 
-            HideButtons();            
+
+            HideButtons();      
+      
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -130,8 +135,18 @@ namespace WindowsFormsApplication1
         private void ReturnButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-            leagueMenu = new Submeny(ref gameSelected);
-            leagueMenu.Show();
+
+            if (dotaQuestions)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (leagueQuestions)
+            {
+                gameSelected = ChooseGame.League;
+            }
+
+            subMeny = new Submeny(ref gameSelected);
+            subMeny.Show();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)

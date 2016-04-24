@@ -20,9 +20,9 @@ namespace MonogameRnd
         public bool selected;
         public bool randomized;
 
-        public int role;
+        public string role;
 
-        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound, int role, ref bool randomized)
+        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound, string role, ref bool randomized)
         {
             this.tex = tex;
             this.destRect = destRect;
