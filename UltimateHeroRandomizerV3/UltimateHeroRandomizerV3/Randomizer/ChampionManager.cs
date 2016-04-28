@@ -60,7 +60,7 @@ namespace UltimateHeroRandomizerV3
 
         public void LoadChampions(ContentManager Content)
         {
-
+            // Skapar alla champions
             for (int i = 0; i < champions.Length; i++)
             {
                 destRect = new Rectangle(destX, destY, 75, 75);
@@ -84,9 +84,10 @@ namespace UltimateHeroRandomizerV3
 
         public void ChampionSelected(ContentManager Content, GameTime gameTime)
         {
+            //Metod som bestämmer om en champion är selected eller inte. Visar namn på den karaktär som blir tryckt på. 
+
             foreach (Champion c in champions)
             {
-
                 if (c.destRect.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
                 {
                     if (!c.selected)
@@ -118,6 +119,8 @@ namespace UltimateHeroRandomizerV3
 
         public void RandomizeChampion(GameWindow Window)
         {
+            //Metod som slumpar en champion som har blivit vald(Selected). Den Hamnar i mitten av fönstret, den skalas upp och det spelas ett selection sound som tillhör karaktären. 
+
             for (int i = 0; i < champions.Length; i++)
             {
 
@@ -132,7 +135,7 @@ namespace UltimateHeroRandomizerV3
 
                     champions[i].destRect = new Rectangle(Window.ClientBounds.Width / 2 - 100, Window.ClientBounds.Height / 2 - 100, 200, 200);
                     champions[i].selected = false;
-                    champions[i].selectionSound.Play();
+                    champions[i].selectionSound.Play(0.01f, 0, 0);
                     break;
                 }
                 else
@@ -143,6 +146,8 @@ namespace UltimateHeroRandomizerV3
         }
         public void RandomizeAllChampions(GameWindow Window)
         {
+            //Dunno YET
+
             for (int i = 0; i < champions.Length; i++)
             {
                 i = rnd.Next(0, 130);
@@ -154,7 +159,7 @@ namespace UltimateHeroRandomizerV3
 
         public void CreateChampionFilter()
         {
-
+            // Skapar ett filter för alla champions som blivit valda(Selected) // UNDER CONSTRUCTION
 
             int nr = 0;
             for (int i = 0; i < champions.Length; i++)
@@ -179,6 +184,9 @@ namespace UltimateHeroRandomizerV3
 
         public void ResetFilter()
         {
+
+            //Återskapar ursprungsfiltret där alla karaktärer finns med.
+
             destX = 200;
             destY = 0;
             sourceX = 0;
@@ -205,6 +213,7 @@ namespace UltimateHeroRandomizerV3
 
         public void DrawChampions(SpriteBatch spriteBatch)
         {
+            //Ritar ut alla karaktärer
             for (int i = 0; i < champions.Length; i++)
             {
                 champions[i].DrawChamps(spriteBatch);
@@ -225,15 +234,14 @@ namespace UltimateHeroRandomizerV3
 
         public void DrawChampName(SpriteBatch spriteBatch)
         {
-
-            spriteBatch.DrawString(Game1.font, THISNAME, Vector2.Zero, Color.Black);
-
-            spriteBatch.DrawString(Game1.font, roleName, new Vector2(0, 100), Color.White);
+            //Ritar ut namnet på vald champion.
+            spriteBatch.DrawString(RandomizerManager.font, THISNAME, Vector2.Zero, Color.Black);
+            spriteBatch.DrawString(RandomizerManager.font, roleName, new Vector2(0, 100), Color.White);
         }
 
         public void FilterChampions(ref FilterManager filterManager)
         {
-
+            //Håller koll på vilket förskapat filter som används. UNDER CONSTRUCTION
             destX = 200;
             destY = 0;
             int nr = 0;

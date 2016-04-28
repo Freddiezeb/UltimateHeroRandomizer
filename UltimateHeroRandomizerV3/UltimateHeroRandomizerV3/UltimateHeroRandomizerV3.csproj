@@ -68,6 +68,7 @@
     <Compile Include="Randomizer\FilterBox.cs" />
     <Compile Include="Randomizer\FilterManager.cs" />
     <Compile Include="Randomizer\KeyMouseReader.cs" />
+    <Compile Include="Randomizer\RandomizerManager.cs" />
     <Compile Include="Randomizer\SelectionRectangle.cs" />
     <Compile Include="Randomizer\SoundManager.cs" />
     <Compile Include="Randomizer\TextureManager.cs" />

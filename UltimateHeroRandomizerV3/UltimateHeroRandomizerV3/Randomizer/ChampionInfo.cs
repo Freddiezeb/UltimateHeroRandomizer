@@ -10,6 +10,8 @@ namespace UltimateHeroRandomizerV3
     {
         string[] champNames;
 
+        //Klass som håller information om champions namn och deras roll, laddas in genom text-filer.
+
         public void GetChampionInfo(ref Champion[] champions)
         {
             //Roles:

@@ -9,7 +9,7 @@ namespace UltimateHeroRandomizerV3
 {
     class SoundManager
     {
-        
+        //En klass som håller i alla sounds
         public SoundManager()
         {
 

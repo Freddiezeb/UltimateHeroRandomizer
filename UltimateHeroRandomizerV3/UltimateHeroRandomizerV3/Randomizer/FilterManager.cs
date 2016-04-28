@@ -23,6 +23,7 @@ namespace UltimateHeroRandomizerV3
 
         public FilterManager(Texture2D texture)
         {
+            //Skapar en box för varje karaktärstyp
             filterBoxes = new FilterBox[5];
 
             for (int i = 0; i < filterBoxes.Length; i++)
@@ -37,6 +38,7 @@ namespace UltimateHeroRandomizerV3
 
         public void FilterMarker()
         {
+            //Markerar ett filter som bestämmer vilka och aktiverar en bool som säger vilken karaktärstyp som ska visas // UNDER CONSTRUCTION
             for (int i = 0; i < filterBoxes.Length; i++)
             {
                 if (filterBoxes[i].rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
@@ -98,11 +100,11 @@ namespace UltimateHeroRandomizerV3
                 filterBoxes[i].Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(Game1.font, "Marksman", new Vector2(50, 199), Color.White);
-            spriteBatch.DrawString(Game1.font, "Mage", new Vector2(50, 259), Color.White);
-            spriteBatch.DrawString(Game1.font, "Assassin", new Vector2(50, 318), Color.White);
-            spriteBatch.DrawString(Game1.font, "Fighter", new Vector2(50, 378), Color.White);
-            spriteBatch.DrawString(Game1.font, "Tank", new Vector2(50, 438), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Marksman", new Vector2(50, 199), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Mage", new Vector2(50, 259), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Assassin", new Vector2(50, 318), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Fighter", new Vector2(50, 378), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Tank", new Vector2(50, 438), Color.White);
 
         }
     }

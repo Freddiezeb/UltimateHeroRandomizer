@@ -41,6 +41,8 @@ namespace UltimateHeroRandomizerV3
 
         public void ButtonUpdate(MouseState mouse)
         {
+            //Håller koll på vilka knappar som trycks på.
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].Update();
@@ -68,6 +70,7 @@ namespace UltimateHeroRandomizerV3
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            //Ritar ut knappar
             for (int i = 0; i < buttons.Length; i++)
             {
                 rect = new Rectangle(200 + i * 300, 810 , 150, 60);
@@ -76,6 +79,7 @@ namespace UltimateHeroRandomizerV3
 
             buttonFont = TextureManager.buttonFont;
 
+            //Text till knappar
             spriteBatch.DrawString(buttonFont, "Create Filter", new Vector2(230, 830), Color.White);
             spriteBatch.DrawString(buttonFont, "Randomize!", new Vector2(533, 830), Color.White);
             spriteBatch.DrawString(buttonFont, "Restore Champions", new Vector2(807, 830), Color.White);
