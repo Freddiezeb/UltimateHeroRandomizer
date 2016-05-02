@@ -45,21 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Champion.cs" />
-    <Compile Include="ChampionManager.cs" />
-    <Compile Include="Dota.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dota.Designer.cs">
-      <DependentUpon>Dota.cs</DependentUpon>
-    </Compile>
     <Compile Include="DotaQuestion.cs" />
-    <Compile Include="DotaQuiz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DotaQuiz.Designer.cs">
-      <DependentUpon>DotaQuiz.cs</DependentUpon>
-    </Compile>
     <Compile Include="DotaRandomizer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,17 +58,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="League.cs">
+    <Compile Include="Submeny.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="League.Designer.cs">
-      <DependentUpon>League.cs</DependentUpon>
+    <Compile Include="Submeny.Designer.cs">
+      <DependentUpon>Submeny.cs</DependentUpon>
     </Compile>
-    <Compile Include="LeagueQuiz.cs">
+    <Compile Include="Quiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeagueQuiz.Designer.cs">
-      <DependentUpon>LeagueQuiz.cs</DependentUpon>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
     </Compile>
     <Compile Include="LeagueRandomize.cs">
       <SubType>Form</SubType>
@@ -91,39 +77,24 @@
       <DependentUpon>LeagueRandomize.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="NyRandomizer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NyRandomizer.Designer.cs">
-      <DependentUpon>NyRandomizer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LeagueQuestion.cs" />
+    <Compile Include="Question.cs" />
     <Compile Include="QuestionManager.cs" />
-    <EmbeddedResource Include="Dota.resx">
-      <DependentUpon>Dota.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DotaQuiz.resx">
-      <DependentUpon>DotaQuiz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DotaRandomizer.resx">
       <DependentUpon>DotaRandomizer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="League.resx">
-      <DependentUpon>League.cs</DependentUpon>
+    <EmbeddedResource Include="Submeny.resx">
+      <DependentUpon>Submeny.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LeagueQuiz.resx">
-      <DependentUpon>LeagueQuiz.cs</DependentUpon>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LeagueRandomize.resx">
       <DependentUpon>LeagueRandomize.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NyRandomizer.resx">
-      <DependentUpon>NyRandomizer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

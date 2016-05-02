@@ -12,13 +12,14 @@ namespace MonogameRnd
         public static Texture2D championCollage;
         public static Texture2D buttonTexture;
         public static Texture2D backgroundTexture;
-
+        public static Texture2D filterButton;
 
         public static void LoadTextures(ContentManager Content)
         {
             championCollage = Content.Load<Texture2D>("COMPLETECOLLAGE");
             buttonTexture = Content.Load<Texture2D>("Button");
             backgroundTexture = Content.Load<Texture2D>("backgroundProject");
+            filterButton = Content.Load<Texture2D>("radioButton");
 
         }
     }

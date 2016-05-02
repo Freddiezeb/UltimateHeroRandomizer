@@ -11,16 +11,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    public enum ChooseGame
+    {
+        League,
+        Dota,
+    }
     public partial class MainMenu : Form
     {
-        Dota dota;
-        League league;
+        Submeny submeny;
+
+
+
+        ChooseGame gameSelected;
 
         SoundPlayer sound;
         public MainMenu()
         {
-            dota = new Dota();
-            league = new League();
+
             InitializeComponent();
 
             sound = new SoundPlayer("Welcome_Rift2.wav");
@@ -33,10 +40,11 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            gameSelected = ChooseGame.League;
+            submeny = new Submeny(ref gameSelected);
             sound.Play();
             ActiveForm.Hide();
-            league.Show();
-
+            submeny.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,8 +59,16 @@ namespace WindowsFormsApplication1
 
         private void DotaButton_Click(object sender, EventArgs e)
         {
+            gameSelected = ChooseGame.Dota;
+            submeny = new Submeny(ref gameSelected);
             ActiveForm.Hide();
-            dota.Show();
+            submeny.Show();
+        }
+
+
+        private void MainMenu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

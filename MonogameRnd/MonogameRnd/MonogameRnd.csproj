@@ -42,6 +42,9 @@
     <Compile Include="ButtonManager.cs" />
     <Compile Include="Champion.cs" />
     <Compile Include="ChampionManager.cs" />
+    <Compile Include="ChampionInfo.cs" />
+    <Compile Include="FilterBox.cs" />
+    <Compile Include="FilterManager.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="KeyMouseReader.cs" />
     <Compile Include="Program.cs" />
@@ -81,6 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\myFont.spritefont">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

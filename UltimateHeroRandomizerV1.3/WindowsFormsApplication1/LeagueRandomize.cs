@@ -17,7 +17,10 @@ namespace WindowsFormsApplication1
 
         Random rnd = new Random();
 
-        League leagueMenu;
+        Submeny leagueMenu;
+
+        ChooseGame gameSelected;
+
 
         string champName;
 
@@ -29,6 +32,9 @@ namespace WindowsFormsApplication1
             ChampionsImage.Controls.Add(ChampionSelected);
             ChampionSelected.BackColor = Color.Transparent;
             ChampionSelected.Hide();
+
+
+
         }
 
         public void LoadRectangles()
@@ -275,8 +281,8 @@ namespace WindowsFormsApplication1
             LoadRectangles();
 
 
-            int x = 0;
-            int y = 0;
+            //int x = 0;
+            //int y = 0;
 
             for (int i = 0; i < rectangles.GetLength(0); i++)
             {
@@ -470,7 +476,7 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-            leagueMenu = new League();
+            leagueMenu = new Submeny(ref gameSelected);
             leagueMenu.Show();
         }
 
