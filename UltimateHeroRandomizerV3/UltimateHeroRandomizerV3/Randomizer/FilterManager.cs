@@ -17,19 +17,19 @@ namespace UltimateHeroRandomizerV3
 
         bool marked;
 
-        public bool reset;
+        public bool reset, filterMarked, clicked;
 
-        public bool assassin, marksman, mage, tank, fighter;
+        public bool assassin, marksman, mage, tank, fighter, support;
 
         public FilterManager(Texture2D texture)
         {
             //Skapar en box för varje karaktärstyp
-            filterBoxes = new FilterBox[5];
+            filterBoxes = new FilterBox[6];
 
             for (int i = 0; i < filterBoxes.Length; i++)
             {
                 rectangle = new Rectangle(20, 200 + i * 60, 20, 20);
-                filterBoxes[i] = new FilterBox(texture, rectangle, ref marked);    
+                filterBoxes[i] = new FilterBox(texture, rectangle, ref marked);
             }
 
 
@@ -43,54 +43,156 @@ namespace UltimateHeroRandomizerV3
             {
                 if (filterBoxes[i].rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
                 {
-                    if (!filterBoxes[i].marked)
+                    if (i == 0 && !filterBoxes[0].marked)
                     {
-                        filterBoxes[i].marked = true;
+                        marksman = true;
+                        mage = false;
+                        tank = false;
+                        fighter = false;
+                        assassin = false;
+                        support = false;
+                        filterMarked = true;
+                        clicked = true;
+
+                        filterBoxes[0].marked = true;
+
+                        filterBoxes[1].marked = false;
+                        filterBoxes[2].marked = false;
+                        filterBoxes[3].marked = false;
+                        filterBoxes[4].marked = false;
+                        filterBoxes[5].marked = false;
+                        break;
                     }
+
+                    if (i == 1 && !filterBoxes[1].marked)
+                    {
+                        mage = true;
+                        marksman = false;
+                        tank = false;
+                        fighter = false;
+                        assassin = false;
+                        support = false;
+                        filterMarked = true;
+                        clicked = true;
+
+                        filterBoxes[1].marked = true;
+
+                        filterBoxes[0].marked = false;
+                        filterBoxes[2].marked = false;
+                        filterBoxes[3].marked = false;
+                        filterBoxes[4].marked = false;
+                        filterBoxes[5].marked = false;
+
+                        break;
+                    }
+                    if (i == 2 && !filterBoxes[2].marked)
+                    {
+                        assassin = true;
+
+                        mage = false;
+                        marksman = false;
+                        tank = false;
+                        fighter = false;
+                        support = false;
+                        filterMarked = true;
+                        clicked = true;
+
+                        filterBoxes[2].marked = true;
+
+                        filterBoxes[0].marked = false;
+                        filterBoxes[1].marked = false;
+                        filterBoxes[3].marked = false;
+                        filterBoxes[4].marked = false;
+                        filterBoxes[5].marked = false;
+                        break;
+                    }
+
+
+                    if (i == 3 && !filterBoxes[3].marked)
+                    {
+                        fighter = true;
+
+                        mage = false;
+                        marksman = false;
+                        tank = false;
+                        assassin = false;
+                        support = false;
+                        filterMarked = true;
+                        clicked = true;
+
+
+                        filterBoxes[3].marked = true;
+
+                        filterBoxes[0].marked = false;
+                        filterBoxes[1].marked = false;
+                        filterBoxes[2].marked = false;
+                        filterBoxes[4].marked = false;
+                        filterBoxes[5].marked = false;
+                        break;
+                    }
+
+                    if (i == 4 && !filterBoxes[4].marked)
+                    {
+                        tank = true;
+
+                        mage = false;
+                        marksman = false;
+                        fighter = false;
+                        assassin = false;
+                        support = false;
+                        filterMarked = true;
+                        clicked = true;
+
+                        filterBoxes[4].marked = true;
+
+                        filterBoxes[0].marked = false;
+                        filterBoxes[1].marked = false;
+                        filterBoxes[2].marked = false;
+                        filterBoxes[3].marked = false;
+                        filterBoxes[5].marked = false;
+                        break;
+                    }
+
+
+                    if (i == 5 && !filterBoxes[5].marked)
+                    {
+                        support = true;
+
+                        tank = false;
+                        mage = false;
+                        marksman = false;
+                        fighter = false;
+                        assassin = false;
+                        filterMarked = true;
+
+                        filterBoxes[5].marked = true;
+
+                        filterBoxes[0].marked = false;
+                        filterBoxes[1].marked = false;
+                        filterBoxes[2].marked = false;
+                        filterBoxes[3].marked = false;
+                        filterBoxes[4].marked = false;
+                        break;
+                    }
+
                     else
                     {
                         filterBoxes[i].marked = false;
+
                         reset = true;
+                        filterMarked = false;
+
                         marksman = false;
                         mage = false;
                         assassin = false;
                         tank = false;
+                        fighter = false;
+                        support = false;
+                        break;
                     }
                 }
             }
 
-            if (filterBoxes[0].marked)
-            {
-                marksman = true;
-            }
-            if (filterBoxes[1].marked)
-            {
-                mage = true;
-            }
-            if (filterBoxes[2].marked)
-            {
-                assassin = true;
-            }
-            if (filterBoxes[3].marked)
-            {
-                fighter = true;
-            }
-            if (filterBoxes[4].marked)
-            {
-                tank = true;
-            }
-
-            //for (int i = 0; i < filterBoxes.Length; i++)
-            //{
-            //    if (filterBoxes[i].marked)
-            //    {
-            //        filterBoxes[i].marked
-            //    }
-            //}
-            //if (filterBoxes[5].marked)
-            //{
-            //    support = true;
-            //}
         }
 
         public void DrawBoxes(SpriteBatch spriteBatch)
@@ -105,6 +207,7 @@ namespace UltimateHeroRandomizerV3
             spriteBatch.DrawString(RandomizerManager.font, "Assassin", new Vector2(50, 318), Color.White);
             spriteBatch.DrawString(RandomizerManager.font, "Fighter", new Vector2(50, 378), Color.White);
             spriteBatch.DrawString(RandomizerManager.font, "Tank", new Vector2(50, 438), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Support", new Vector2(50, 498), Color.White);
 
         }
     }

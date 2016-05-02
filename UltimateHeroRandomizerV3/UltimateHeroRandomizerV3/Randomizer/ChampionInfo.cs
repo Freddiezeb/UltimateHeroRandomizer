@@ -8,9 +8,7 @@ namespace UltimateHeroRandomizerV3
 {
     class ChampionInfo
     {
-        string[] champNames;
-
-        //Klass som håller information om champions namn och deras roll, laddas in genom text-filer.
+        //Klass som håller information om champions namn och deras roll, laddas in genom text-fil.
 
         public void GetChampionInfo(ref Champion[] champions)
         {
@@ -24,39 +22,28 @@ namespace UltimateHeroRandomizerV3
 
             string[] names = new string[130];
 
-            string[] role = new string[13];
+            string[] role = new string[130];
 
-            StreamReader streamReader = new StreamReader("championNames.txt");
 
-            while (!streamReader.EndOfStream)
+            using (StreamReader reader = new StreamReader("championNames.txt"))
             {
-                for (int i = 0; i < 130; i++)
+                while (!reader.EndOfStream)
                 {
-                    names[i] = streamReader.ReadLine();
+                    for (int i = 0; i < 130; i++)
+                    {
+                        string str = reader.ReadLine();
+
+                        string[] split_string = str.Split(',');
+
+                        string characterName = (split_string[0]);
+                        string characterRole = (split_string[1]);
+
+                        champions[i].name = characterName;
+                        champions[i].role = characterRole;
+                    }
+
+
                 }
-            }
-
-
-            streamReader = new StreamReader("championRoles.txt");
-
-            while (!streamReader.EndOfStream)
-            {
-                for (int i = 0; i < 13; i++)
-                {
-                    role[i] = streamReader.ReadLine();
-                }
-            }
-
-            for (int i = 0; i < 130; i++)
-            {
-                champions[i].name = names[i];
-                
-            }
-
-            for (int i = 0; i < 13; i++)
-            {
-                champions[i].role = role[i];
-
             }
 
         }

@@ -110,9 +110,7 @@ namespace UltimateHeroRandomizerV3
                     }
                 }
 
-
             }
-
 
             soundManager.LoadSounds(ref champions, Content);
         }
@@ -125,7 +123,6 @@ namespace UltimateHeroRandomizerV3
             {
 
                 i = rnd.Next(0, 130);
-
 
                 if (champions[i].selected)
                 {
@@ -162,6 +159,8 @@ namespace UltimateHeroRandomizerV3
             // Skapar ett filter för alla champions som blivit valda(Selected) // UNDER CONSTRUCTION
 
             int nr = 0;
+            destX = 200;
+            destY = 0;
             for (int i = 0; i < champions.Length; i++)
             {
                 if (champions[i].selected)
@@ -247,10 +246,12 @@ namespace UltimateHeroRandomizerV3
             int nr = 0;
             for (int i = 0; i < champions.Length; i++)
             {
+                champions[i].selected = false;
                 if (filterManager.marksman)
                 {
                     if (champions[i].role == "Marksman")
                     {
+                        champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
                         nr++;
@@ -259,7 +260,26 @@ namespace UltimateHeroRandomizerV3
                             destX = 200;
                             destY += 75;
                         }
+                    }
 
+                    else
+                    {
+                        champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
+                    }
+                }
+                if (filterManager.mage)
+                {
+                    if (champions[i].role == "Mage")
+                    {
+                        champions[i].selected = true;
+                        champions[i].destRect = new Rectangle(destX, destY, 75, 75);
+                        destX += 75;
+                        nr++;
+                        if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                        {
+                            destX = 200;
+                            destY += 75;
+                        }
                     }
 
                     else
@@ -268,6 +288,91 @@ namespace UltimateHeroRandomizerV3
                     }
                 }
 
+                if (filterManager.assassin)
+                {
+                    if (champions[i].role == "Assassin")
+                    {
+                        champions[i].selected = true;
+                        champions[i].destRect = new Rectangle(destX, destY, 75, 75);
+                        destX += 75;
+                        nr++;
+                        if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                        {
+                            destX = 200;
+                            destY += 75;
+                        }
+                    }
+
+                    else
+                    {
+                        champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
+                    }
+                }
+
+                if (filterManager.fighter)
+                {
+                    if (champions[i].role == "Fighter")
+                    {
+                        champions[i].selected = true;
+                        champions[i].destRect = new Rectangle(destX, destY, 75, 75);
+                        destX += 75;
+                        nr++;
+                        if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                        {
+                            destX = 200;
+                            destY += 75;
+                        }
+                    }
+
+                    else
+                    {
+                        champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
+                    }
+
+                    
+                }
+
+                if (filterManager.tank)
+                {
+                    if (champions[i].role == "Tank")
+                    {
+                        champions[i].selected = true;
+                        champions[i].destRect = new Rectangle(destX, destY, 75, 75);
+                        destX += 75;
+                        nr++;
+                        if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                        {
+                            destX = 200;
+                            destY += 75;
+                        }
+                    }
+
+                    else
+                    {
+                        champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
+                    }
+                }
+
+                if (filterManager.support)
+                {
+                    if (champions[i].role == "Support")
+                    {
+                        champions[i].selected = true;
+                        champions[i].destRect = new Rectangle(destX, destY, 75, 75);
+                        destX += 75;
+                        nr++;
+                        if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                        {
+                            destX = 200;
+                            destY += 75;
+                        }
+                    }
+
+                    else
+                    {
+                        champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
+                    }
+                }
 
 
             }
