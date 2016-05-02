@@ -125,6 +125,7 @@
     <Content Include="Icon.ico" />
     <Content Include="Resources\dota2 menu3.jpeg" />
     <Content Include="Resources\lolquiz.jpeg" />
+    <None Include="Content\myFont.spritefont" />
     <None Include="Resources\lolmeny3.jpeg" />
     <None Include="Resources\starta skitet.jpeg" />
     <None Include="UltimateHeroRandomizerV3_TemporaryKey.pfx" />

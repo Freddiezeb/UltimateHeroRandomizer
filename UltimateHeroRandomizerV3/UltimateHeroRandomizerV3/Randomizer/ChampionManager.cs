@@ -28,7 +28,7 @@ namespace UltimateHeroRandomizerV3
         string name;
         bool selected;
 
-        string THISNAME = "";
+        string championName = "";
         string roleName = "";
 
         SoundManager soundManager;
@@ -61,6 +61,9 @@ namespace UltimateHeroRandomizerV3
         public void LoadChampions(ContentManager Content)
         {
             // Skapar alla champions
+
+            keepRectangleInfo = new Rectangle(200, 0, 75, 75);
+
             for (int i = 0; i < champions.Length; i++)
             {
                 destRect = new Rectangle(destX, destY, 75, 75);
@@ -95,7 +98,7 @@ namespace UltimateHeroRandomizerV3
                         //c.selectionSound.Play(0.01f, 0, 0);
                         c.selected = true;
 
-                        THISNAME = c.name;
+                        championName = c.name;
 
                         if (c.role != null)
                         {
@@ -119,6 +122,8 @@ namespace UltimateHeroRandomizerV3
         {
             //Metod som slumpar en champion som har blivit vald(Selected). Den Hamnar i mitten av fönstret, den skalas upp och det spelas ett selection sound som tillhör karaktären. 
 
+
+
             for (int i = 0; i < champions.Length; i++)
             {
 
@@ -126,11 +131,13 @@ namespace UltimateHeroRandomizerV3
 
                 if (champions[i].selected)
                 {
+
                     champions[pastIndex].destRect = keepRectangleInfo;
                     keepRectangleInfo = champions[i].destRect;
                     pastIndex = i;
 
-                    champions[i].destRect = new Rectangle(Window.ClientBounds.Width / 2 - 100, Window.ClientBounds.Height / 2 - 100, 200, 200);
+
+                    champions[i].destRect = new Rectangle(40, 40, 125, 125);
                     champions[i].selected = false;
                     champions[i].selectionSound.Play(0.01f, 0, 0);
                     break;
@@ -148,10 +155,21 @@ namespace UltimateHeroRandomizerV3
             for (int i = 0; i < champions.Length; i++)
             {
                 i = rnd.Next(0, 130);
-                champions[i].destRect = new Rectangle(Window.ClientBounds.Width / 2 - 100, Window.ClientBounds.Height / 2 - 100, 200, 200);
-                champions[i].selectionSound.Play();
+
+
+                champions[pastIndex].destRect = keepRectangleInfo;
+                keepRectangleInfo = champions[i].destRect;
+                pastIndex = i;
+
+                champions[i].destRect = new Rectangle(40, 40, 125, 125);
+                champions[i].selectionSound.Play(0.01f, 0, 0);
+                championName = champions[i].name;
+                roleName = champions[i].role;
+
                 break;
             }
+
+
         }
 
         public void CreateChampionFilter()
@@ -185,6 +203,9 @@ namespace UltimateHeroRandomizerV3
         {
 
             //Återskapar ursprungsfiltret där alla karaktärer finns med.
+
+            championName = "";
+            roleName = "";
 
             destX = 200;
             destY = 0;
@@ -234,8 +255,8 @@ namespace UltimateHeroRandomizerV3
         public void DrawChampName(SpriteBatch spriteBatch)
         {
             //Ritar ut namnet på vald champion.
-            spriteBatch.DrawString(RandomizerManager.font, THISNAME, Vector2.Zero, Color.Black);
-            spriteBatch.DrawString(RandomizerManager.font, roleName, new Vector2(0, 100), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, championName, new Vector2(40, 170), Color.Black);
+            spriteBatch.DrawString(RandomizerManager.font, roleName, new Vector2(40, 200), Color.Black);
         }
 
         public void FilterChampions(ref FilterManager filterManager)
@@ -329,7 +350,7 @@ namespace UltimateHeroRandomizerV3
                         champions[i].destRect = new Rectangle(1000, 1000, 75, 75);
                     }
 
-                    
+
                 }
 
                 if (filterManager.tank)

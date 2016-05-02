@@ -28,15 +28,11 @@ namespace UltimateHeroRandomizerV3
 
         Texture2D selectTex;
 
-        Rectangle buttonRect, selectRect, resetRect;
+        Rectangle selectRect;
 
         bool visible = false;
 
-        bool filterCreated;
-
         Random rnd;
-
-        bool filterInfo = false;
 
         public static SpriteFont font;
 
@@ -60,9 +56,6 @@ namespace UltimateHeroRandomizerV3
             champManager.LoadChampions(Content);
 
             rnd = new Random();
-
-            buttonRect = new Rectangle(600, 800, TextureManager.buttonTexture.Width, TextureManager.buttonTexture.Height);
-            resetRect = new Rectangle(800, 800, TextureManager.buttonTexture.Width, TextureManager.buttonTexture.Height);
 
             selectionRects = new SelectionRectangle[130];
 
@@ -89,7 +82,7 @@ namespace UltimateHeroRandomizerV3
             {
                 randomizerMode = RandomizerMode.RandomizePremadeFilter;
             }
-            if (buttonManager.createFilter)
+            if (buttonManager.createFilter && !filterManager.filterMarked)
             {
                 randomizerMode = RandomizerMode.RandomizePersonalFilter;
             }
@@ -98,7 +91,7 @@ namespace UltimateHeroRandomizerV3
                 randomizerMode = RandomizerMode.RandomizeWithAll;
             }
 
-            filterManager.FilterMarker();
+
 
             switch (randomizerMode)
             {
@@ -171,6 +164,10 @@ namespace UltimateHeroRandomizerV3
                     {
                         champManager.FilterChampions(ref filterManager);
                         filterManager.clicked = false;
+                        for (int i = 0; i < selectionRects.Length; i++)
+                        {
+                            selectionRects[i].visible = false;
+                        }
 
                     }
                     if (buttonManager.randomize)
@@ -186,83 +183,21 @@ namespace UltimateHeroRandomizerV3
                         buttonManager.createFilter = false;
                     }
 
+                    if (filterManager.reset)
+                    {
+                        champManager.ResetFilter();
+                        filterManager.reset = false;
+                    }
+
                     break;
                 default:
                     break;
             }
 
-            //if (!filterCreated)
-            //{
-            //    champManager.ChampionSelected(Content, gameTime);
-            //    foreach (SelectionRectangle rect in selectionRects)
-            //    {
-            //        if (rect.rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == Microsoft.Xna.Framework.Input.ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == Microsoft.Xna.Framework.Input.ButtonState.Released)
-            //        {
-            //            if (!rect.visible)
-            //            {
-            //                rect.visible = true;
-            //            }
-            //            else
-            //            {
-            //                rect.visible = false;
-            //            }
-            //        }
-            //    }
-            //}
-
-            //if (filterManager.reset)
-            //{
-            //    champManager.ResetFilter();
-            //}
-
-
-
-
-            //filterManager.FilterMarker();
 
             champManager.GetChampionRole();
+            filterManager.FilterMarker();
 
-
-            //if (filterManager.filterMarked)
-            //{
-            //    filterCreated = true;
-            //}
-            //if (filterManager.clicked)
-            //{
-            //    champManager.FilterChampions(ref filterManager);
-            //    filterManager.clicked = false;
-            //}
-
-            //if (buttonManager.createFilter)
-            //{
-            //    champManager.CreateChampionFilter();
-            //    for (int i = 0; i < selectionRects.Length; i++)
-            //    {
-            //        selectionRects[i].visible = false;
-            //    }
-            //    buttonManager.createFilter = false;
-            //    filterCreated = true;
-            //}
-            //if (buttonManager.randomize)
-            //{
-            //    if (filterCreated)
-            //    {
-            //        champManager.RandomizeChampion(Window);
-            //    }
-            //    else
-            //    {
-            //        champManager.RandomizeAllChampions(Window);
-            //    }
-
-            //    buttonManager.randomize = false;
-            //}
-            //if (buttonManager.restoreFilter)
-            //{
-            //    champManager.ResetFilter();
-            //    filterManager.filterMarked = false;
-            //    buttonManager.restoreFilter = false;
-            //    filterCreated = false;
-            //}
         }
 
         public void Draw(SpriteBatch spriteBatch)

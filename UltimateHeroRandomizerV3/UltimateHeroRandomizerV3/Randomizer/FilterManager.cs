@@ -13,7 +13,6 @@ namespace UltimateHeroRandomizerV3
         FilterBox[] filterBoxes;
 
         Rectangle rectangle;
-        Texture2D texture;
 
         bool marked;
 
@@ -28,7 +27,7 @@ namespace UltimateHeroRandomizerV3
 
             for (int i = 0; i < filterBoxes.Length; i++)
             {
-                rectangle = new Rectangle(20, 200 + i * 60, 20, 20);
+                rectangle = new Rectangle(20, 250 + i * 60, 20, 20);
                 filterBoxes[i] = new FilterBox(texture, rectangle, ref marked);
             }
 
@@ -41,6 +40,7 @@ namespace UltimateHeroRandomizerV3
             //Markerar ett filter som bestämmer vilka och aktiverar en bool som säger vilken karaktärstyp som ska visas // UNDER CONSTRUCTION
             for (int i = 0; i < filterBoxes.Length; i++)
             {
+                
                 if (filterBoxes[i].rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
                 {
                     if (i == 0 && !filterBoxes[0].marked)
@@ -164,6 +164,7 @@ namespace UltimateHeroRandomizerV3
                         fighter = false;
                         assassin = false;
                         filterMarked = true;
+                        clicked = true;
 
                         filterBoxes[5].marked = true;
 
@@ -202,12 +203,12 @@ namespace UltimateHeroRandomizerV3
                 filterBoxes[i].Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(RandomizerManager.font, "Marksman", new Vector2(50, 199), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Mage", new Vector2(50, 259), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Assassin", new Vector2(50, 318), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Fighter", new Vector2(50, 378), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Tank", new Vector2(50, 438), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Support", new Vector2(50, 498), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Marksman", new Vector2(50, 249), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Mage", new Vector2(50, 309), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Assassin", new Vector2(50, 368), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Fighter", new Vector2(50, 428), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Tank", new Vector2(50, 488), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, "Support", new Vector2(50, 548), Color.White);
 
         }
     }

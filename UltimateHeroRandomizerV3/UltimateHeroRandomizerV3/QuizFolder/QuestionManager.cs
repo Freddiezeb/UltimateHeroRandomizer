@@ -15,7 +15,7 @@ namespace UltimateHeroRandomizerV3
 
         Random rnd;
 
-        int totalQuestions = 15;
+        int totalQuestions = 21;
 
         public QuestionManager()
         {
@@ -47,7 +47,7 @@ namespace UltimateHeroRandomizerV3
                     questions[i].answered = true;
                     break;
                 }
-                if (i == 14 && questions[14].answered)
+                if (i == 20 && questions[20].answered)
                 {
                     i = 0;
                 }
@@ -84,6 +84,15 @@ namespace UltimateHeroRandomizerV3
                 questions[12] = new Question("What champion is also known as \n\"the Tidal Trickster?\"", "Shaco", "Fizz", "Riven", "Ezreal", ref answered, 2);
                 questions[13] = new Question("What champion is also known as \n\"the Sinister Blade?\"", "Katarina", "Fiora", "Garen", "Aatrox", ref answered, 1);
                 questions[14] = new Question("What champion is also known as \n\"the Iron Revenant?\"", "Trundle", "Mordekaiser", "Taric", "Rumble", ref answered, 2);
+
+                questions[15] = new Question("What is the maximum cooldown \n\"reduction for a normal game mode?", "30", "40", "45", "50", ref answered, 3);
+                questions[16] = new Question("Which team won the World Championsship 2015?", "SKT T1", "Fnatic", "Origen", "Samsung White", ref answered, 1);
+                questions[17] = new Question("How do you make your base spawn 'Super minions'?", "You ace the enemy team", "You destroy your own inhibitor", "You kill the the third dragon", "You destroy your enemies inhibitor", ref answered, 4);
+                questions[18] = new Question("How long is the channeling time for Teleport?", "3.5 seconds", "4 seconds", "2.5 seconds", "3 seconds", ref answered, 2);
+                questions[19] = new Question("What does is the game mode U.R.F short for?", "Ultimate Raid Fort", "Unit Rain Fight", "Ultra Rapid Fire", "Underground Race Fame", ref answered, 3);
+                questions[20] = new Question("Which one of these pro players \n\"is famous for the Kassadin backdoor?", "xPeke", "Ocelote", "Faker", "Shushei", ref answered, 1);
+
+
             }
 
             if (Quiz.dotaQuestions)
