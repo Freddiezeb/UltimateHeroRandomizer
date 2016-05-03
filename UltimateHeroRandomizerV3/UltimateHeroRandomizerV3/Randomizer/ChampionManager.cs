@@ -34,6 +34,9 @@ namespace UltimateHeroRandomizerV3
         SoundManager soundManager;
         ChampionInfo championInfo;
 
+        SoundEffectInstance pastInstance;
+        SoundEffectInstance soundEffectInstance;
+
         bool soundPlaying;
 
         Random rnd = new Random();
@@ -83,6 +86,7 @@ namespace UltimateHeroRandomizerV3
             }
 
             soundManager.LoadSounds(ref champions, Content);
+
         }
 
         public void ChampionSelected(ContentManager Content, GameTime gameTime)
@@ -123,7 +127,6 @@ namespace UltimateHeroRandomizerV3
             //Metod som slumpar en champion som har blivit vald(Selected). Den Hamnar i mitten av fönstret, den skalas upp och det spelas ett selection sound som tillhör karaktären. 
 
 
-
             for (int i = 0; i < champions.Length; i++)
             {
 
@@ -134,12 +137,23 @@ namespace UltimateHeroRandomizerV3
 
                     champions[pastIndex].destRect = keepRectangleInfo;
                     keepRectangleInfo = champions[i].destRect;
+                    if (pastInstance != null)
+                    {
+                        pastInstance.Pause();
+                    }
                     pastIndex = i;
 
+                    pastInstance = champions[pastIndex].selectionSound.CreateInstance();
+                    soundEffectInstance = champions[i].selectionSound.CreateInstance();
+
+                    pastInstance = soundEffectInstance;
+                    soundEffectInstance.Volume = 0.1f;
 
                     champions[i].destRect = new Rectangle(40, 40, 125, 125);
                     champions[i].selected = false;
-                    champions[i].selectionSound.Play(0.01f, 0, 0);
+                    roleName = champions[i].role;
+                    championName = champions[i].name;
+                    soundEffectInstance.Play();
                     break;
                 }
                 else
@@ -150,25 +164,31 @@ namespace UltimateHeroRandomizerV3
         }
         public void RandomizeAllChampions(GameWindow Window)
         {
-            //Dunno YET
+            //Slumpa mellan alla karaktärer som finns
+            //int i;
+            int i;
 
-            for (int i = 0; i < champions.Length; i++)
+            i = rnd.Next(0, 130);
+
+            champions[pastIndex].destRect = keepRectangleInfo;
+            keepRectangleInfo = champions[i].destRect;
+            if (pastInstance != null)
             {
-                i = rnd.Next(0, 130);
-
-
-                champions[pastIndex].destRect = keepRectangleInfo;
-                keepRectangleInfo = champions[i].destRect;
-                pastIndex = i;
-
-                champions[i].destRect = new Rectangle(40, 40, 125, 125);
-                champions[i].selectionSound.Play(0.01f, 0, 0);
-                championName = champions[i].name;
-                roleName = champions[i].role;
-
-                break;
+                pastInstance.Pause();
             }
+            pastIndex = i;
 
+            pastInstance = champions[pastIndex].selectionSound.CreateInstance();
+            soundEffectInstance = champions[i].selectionSound.CreateInstance();
+
+            pastInstance = soundEffectInstance;
+            soundEffectInstance.Volume = 0.1f;
+
+
+            champions[i].destRect = new Rectangle(40, 40, 125, 125);
+            championName = champions[i].name;
+            roleName = champions[i].role;
+            soundEffectInstance.Play();
 
         }
 
