@@ -86,6 +86,7 @@
     <Compile Include="Quiz.Designer.cs">
       <DependentUpon>Quiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuizFolder\ImageManager.cs" />
     <Compile Include="QuizFolder\Question.cs" />
     <Compile Include="QuizFolder\QuestionManager.cs" />
     <Compile Include="Randomizer\Button.cs" />
@@ -125,10 +126,12 @@
     <Content Include="Icon.ico" />
     <Content Include="Resources\dota2 menu3.jpeg" />
     <Content Include="Resources\lolquiz.jpeg" />
-    <None Include="Content\myFont.spritefont" />
+    <Content Include="Resources\Teemo.jpg" />
+    <None Include="Content\myFont.spritefont">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\lolmeny3.jpeg" />
     <None Include="Resources\starta skitet.jpeg" />
-    <None Include="UltimateHeroRandomizerV3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
@@ -140,6 +143,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Submenu.resx">
       <DependentUpon>Submenu.cs</DependentUpon>
@@ -166,6 +172,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Memory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

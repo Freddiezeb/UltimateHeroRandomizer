@@ -24,13 +24,18 @@ namespace UltimateHeroRandomizerV3
         int correctAnswer;
         int questionCount;
 
+        Image image;
+        ImageManager imageManager;
+
         public static bool leagueQuestions, dotaQuestions;
 
         string qText, answer1, answer2, answer3, answer4;
 
         public Quiz(ref ChooseGame gameSelected)
         {
+            imageManager = new ImageManager();
             InitializeComponent();
+
 
             switch (gameSelected)
             {
@@ -93,15 +98,40 @@ namespace UltimateHeroRandomizerV3
             ResetQuiz();
             LoadQuestions();
 
+            if (image != null)
+            {
+                this.questionLabel.Location = new System.Drawing.Point(514, 165);
+                this.answerButton1.Location = new System.Drawing.Point(514, 316);
+                this.answerButton2.Location = new System.Drawing.Point(514, 335);
+                this.answerButton3.Location = new System.Drawing.Point(514, 354);
+                this.answerButton4.Location = new System.Drawing.Point(514, 373);
+                this.ScoreLabel.Location = new System.Drawing.Point(514, 450);
+                this.AnswerButton.Location = new System.Drawing.Point(514, 410);
+            }
+            else
+            {
+                this.questionLabel.Location = new System.Drawing.Point(474, 198);
+                this.answerButton1.Location = new System.Drawing.Point(514, 244);
+                this.answerButton2.Location = new System.Drawing.Point(514, 263);
+                this.answerButton3.Location = new System.Drawing.Point(514, 282);
+                this.answerButton4.Location = new System.Drawing.Point(514, 301);
+                this.ScoreLabel.Location = new System.Drawing.Point(483, 416);
+                this.AnswerButton.Location = new System.Drawing.Point(523, 335);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadQuestions();
-            ShowButtons();
+            if (comboBoxValue != 0)
+            {
+                LoadQuestions();
+                ShowButtons();
 
-            questionAmountBox.Hide();
-            StartQuizButton.Hide();
+                questionAmountBox.Hide();
+                StartQuizButton.Hide();
+            }
+
         }
 
         private void GetStringInfo()
@@ -111,6 +141,7 @@ namespace UltimateHeroRandomizerV3
             this.answerButton2.Text = answer2;
             this.answerButton3.Text = answer3;
             this.answerButton4.Text = answer4;
+            this.pictureBox1.Image = image;
         }
 
         private void CheckReset()
@@ -188,6 +219,7 @@ namespace UltimateHeroRandomizerV3
                 score = 0;
                 label1.Show();
                 label1.Text = "";
+                qManager.ReviveQuestions();
             }
         }
 
@@ -221,7 +253,7 @@ namespace UltimateHeroRandomizerV3
 
         private void LoadQuestions()
         {
-            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer);
+            qManager.LoadQuestion(ref qText, ref answer1, ref answer2, ref answer3, ref answer4, ref correctAnswer, ref image);
             GetCorrectAnswer();
             GetStringInfo();
         }
