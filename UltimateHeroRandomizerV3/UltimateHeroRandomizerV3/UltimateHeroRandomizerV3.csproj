@@ -108,6 +108,12 @@
     <Compile Include="Randomizer\SelectionRectangle.cs" />
     <Compile Include="Randomizer\SoundManager.cs" />
     <Compile Include="Randomizer\TextureManager.cs" />
+    <Compile Include="SlidePuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlidePuzzle.Designer.cs">
+      <DependentUpon>SlidePuzzle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Submenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,8 +164,19 @@
     <None Include="Resources\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\110-morphling.jpg" />
     <Content Include="Resources\dota2 menu3.jpeg" />
     <Content Include="Resources\lolquiz.jpeg" />
+    <None Include="Resources\SPmorph1.png" />
+    <None Include="Resources\SPmorph2.png" />
+    <None Include="Resources\SPmorph3.png" />
+    <None Include="Resources\SPmorph4.png" />
+    <None Include="Resources\SPmorph5.png" />
+    <None Include="Resources\SPmorph6.png" />
+    <None Include="Resources\SPmorph7.png" />
+    <None Include="Resources\SPmorph8.png" />
+    <None Include="Resources\SPmorph9.png" />
+    <None Include="Resources\SPwhite.png" />
     <Content Include="Resources\Teemo.jpg" />
     <None Include="Content\myFont.spritefont">
       <SubType>Designer</SubType>
@@ -181,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Quiz.resx">
       <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlidePuzzle.resx">
+      <DependentUpon>SlidePuzzle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Submenu.resx">
       <DependentUpon>Submenu.cs</DependentUpon>

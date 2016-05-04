@@ -120,6 +120,7 @@
             this.SlidePuzzleButton.TabIndex = 5;
             this.SlidePuzzleButton.Text = "Slide Puzzle";
             this.SlidePuzzleButton.UseVisualStyleBackColor = false;
+            this.SlidePuzzleButton.Click += new System.EventHandler(this.SlidePuzzleButton_Click);
             // 
             // PongButton
             // 

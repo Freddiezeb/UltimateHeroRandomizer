@@ -14,7 +14,7 @@ namespace UltimateHeroRandomizerV3
         MainMenu menu;
         Quiz quiz;
         Memory memory;
-
+        SlidePuzzle slidePuzzle;
 
         ChooseGame gameSelected;
 
@@ -130,6 +130,13 @@ namespace UltimateHeroRandomizerV3
             ActiveForm.Hide();
             memory = new Memory();
             memory.Show();
+        }
+
+        private void SlidePuzzleButton_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            slidePuzzle = new SlidePuzzle();
+            slidePuzzle.Show();
         }
 
     }
