@@ -54,10 +54,11 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>3440ACA93AA025A096E8DB5841F112A388268085</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>058A2E421E87FD9D05B2279945535470BE93ADCD</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>UltimateHeroRandomizerV3_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
