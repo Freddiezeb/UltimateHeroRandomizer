@@ -109,7 +109,6 @@ namespace UltimateHeroRandomizerV3
                             roleName = c.role;
                         }
 
-
                     }
                     else
                     {
@@ -165,7 +164,6 @@ namespace UltimateHeroRandomizerV3
         public void RandomizeAllChampions(GameWindow Window)
         {
             //Slumpa mellan alla karaktärer som finns
-            //int i;
             int i;
 
             i = rnd.Next(0, 130);

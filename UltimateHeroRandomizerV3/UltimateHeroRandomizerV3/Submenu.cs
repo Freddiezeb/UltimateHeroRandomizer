@@ -13,6 +13,7 @@ namespace UltimateHeroRandomizerV3
     {
         MainMenu menu;
         Quiz quiz;
+        Memory memory;
 
 
         ChooseGame gameSelected;
@@ -122,6 +123,13 @@ namespace UltimateHeroRandomizerV3
             ActiveForm.Hide();
             quiz = new Quiz(ref gameSelected);
             quiz.Show();
+        }
+
+        private void MemoryButton_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            memory = new Memory();
+            memory.Show();
         }
 
     }

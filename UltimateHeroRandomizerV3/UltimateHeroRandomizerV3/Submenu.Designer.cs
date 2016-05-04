@@ -106,6 +106,7 @@
             this.MemoryButton.TabIndex = 4;
             this.MemoryButton.Text = "Memory";
             this.MemoryButton.UseVisualStyleBackColor = false;
+            this.MemoryButton.Click += new System.EventHandler(this.MemoryButton_Click);
             // 
             // SlidePuzzleButton
             // 

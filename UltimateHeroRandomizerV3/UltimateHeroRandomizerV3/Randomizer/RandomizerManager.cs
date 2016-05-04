@@ -92,7 +92,6 @@ namespace UltimateHeroRandomizerV3
             }
 
 
-
             switch (randomizerMode)
             {
                 case RandomizerMode.RandomizeWithAll:
