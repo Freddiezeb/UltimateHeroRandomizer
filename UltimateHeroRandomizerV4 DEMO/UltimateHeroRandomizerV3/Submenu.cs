@@ -37,11 +37,12 @@ namespace UltimateHeroRandomizerV3
                     this.RandomizeButton.Location = new System.Drawing.Point(108, 192);
                     this.MinigamesButton.Location = new System.Drawing.Point(108, 294);
                     this.ReturnButton.Location = new System.Drawing.Point(108, 397);
-                    QuizButton.Location = new System.Drawing.Point(108, 140);
-                    MemoryButton.Location = new System.Drawing.Point(108, 240);
-                    SlidePuzzleButton.Location = new System.Drawing.Point(108, 340);
-                    PongButton.Location = new System.Drawing.Point(108, 440);
-                    DiceButton.Location = new System.Drawing.Point(108, 540);
+                    QuizButton.Location = new System.Drawing.Point(108, 100);
+                    MemoryButton.Location = new System.Drawing.Point(108, 200);
+                    SlidePuzzleButton.Location = new System.Drawing.Point(108, 300);
+                    PongButton.Location = new System.Drawing.Point(108, 400);
+                    DiceButton.Location = new System.Drawing.Point(108, 500);
+                    BackButton.Location = new System.Drawing.Point(108, 600);
                     break;
                 default:
                     break;
@@ -51,6 +52,7 @@ namespace UltimateHeroRandomizerV3
             SlidePuzzleButton.Hide();
             PongButton.Hide();
             DiceButton.Hide();
+            BackButton.Hide();
 
         }
 
@@ -106,6 +108,7 @@ namespace UltimateHeroRandomizerV3
             SlidePuzzleButton.Show();
             PongButton.Show();
             DiceButton.Show();
+            BackButton.Show();
 
             ReturnButton.Hide();
             MinigamesButton.Hide();
@@ -131,6 +134,20 @@ namespace UltimateHeroRandomizerV3
             ActiveForm.Hide();
             slidePuzzle = new SlidePuzzle();
             slidePuzzle.Show();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            QuizButton.Hide();
+            MemoryButton.Hide();
+            SlidePuzzleButton.Hide();
+            PongButton.Hide();
+            DiceButton.Hide();
+            BackButton.Hide();
+
+            ReturnButton.Show();
+            MinigamesButton.Show();
+            RandomizeButton.Show();
         }
 
     }
