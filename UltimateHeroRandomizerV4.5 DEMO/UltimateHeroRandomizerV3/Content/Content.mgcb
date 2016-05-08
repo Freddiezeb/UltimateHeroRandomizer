@@ -1,0 +1,857 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/Windows
+/intermediateDir:obj/Windows
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin myFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:myFont.spritefont
+
+#begin buttonFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:buttonFont.spritefont
+
+#begin SelectionSounds/Aatrox.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Aatrox.wav
+
+#begin SelectionSounds/Ahri.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ahri.wav
+
+#begin SelectionSounds/Akali.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Akali.wav
+
+#begin SelectionSounds/Alistar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Alistar.wav
+
+#begin SelectionSounds/Amumu.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Amumu.wav
+
+#begin SelectionSounds/Anivia.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Anivia.wav
+
+#begin SelectionSounds/Annie.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Annie.wav
+
+#begin SelectionSounds/Ashe.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ashe.wav
+
+#begin SelectionSounds/AurelionSol.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/AurelionSol.wav
+
+#begin SelectionSounds/Azir.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Azir.wav
+
+#begin SelectionSounds/Bard.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Bard.wav
+
+#begin SelectionSounds/Blitzcrank.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Blitzcrank.wav
+
+#begin SelectionSounds/Brand.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Brand.wav
+
+#begin SelectionSounds/Braum.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Braum.wav
+
+#begin SelectionSounds/Caitlyn.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Caitlyn.wav
+
+#begin SelectionSounds/Cassiopeia.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Cassiopeia.wav
+
+#begin SelectionSounds/Chogath.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Chogath.wav
+
+#begin SelectionSounds/Corki.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Corki.wav
+
+#begin SelectionSounds/Darius.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Darius.wav
+
+#begin SelectionSounds/Diana.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Diana.wav
+
+#begin SelectionSounds/Draven.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Draven.wav
+
+#begin SelectionSounds/DrMundo.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/DrMundo.wav
+
+#begin SelectionSounds/Ekko.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ekko.wav
+
+#begin SelectionSounds/Elise.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Elise.wav
+
+#begin SelectionSounds/Evelynn.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Evelynn.wav
+
+#begin SelectionSounds/Ezreal.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ezreal.wav
+
+#begin SelectionSounds/FiddleSticks.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/FiddleSticks.wav
+
+#begin SelectionSounds/Fiora.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Fiora.wav
+
+#begin SelectionSounds/Fizz.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Fizz.wav
+
+#begin SelectionSounds/Galio.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Galio.wav
+
+#begin SelectionSounds/Gangplank.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Gangplank.wav
+
+#begin SelectionSounds/Garen.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Garen.wav
+
+#begin SelectionSounds/Gnar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Gnar.wav
+
+#begin SelectionSounds/Gragas.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Gragas.wav
+
+#begin SelectionSounds/Graves.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Graves.wav
+
+#begin SelectionSounds/Hecarim.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Hecarim.wav
+
+#begin SelectionSounds/Heimerdinger.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Heimerdinger.wav
+
+#begin SelectionSounds/Illaoi.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Illaoi.wav
+
+#begin SelectionSounds/Irelia.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Irelia.wav
+
+#begin SelectionSounds/Janna.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Janna.wav
+
+#begin SelectionSounds/JarvanIV.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/JarvanIV.wav
+
+#begin SelectionSounds/Jax.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Jax.wav
+
+#begin SelectionSounds/Jayce.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Jayce.wav
+
+#begin SelectionSounds/Jhin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Jhin.wav
+
+#begin SelectionSounds/Jinx.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Jinx.wav
+
+#begin SelectionSounds/Kalista.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Kalista.wav
+
+#begin SelectionSounds/Karma.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Karma.wav
+
+#begin SelectionSounds/Karthus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Karthus.wav
+
+#begin SelectionSounds/Kassadin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Kassadin.wav
+
+#begin SelectionSounds/Katarina.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Katarina.wav
+
+#begin SelectionSounds/Kayle.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Kayle.wav
+
+#begin SelectionSounds/Kennen.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Kennen.wav
+
+#begin SelectionSounds/Khazix.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Khazix.wav
+
+#begin SelectionSounds/Kindred.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Kindred.wav
+
+#begin SelectionSounds/KogMaw.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/KogMaw.wav
+
+#begin SelectionSounds/LeBlanc.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/LeBlanc.wav
+
+#begin SelectionSounds/LeeSin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/LeeSin.wav
+
+#begin SelectionSounds/Leona.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Leona.wav
+
+#begin SelectionSounds/Lissandra.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Lissandra.wav
+
+#begin SelectionSounds/Lucian.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Lucian.wav
+
+#begin SelectionSounds/Lulu.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Lulu.wav
+
+#begin SelectionSounds/Lux.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Lux.wav
+
+#begin SelectionSounds/Malphite.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Malphite.wav
+
+#begin SelectionSounds/Malzahar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Malzahar.wav
+
+#begin SelectionSounds/Maokai.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Maokai.wav
+
+#begin SelectionSounds/MasterYi.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/MasterYi.wav
+
+#begin SelectionSounds/MissFortune.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/MissFortune.wav
+
+#begin SelectionSounds/MonkeyKing.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/MonkeyKing.wav
+
+#begin SelectionSounds/Mordekaiser.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Mordekaiser.wav
+
+#begin SelectionSounds/Morgana.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Morgana.wav
+
+#begin SelectionSounds/Nami.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nami.wav
+
+#begin SelectionSounds/Nasus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nasus.wav
+
+#begin SelectionSounds/Nautilus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nautilus.wav
+
+#begin SelectionSounds/Nidalee.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nidalee.wav
+
+#begin SelectionSounds/Nocturne.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nocturne.wav
+
+#begin SelectionSounds/Nunu.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Nunu.wav
+
+#begin SelectionSounds/Olaf.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Olaf.wav
+
+#begin SelectionSounds/Orianna.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Orianna.wav
+
+#begin SelectionSounds/Pantheon.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Pantheon.wav
+
+#begin SelectionSounds/Permission.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Permission.wav
+
+#begin SelectionSounds/Poppy.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Poppy.wav
+
+#begin SelectionSounds/Quinn.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Quinn.wav
+
+#begin SelectionSounds/Rammus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Rammus.wav
+
+#begin SelectionSounds/Reksai.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Reksai.wav
+
+#begin SelectionSounds/Renekton.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Renekton.wav
+
+#begin SelectionSounds/Rengar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Rengar.wav
+
+#begin SelectionSounds/Riven.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Riven.wav
+
+#begin SelectionSounds/Rumble.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Rumble.wav
+
+#begin SelectionSounds/Ryze.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ryze.wav
+
+#begin SelectionSounds/Sejuani.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Sejuani.wav
+
+#begin SelectionSounds/Shaco.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Shaco.wav
+
+#begin SelectionSounds/Shen.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Shen.wav
+
+#begin SelectionSounds/Shyvana.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Shyvana.wav
+
+#begin SelectionSounds/Singed.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Singed.wav
+
+#begin SelectionSounds/Sion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Sion.wav
+
+#begin SelectionSounds/Sivir.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Sivir.wav
+
+#begin SelectionSounds/Skarner.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Skarner.wav
+
+#begin SelectionSounds/Sona.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Sona.wav
+
+#begin SelectionSounds/Soraka.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Soraka.wav
+
+#begin SelectionSounds/Swain.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Swain.wav
+
+#begin SelectionSounds/Syndra.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Syndra.wav
+
+#begin SelectionSounds/TahmKench.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/TahmKench.wav
+
+#begin SelectionSounds/Talon.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Talon.wav
+
+#begin SelectionSounds/Taric.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Taric.wav
+
+#begin SelectionSounds/Teemo.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Teemo.wav
+
+#begin SelectionSounds/Thresh.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Thresh.wav
+
+#begin SelectionSounds/Tristana.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Tristana.wav
+
+#begin SelectionSounds/Trundle.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Trundle.wav
+
+#begin SelectionSounds/Tryndamere.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Tryndamere.wav
+
+#begin SelectionSounds/TwistedFate.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/TwistedFate.wav
+
+#begin SelectionSounds/Twitch.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Twitch.wav
+
+#begin SelectionSounds/Udyr.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Udyr.wav
+
+#begin SelectionSounds/Urgot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Urgot.wav
+
+#begin SelectionSounds/Varus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Varus.wav
+
+#begin SelectionSounds/Warwick.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Warwick.wav
+
+#begin SelectionSounds/Vayne.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Vayne.wav
+
+#begin SelectionSounds/Veigar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Veigar.wav
+
+#begin SelectionSounds/VelKoz.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/VelKoz.wav
+
+#begin SelectionSounds/Vi.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Vi.wav
+
+#begin SelectionSounds/Viktor.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Viktor.wav
+
+#begin SelectionSounds/Vladimir.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Vladimir.wav
+
+#begin SelectionSounds/Volibear.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Volibear.wav
+
+#begin SelectionSounds/Xerath.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Xerath.wav
+
+#begin SelectionSounds/XinZhao.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/XinZhao.wav
+
+#begin SelectionSounds/Yasuo.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Yasuo.wav
+
+#begin SelectionSounds/Yorick.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Yorick.wav
+
+#begin SelectionSounds/Zac.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Zac.wav
+
+#begin SelectionSounds/Zed.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Zed.wav
+
+#begin SelectionSounds/Ziggs.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Ziggs.wav
+
+#begin SelectionSounds/Zilean.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Zilean.wav
+
+#begin SelectionSounds/Zyra.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Zyra.wav
+
+#begin Transparent.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:Transparent.png
+
+#begin Button.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:Button.png
+
+#begin backgroundProject.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:backgroundProject.jpg
+
+#begin radioButton.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:radioButton.png
+
