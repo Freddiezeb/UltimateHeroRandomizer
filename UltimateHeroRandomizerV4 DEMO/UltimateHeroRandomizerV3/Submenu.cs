@@ -18,7 +18,7 @@ namespace UltimateHeroRandomizerV3
 
         ChooseGame gameSelected;
 
-        bool Dota, League;
+        public static bool Dota, League;
 
         public Submenu(ref ChooseGame game)
         {
@@ -28,14 +28,15 @@ namespace UltimateHeroRandomizerV3
             {
                 case ChooseGame.League:
                     League = true;
+                    Dota = false;
                     break;
                 case ChooseGame.Dota:
                     Dota = true;
+                    League = false;
                     this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
                     this.RandomizeButton.Location = new System.Drawing.Point(108, 192);
                     this.MinigamesButton.Location = new System.Drawing.Point(108, 294);
                     this.ReturnButton.Location = new System.Drawing.Point(108, 397);
-
                     QuizButton.Location = new System.Drawing.Point(108, 140);
                     MemoryButton.Location = new System.Drawing.Point(108, 240);
                     SlidePuzzleButton.Location = new System.Drawing.Point(108, 340);
@@ -78,27 +79,20 @@ namespace UltimateHeroRandomizerV3
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-
+            if (Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (League)
+            {
+                gameSelected = ChooseGame.League;
+            }
 
             using (var game = new Game1())
                 game.Run();
         }
 
 
-        public void GetEnumInfo(ref ChooseGame state)
-        {
-            switch (state)
-            {
-                case ChooseGame.League:
-                    break;
-                case ChooseGame.Dota:
-
-
-                    break;
-                default:
-                    break;
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

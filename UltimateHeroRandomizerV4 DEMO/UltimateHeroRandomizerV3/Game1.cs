@@ -61,6 +61,14 @@ namespace UltimateHeroRandomizerV3
 
             if (KeyMouseReader.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Space))
             {
+                if (Submenu.Dota)
+                {
+                    gameChoose = ChooseGame.Dota;
+                }
+                if (Submenu.League)
+                {
+                    gameChoose = ChooseGame.League;
+                }
                 submenu = new Submenu(ref gameChoose);
                 submenu.Show();
                 gameForm.Hide();

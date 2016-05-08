@@ -41,11 +41,8 @@ namespace UltimateHeroRandomizerV3
                         champions[i].name = characterName;
                         champions[i].role = characterRole;
                     }
-
-
                 }
             }
-
         }
     }
 }
