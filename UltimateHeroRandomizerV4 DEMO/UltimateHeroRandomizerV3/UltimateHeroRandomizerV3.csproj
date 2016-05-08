@@ -126,6 +126,12 @@
     <Compile Include="Submenu.Designer.cs">
       <DependentUpon>Submenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UploadHighscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadHighscore.Designer.cs">
+      <DependentUpon>UploadHighscore.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Submenu.resx">
       <DependentUpon>Submenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadHighscore.resx">
+      <DependentUpon>UploadHighscore.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

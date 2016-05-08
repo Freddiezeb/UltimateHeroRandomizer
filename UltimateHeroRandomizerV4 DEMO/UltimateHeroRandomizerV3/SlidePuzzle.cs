@@ -12,9 +12,12 @@ namespace UltimateHeroRandomizerV3
     public partial class SlidePuzzle : Form
     {
         Submenu subMenu;
+        UploadHighscore uploadHighscore;
         ChooseGame gameSelected;
 
-        int ticks, timerTicks = 6;
+
+        public static int ticks;
+        int timerTicks = 6;
         bool isPressed, isShowing, isCounting;
         bool pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9;
 
@@ -25,7 +28,6 @@ namespace UltimateHeroRandomizerV3
             timer1.Start();
             windowTimer.Start();
             //CheckWin();
-
         }
 
         void CheckWin()
@@ -411,6 +413,9 @@ namespace UltimateHeroRandomizerV3
             //pictureBox8.Image = Properties.Resources.SPmorph7;
             //pictureBox9.Image = Properties.Resources.SPmorph6;
 
+            System.Diagnostics.Debug.WriteLine(pictureBox1.Image);
+
+
             if (pictureBox1.Image == Properties.Resources.SPmorph9)
             {
                 pic1 = true;
@@ -453,9 +458,11 @@ namespace UltimateHeroRandomizerV3
             //    isShowing = true;
             //    Application.Exit();
             //}
-            if (pic1 == true)
+            if (ticks >= 5)
             {
-                Application.Exit();
+                isPressed = false;
+                uploadHighscore = new UploadHighscore();
+                uploadHighscore.Show();
             }
         }
     }
