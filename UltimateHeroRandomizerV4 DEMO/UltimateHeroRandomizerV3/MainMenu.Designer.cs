@@ -32,7 +32,7 @@
             this.DotaButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.highscoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LeagueButton
@@ -90,18 +90,19 @@
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // highscoreButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(504, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 49);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Options";
-            this.button1.UseVisualStyleBackColor = false;
+            this.highscoreButton.BackColor = System.Drawing.Color.Transparent;
+            this.highscoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.highscoreButton.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highscoreButton.ForeColor = System.Drawing.Color.White;
+            this.highscoreButton.Location = new System.Drawing.Point(504, 421);
+            this.highscoreButton.Name = "highscoreButton";
+            this.highscoreButton.Size = new System.Drawing.Size(175, 49);
+            this.highscoreButton.TabIndex = 4;
+            this.highscoreButton.Text = "Highscore";
+            this.highscoreButton.UseVisualStyleBackColor = false;
+            this.highscoreButton.Click += new System.EventHandler(this.highscoreButton_Click_1);
             // 
             // MainMenu
             // 
@@ -109,7 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.mainBackground;
             this.ClientSize = new System.Drawing.Size(1200, 805);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.highscoreButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DotaButton);
@@ -130,6 +131,6 @@
         private System.Windows.Forms.Button DotaButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button highscoreButton;
     }
 }
