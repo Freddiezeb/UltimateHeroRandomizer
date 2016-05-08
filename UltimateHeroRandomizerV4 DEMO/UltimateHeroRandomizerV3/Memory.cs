@@ -16,6 +16,9 @@ namespace UltimateHeroRandomizerV3
 
         PictureBox texture;
 
+        Submenu subMenu;
+        ChooseGame gameSelected;
+
         int remaining = 8;
 
         public Memory()
@@ -23,7 +26,9 @@ namespace UltimateHeroRandomizerV3
             // Lägger till transparent bakgrund till bilderna
             InitializeComponent();
 
-            //ScoreLabel.Text = "Score: " + score.ToString() + " points";
+            gameSelected = new ChooseGame();
+
+            ScoreLabel.Text = "Score: " + score.ToString() + " points";
 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
@@ -40,7 +45,7 @@ namespace UltimateHeroRandomizerV3
             pictureBox13.BackColor = Color.Transparent;
             pictureBox14.BackColor = Color.Transparent;
             pictureBox15.BackColor = Color.Transparent;
-            pictureBox16.BackColor = Color.Transparent;           
+            pictureBox16.BackColor = Color.Transparent;
         }
 
         private void DefaultPicture()
@@ -85,7 +90,7 @@ namespace UltimateHeroRandomizerV3
                     i++;
                 }
             }
-            
+
             for (int j = 0; j < 16; j++)
             {
                 if (textureArray[j] > 8)
@@ -110,12 +115,12 @@ namespace UltimateHeroRandomizerV3
             // DoEvents() för att förlänga eventerna med Sleep(500)            
 
             if (lastTexture.Tag.ToString() == nextTexture.Tag.ToString())
-            {                
+            {
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
                 lastTexture.Visible = false;
-                nextTexture.Visible = false;             
-                remaining--;                              
+                nextTexture.Visible = false;
+                remaining--;
             }
 
             else
@@ -123,7 +128,7 @@ namespace UltimateHeroRandomizerV3
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
                 lastTexture.Image = Image.FromFile("0.png");
-                nextTexture.Image = Image.FromFile("0.png");               
+                nextTexture.Image = Image.FromFile("0.png");
             }
 
         }
@@ -131,9 +136,9 @@ namespace UltimateHeroRandomizerV3
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "League of Memory";
-          
+
             DefaultPicture();
-            CheckPicture();                           
+            CheckPicture();
             TagPicture();
         }
 
@@ -142,7 +147,7 @@ namespace UltimateHeroRandomizerV3
             //Vänder brickorna efter klick på texturrutorna
             PictureBox currentTexture = (sender as PictureBox);
 
-            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".png");           
+            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".png");
 
             if (count == 0)
             {
@@ -155,7 +160,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     MessageBox.Show("You Can't Do That!");
                     count = 0;
-                    texture.Image = Image.FromFile("0.png"); 
+                    texture.Image = Image.FromFile("0.png");
                 }
                 else
                 {
@@ -235,10 +240,13 @@ namespace UltimateHeroRandomizerV3
             score = 0;
         }
 
-        private void ScoreLabel_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            ActiveForm.Hide();
 
+            subMenu = new Submenu(ref gameSelected);
+            subMenu.Show();
         }
     }
-    }
+}
 
