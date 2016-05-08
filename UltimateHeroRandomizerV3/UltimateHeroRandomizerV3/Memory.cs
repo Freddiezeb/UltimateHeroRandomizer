@@ -16,12 +16,17 @@ namespace UltimateHeroRandomizerV3
 
         PictureBox texture;
 
+        Submenu subMenu;
+        ChooseGame gameSelected;
+
         int remaining = 8;
 
         public Memory()
         {
             // Lägger till transparent bakgrund till bilderna
             InitializeComponent();
+
+            gameSelected = new ChooseGame();
 
             //ScoreLabel.Text = "Score: " + score.ToString() + " points";
 
@@ -238,6 +243,14 @@ namespace UltimateHeroRandomizerV3
         private void ScoreLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+
+            subMenu = new Submenu(ref gameSelected);
+            subMenu.Show();
         }
     }
     }
