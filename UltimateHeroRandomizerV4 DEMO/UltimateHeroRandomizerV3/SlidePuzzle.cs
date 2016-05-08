@@ -11,6 +11,9 @@ namespace UltimateHeroRandomizerV3
 {
     public partial class SlidePuzzle : Form
     {
+        Submenu subMenu;
+        ChooseGame gameSelected;
+
         int ticks, timerTicks = 6;
         bool isPressed, isShowing, isCounting;
 
@@ -339,9 +342,17 @@ namespace UltimateHeroRandomizerV3
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+
+            subMenu = new Submenu(ref gameSelected);
+            subMenu.Show();
         }
     }
 }
