@@ -36,6 +36,7 @@
             this.SlidePuzzleButton = new System.Windows.Forms.Button();
             this.PongButton = new System.Windows.Forms.Button();
             this.DiceButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RandomizeButton
@@ -145,9 +146,23 @@
             this.DiceButton.Name = "DiceButton";
             this.DiceButton.Size = new System.Drawing.Size(231, 80);
             this.DiceButton.TabIndex = 7;
-            this.DiceButton.Text = "Dice(?)";
+            this.DiceButton.Text = "Dice";
             this.DiceButton.UseVisualStyleBackColor = false;
             this.DiceButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Back
+            // 
+            this.BackButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BackButton.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(761, 681);
+            this.BackButton.Name = "Back";
+            this.BackButton.Size = new System.Drawing.Size(231, 80);
+            this.BackButton.TabIndex = 8;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.Back_Click);
             // 
             // Submenu
             // 
@@ -155,6 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolmeny3;
             this.ClientSize = new System.Drawing.Size(1195, 803);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.DiceButton);
             this.Controls.Add(this.PongButton);
             this.Controls.Add(this.SlidePuzzleButton);
@@ -180,5 +196,6 @@
         private System.Windows.Forms.Button SlidePuzzleButton;
         private System.Windows.Forms.Button PongButton;
         private System.Windows.Forms.Button DiceButton;
+        private System.Windows.Forms.Button BackButton;
     }
 }
