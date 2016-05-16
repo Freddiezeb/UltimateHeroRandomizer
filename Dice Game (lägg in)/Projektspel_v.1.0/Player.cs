@@ -92,6 +92,7 @@ namespace Projektspel_v._1._0
 
         #region Public Methods
 
+        //Metod för att "kasta" tärningarna
         public void RollDice()
         {
             for (int i = 0; i < dice.Length; i++) 
@@ -124,6 +125,7 @@ namespace Projektspel_v._1._0
             GetResults();
         }
 
+        //Resetar spelaren så man kan kasta igen
         public void ResetPlayer()
         {
             for (int i = 0; i < diceResults.Length; i++)
@@ -147,6 +149,7 @@ namespace Projektspel_v._1._0
 
         #region Private Methods
 
+        //Kollar resultatet av kastet, tvåpar osv.
         private void GetResults()
         {
             bool fiveKind = false, fourKind = false, highStraight = false,
