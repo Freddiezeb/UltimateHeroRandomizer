@@ -13,13 +13,12 @@ namespace UltimateHeroRandomizerV3
     {
         int count = 0;
         int score = 0;
+        int remaining = 8;
 
         PictureBox texture;
 
         Submenu subMenu;
         ChooseGame gameSelected;
-
-        int remaining = 8;
 
         public Memory()
         {
@@ -29,6 +28,7 @@ namespace UltimateHeroRandomizerV3
             gameSelected = new ChooseGame();
 
             ScoreLabel.Text = "Score: " + score.ToString() + " points";
+            label1.Text = "Remaining Pairs: " + remaining.ToString();
 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
@@ -59,7 +59,6 @@ namespace UltimateHeroRandomizerV3
                     (x as PictureBox).Image = Properties.Resources._0;
                 }
             }
-
         }
 
         private void CheckPicture()
@@ -121,6 +120,9 @@ namespace UltimateHeroRandomizerV3
                 lastTexture.Visible = false;
                 nextTexture.Visible = false;
                 remaining--;
+                label1.Text = "Remaining Pairs: " + remaining.ToString();
+                score = score + 10;
+                ScoreLabel.Text = "Score: " + score.ToString() + " points";
             }
 
             else
@@ -131,12 +133,16 @@ namespace UltimateHeroRandomizerV3
                 nextTexture.Image = Image.FromFile("0.png");
             }
 
+            if (remaining <= 0)
+            {
+                MessageBox.Show("Congratulations!\nRestart or Exit the Game");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "League of Memory";
-
+            //Laddar in alla metoder som ska finnas från start av spel
             DefaultPicture();
             CheckPicture();
             TagPicture();
@@ -166,8 +172,6 @@ namespace UltimateHeroRandomizerV3
                 {
                     textureMatch(texture, currentTexture);
                     count = 0;
-                    score = score + 10;
-                    ScoreLabel.Text = "Score: " + score.ToString() + " points";
                 }
             }
 
@@ -237,6 +241,7 @@ namespace UltimateHeroRandomizerV3
             Restart();
             count = 0;
             remaining = 8;
+            label1.Text = "Remaining Pairs: " + remaining.ToString();
             score = 0;
         }
 

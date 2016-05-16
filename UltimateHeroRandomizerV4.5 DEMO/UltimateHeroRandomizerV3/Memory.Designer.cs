@@ -50,6 +50,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -312,6 +313,18 @@
             this.ScoreLabel.TabIndex = 21;
             this.ScoreLabel.Text = "Score:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(146, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Remaining Pairs:";
+            // 
             // Memory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +332,7 @@
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolquiz;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1196, 717);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -388,5 +402,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label ScoreLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
