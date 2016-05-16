@@ -89,7 +89,7 @@ namespace UltimateHeroRandomizerV3
             pictureBox8.BackColor = Color.Aqua;
             pictureBox9.BackColor = Color.Aqua;
 
-            pictureBox10.Image = Properties.Resources._110_morphling;
+
 
             if (Submenu.Dota)
             {
@@ -102,6 +102,7 @@ namespace UltimateHeroRandomizerV3
                 pictureBox7.Image = Properties.Resources.SPmorph2;
                 pictureBox8.Image = Properties.Resources.SPmorph7;
                 pictureBox9.Image = Properties.Resources.SPmorph6;
+                pictureBox10.Image = Properties.Resources._110_morphling;
             }
 
             if (Submenu.League)
@@ -115,6 +116,7 @@ namespace UltimateHeroRandomizerV3
                 pictureBox7.Image = Properties.Resources.lucian2;
                 pictureBox8.Image = Properties.Resources.lucian5;
                 pictureBox9.Image = Properties.Resources.lucian6;
+                pictureBox10.Image = Properties.Resources.lucian;
             }
 
 

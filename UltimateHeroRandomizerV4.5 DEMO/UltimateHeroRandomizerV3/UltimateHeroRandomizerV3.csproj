@@ -213,6 +213,7 @@
     <None Include="Resources\SPmorph8.png" />
     <None Include="Resources\SPmorph9.png" />
     <None Include="Resources\SPwhite.png" />
+    <Content Include="Resources\lucian.jpg" />
     <Content Include="Resources\lucian1.jpg" />
     <Content Include="Resources\lucian2.jpg" />
     <Content Include="Resources\lucian3.jpg" />
@@ -232,6 +233,9 @@
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Highscore.resx">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>

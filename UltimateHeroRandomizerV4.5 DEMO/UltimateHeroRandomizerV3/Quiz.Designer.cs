@@ -143,7 +143,7 @@
             this.ExitButton.ForeColor = System.Drawing.Color.White;
             this.ExitButton.Location = new System.Drawing.Point(1083, 28);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(85, 36);
+            this.ExitButton.Size = new System.Drawing.Size(89, 45);
             this.ExitButton.TabIndex = 7;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@
             this.ReturnButton.ForeColor = System.Drawing.Color.White;
             this.ReturnButton.Location = new System.Drawing.Point(987, 28);
             this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(77, 36);
+            this.ReturnButton.Size = new System.Drawing.Size(89, 45);
             this.ReturnButton.TabIndex = 8;
             this.ReturnButton.Text = "Back";
             this.ReturnButton.UseVisualStyleBackColor = false;
