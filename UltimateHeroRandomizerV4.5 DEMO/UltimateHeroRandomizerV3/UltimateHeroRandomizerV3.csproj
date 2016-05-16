@@ -71,6 +71,13 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Dice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dice.Designer.cs">
+      <DependentUpon>Dice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dice\Player.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Highscore.cs">
       <SubType>Form</SubType>
@@ -210,6 +217,15 @@
     <Content Include="Resources\16.jpg" />
     <Content Include="Resources\17.jpg" />
     <Content Include="Resources\9.jpg" />
+    <Content Include="Resources\boss.png" />
+    <Content Include="Resources\boss1.png" />
+    <Content Include="Resources\dice0.png" />
+    <Content Include="Resources\dice1.png" />
+    <Content Include="Resources\dice2.png" />
+    <Content Include="Resources\dice3.png" />
+    <Content Include="Resources\dice4.png" />
+    <Content Include="Resources\dice5.png" />
+    <Content Include="Resources\dice6.png" />
     <Content Include="Resources\dota2 menu3.jpeg" />
     <Content Include="Resources\lolquiz.jpeg" />
     <None Include="Resources\SPmorph1.png" />

@@ -93,10 +93,10 @@ namespace UltimateHeroRandomizerV3
             for (int j = 8; j < 16; j++)
             {
                 if (textureArray[j] > 16)
-                    textureArray[j] -= 16;
+                    textureArray[j] -= 8;
             }
 
-            int b = 0;
+            int b = 8;
 
             foreach (Control x in this.Controls)
             {
