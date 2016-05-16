@@ -11,21 +11,21 @@ namespace UltimateHeroRandomizerV3
 {
     public partial class Memory : Form
     {
-        int count = 0;
-        int score = 0;
-        int remaining = 8;
-
         PictureBox texture;
 
         Submenu subMenu;
         ChooseGame gameSelected;
+
+        int count = 0;
+        int score = 0;
+        int remaining = 8;
 
         public Memory()
         {
             // Lägger till transparent bakgrund till bilderna
             InitializeComponent();
 
-            gameSelected = new ChooseGame();
+            gameSelected = ChooseGame.League;
 
             ScoreLabel.Text = "Score: " + score.ToString() + " points";
             label1.Text = "Remaining Pairs: " + remaining.ToString();
@@ -111,7 +111,7 @@ namespace UltimateHeroRandomizerV3
         private void textureMatch(PictureBox lastTexture, PictureBox nextTexture)
         {
             // Bestämmer vad som händer om man får dubblett
-            // DoEvents() för att förlänga eventerna med Sleep(500)            
+            // DoEvents() för att förlänga eventerna med Sleep(500)        
 
             if (lastTexture.Tag.ToString() == nextTexture.Tag.ToString())
             {
@@ -119,8 +119,10 @@ namespace UltimateHeroRandomizerV3
                 System.Threading.Thread.Sleep(500);
                 lastTexture.Visible = false;
                 nextTexture.Visible = false;
+
                 remaining--;
                 label1.Text = "Remaining Pairs: " + remaining.ToString();
+
                 score = score + 10;
                 ScoreLabel.Text = "Score: " + score.ToString() + " points";
             }
