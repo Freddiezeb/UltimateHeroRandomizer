@@ -16,7 +16,7 @@ namespace UltimateHeroRandomizerV3
         Submenu subMenu;
         ChooseGame gameSelected;
 
-        int count = 0;
+        int count = 9;
         int score = 0;
         int remaining = 8;
 
@@ -56,7 +56,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-                    (x as PictureBox).Image = Properties.Resources._0;
+                    (x as PictureBox).Image = Properties.Resources._9;
                 }
             }
         }
@@ -68,7 +68,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-                    (x as PictureBox).Tag = "0";
+                    (x as PictureBox).Tag = "9";
                 }
             }
         }
@@ -90,10 +90,10 @@ namespace UltimateHeroRandomizerV3
                 }
             }
 
-            for (int j = 0; j < 16; j++)
+            for (int j = 8; j < 16; j++)
             {
-                if (textureArray[j] > 8)
-                    textureArray[j] -= 8;
+                if (textureArray[j] > 16)
+                    textureArray[j] -= 16;
             }
 
             int b = 0;
@@ -131,8 +131,8 @@ namespace UltimateHeroRandomizerV3
             {
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
-                lastTexture.Image = Image.FromFile("0.png");
-                nextTexture.Image = Image.FromFile("0.png");
+                lastTexture.Image = Image.FromFile("9.jpg");
+                nextTexture.Image = Image.FromFile("9.jpg");
             }
 
             if (remaining <= 0)
@@ -155,9 +155,9 @@ namespace UltimateHeroRandomizerV3
             //Vänder brickorna efter klick på texturrutorna
             PictureBox currentTexture = (sender as PictureBox);
 
-            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".png");
+            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".jpg");
 
-            if (count == 0)
+            if (count == 9)
             {
                 texture = currentTexture;
                 count++;
@@ -167,13 +167,13 @@ namespace UltimateHeroRandomizerV3
                 if (texture == currentTexture)
                 {
                     MessageBox.Show("You Can't Do That!");
-                    count = 0;
-                    texture.Image = Image.FromFile("0.png");
+                    count = 9;
+                    texture.Image = Image.FromFile("9.jpg");
                 }
                 else
                 {
                     textureMatch(texture, currentTexture);
-                    count = 0;
+                    count = 9;
                 }
             }
 
@@ -185,7 +185,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-                    (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + ".png");
+                    (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + ".jpg");
                 }
             }
 
@@ -199,7 +199,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-                    (x as PictureBox).Image = Image.FromFile("0.png");
+                    (x as PictureBox).Image = Image.FromFile("9.jpg");
                 }
             }
         }
@@ -231,7 +231,7 @@ namespace UltimateHeroRandomizerV3
             System.Threading.Thread.Sleep(500);
 
             HidePictures();
-            count = 0;
+            count = 9;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -241,7 +241,7 @@ namespace UltimateHeroRandomizerV3
             CheckPicture();
             TagPicture();
             Restart();
-            count = 0;
+            count = 9;
             remaining = 8;
             label1.Text = "Remaining Pairs: " + remaining.ToString();
             score = 0;

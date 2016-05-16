@@ -36,6 +36,7 @@
             // 
             // sp_dataGridView1
             // 
+            this.sp_dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.sp_dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sp_dataGridView1.Location = new System.Drawing.Point(12, 148);
             this.sp_dataGridView1.Name = "sp_dataGridView1";
