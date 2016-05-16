@@ -16,6 +16,8 @@ namespace UltimateHeroRandomizerV3
         Memory memory;
         SlidePuzzle slidePuzzle;
 
+        Form gameForm;
+
         ChooseGame gameSelected;
 
         public static bool Dota, League;
@@ -91,7 +93,12 @@ namespace UltimateHeroRandomizerV3
             }
 
             using (var game = new Game1())
+            {
+                gameForm = Control.FromHandle(game.Window.Handle) as Form;
+                gameForm.ClientSize = new System.Drawing.Size(1175, 900);
                 game.Run();
+            }        
+
         }
 
 
@@ -131,6 +138,15 @@ namespace UltimateHeroRandomizerV3
         private void SlidePuzzleButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
+
+            if (Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (League)
+            {
+                gameSelected = ChooseGame.League;
+            }
             slidePuzzle = new SlidePuzzle();
             slidePuzzle.Show();
         }

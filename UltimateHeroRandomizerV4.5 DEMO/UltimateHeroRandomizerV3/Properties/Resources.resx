@@ -193,4 +193,28 @@
   <data name="_110_morphling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\110-morphling.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lucian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucian8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucian8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -26,7 +26,7 @@ namespace UltimateHeroRandomizerV3
 
             timer1.Start();
             windowTimer.Start();
-                   //CheckWin();
+            //CheckWin();
 
         }
 
@@ -89,16 +89,33 @@ namespace UltimateHeroRandomizerV3
             pictureBox8.BackColor = Color.Aqua;
             pictureBox9.BackColor = Color.Aqua;
 
-            pictureBox1.Image = Properties.Resources.SPmorph9;
-            pictureBox2.Image = Properties.Resources.SPmorph5;
-            pictureBox3.Image = Properties.Resources.SPwhite;
-            pictureBox4.Image = Properties.Resources.SPmorph8;
-            pictureBox5.Image = Properties.Resources.SPmorph4;
-            pictureBox6.Image = Properties.Resources.SPmorph1;
-            pictureBox7.Image = Properties.Resources.SPmorph2;
-            pictureBox8.Image = Properties.Resources.SPmorph7;
-            pictureBox9.Image = Properties.Resources.SPmorph6;
             pictureBox10.Image = Properties.Resources._110_morphling;
+
+            if (Submenu.Dota)
+            {
+                pictureBox1.Image = Properties.Resources.SPmorph9;
+                pictureBox2.Image = Properties.Resources.SPmorph5;
+                pictureBox3.Image = Properties.Resources.SPwhite;
+                pictureBox4.Image = Properties.Resources.SPmorph8;
+                pictureBox5.Image = Properties.Resources.SPmorph4;
+                pictureBox6.Image = Properties.Resources.SPmorph1;
+                pictureBox7.Image = Properties.Resources.SPmorph2;
+                pictureBox8.Image = Properties.Resources.SPmorph7;
+                pictureBox9.Image = Properties.Resources.SPmorph6;
+            }
+
+            if (Submenu.League)
+            {
+                pictureBox1.Image = Properties.Resources.lucian8;
+                pictureBox2.Image = Properties.Resources.lucian4;
+                pictureBox3.Image = Properties.Resources.SPwhite;
+                pictureBox4.Image = Properties.Resources.lucian7;
+                pictureBox5.Image = Properties.Resources.lucian3;
+                pictureBox6.Image = Properties.Resources.lucian1;
+                pictureBox7.Image = Properties.Resources.lucian2;
+                pictureBox8.Image = Properties.Resources.lucian5;
+                pictureBox9.Image = Properties.Resources.lucian6;
+            }
 
 
 
@@ -401,6 +418,15 @@ namespace UltimateHeroRandomizerV3
         private void button2_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
+
+            if (Submenu.Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (Submenu.League)
+            {
+                gameSelected = ChooseGame.League;
+            }
 
             subMenu = new Submenu(ref gameSelected);
             subMenu.Show();

@@ -20,6 +20,7 @@ namespace UltimateHeroRandomizerV3
         public bool randomize;
         public bool createFilter;
         public bool restoreFilter;
+        public static bool back;
 
         public ButtonManager(Texture2D tex)
         {
@@ -29,7 +30,7 @@ namespace UltimateHeroRandomizerV3
         public void LoadButtons()
         {
 
-            buttons = new Button[3];
+            buttons = new Button[4];
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -62,6 +63,11 @@ namespace UltimateHeroRandomizerV3
                     restoreFilter = true;
                     buttons[2].Clicked = false;
                 }
+                if (buttons[3].Clicked)
+                {
+                    back = true;
+                    buttons[3].Clicked = false;
+                }
             }
 
             
@@ -73,7 +79,7 @@ namespace UltimateHeroRandomizerV3
             //Ritar ut knappar
             for (int i = 0; i < buttons.Length; i++)
             {
-                rect = new Rectangle(200 + i * 300, 810 , 150, 60);
+                rect = new Rectangle(200 + i * 200, 810 , 150, 60);
                 buttons[i].Draw(spriteBatch, rect);
             }
 
@@ -81,8 +87,10 @@ namespace UltimateHeroRandomizerV3
 
             //Text till knappar
             spriteBatch.DrawString(buttonFont, "Create Filter", new Vector2(230, 830), Color.White);
-            spriteBatch.DrawString(buttonFont, "Randomize!", new Vector2(533, 830), Color.White);
-            spriteBatch.DrawString(buttonFont, "Restore Champions", new Vector2(807, 830), Color.White);
+            spriteBatch.DrawString(buttonFont, "Randomize!", new Vector2(433, 830), Color.White);
+            spriteBatch.DrawString(buttonFont, "Restore Champions", new Vector2(607, 830), Color.White);
+            spriteBatch.DrawString(buttonFont, "Back", new Vector2(853, 830), Color.White);
+
         }
     }
 }

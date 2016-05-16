@@ -46,10 +46,9 @@ namespace UltimateHeroRandomizerV3
             font = Content.Load<SpriteFont>("myFont");
             selectTex = Content.Load<Texture2D>("Transparent");
 
-
             filterManager = new FilterManager(TextureManager.filterButton);
 
-            buttonManager = new ButtonManager(TextureManager.buttonTexture);
+            buttonManager = new ButtonManager(TextureManager.buttonNeutral);
             buttonManager.LoadButtons();
 
             champManager = new ChampionManager();

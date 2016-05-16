@@ -95,7 +95,6 @@ namespace UltimateHeroRandomizerV3
         }
 
 
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -149,6 +148,5 @@ namespace UltimateHeroRandomizerV3
             MinigamesButton.Show();
             RandomizeButton.Show();
         }
-
     }
 }

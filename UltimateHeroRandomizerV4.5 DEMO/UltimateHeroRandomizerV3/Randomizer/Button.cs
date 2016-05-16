@@ -12,10 +12,9 @@ namespace UltimateHeroRandomizerV3
     {
         private Texture2D ButtonTex;
         private Rectangle ButtonRec;
-        private Color ButtonColor = new Color(225, 225, 255, 255);
+        private Color ButtonColor = Color.White;
         private Rectangle rect;
 
-        public bool ButtonFade;
         public bool Clicked;
 
         public Button(Texture2D tex, Rectangle rect)
@@ -30,19 +29,16 @@ namespace UltimateHeroRandomizerV3
 
             if (ButtonRec.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y))
             {
-                if (ButtonColor.A == 255) ButtonFade = false;
-                if (ButtonColor.A == 0) ButtonFade = true;
-                if (ButtonFade) ButtonColor.A += 3; else ButtonColor.A -= 3;
 
+                ButtonTex = TextureManager.buttonTexture;
                 if (KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
                 {
                     Clicked = true;
-                    ButtonColor.A = 255;
                 }
             }
-            else if (ButtonColor.A < 255)
+            else
             {
-                ButtonColor.A += 3;
+                ButtonTex = TextureManager.buttonNeutral;
                 Clicked = false;
             }
         }

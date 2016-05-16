@@ -171,6 +171,7 @@
     </Content>
     <Content Include="Icon.ico" />
     <None Include="app.config" />
+    <None Include="Content\buttonFont.spritefont" />
     <None Include="packages.config" />
     <None Include="Resources\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -212,6 +213,14 @@
     <None Include="Resources\SPmorph8.png" />
     <None Include="Resources\SPmorph9.png" />
     <None Include="Resources\SPwhite.png" />
+    <Content Include="Resources\lucian1.jpg" />
+    <Content Include="Resources\lucian2.jpg" />
+    <Content Include="Resources\lucian3.jpg" />
+    <Content Include="Resources\lucian4.jpg" />
+    <Content Include="Resources\lucian5.jpg" />
+    <Content Include="Resources\lucian6.jpg" />
+    <Content Include="Resources\lucian7.jpg" />
+    <Content Include="Resources\lucian8.jpg" />
     <Content Include="Resources\Teemo.jpg" />
     <None Include="Content\myFont.spritefont">
       <SubType>Designer</SubType>

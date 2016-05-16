@@ -28,13 +28,16 @@ namespace UltimateHeroRandomizerV3
 
         protected override void Initialize()
         {
-            gameForm = Control.FromHandle(this.Window.Handle) as Form;
 
-            this.Window.Position = new Point(250, 50);
+            gameForm = Control.FromHandle(this.Window.Handle) as Form;
 
             graphics.PreferredBackBufferHeight = 900;
             graphics.PreferredBackBufferWidth = 1175;
             graphics.ApplyChanges();
+
+
+            this.Window.Position = new Point(gameForm.DesktopBounds.X / 2, gameForm.DesktopBounds.Y / 6);
+
             base.Initialize();
         }
 
@@ -59,7 +62,7 @@ namespace UltimateHeroRandomizerV3
         {
             randomizerManager.Update(gameTime, Window, Content);
 
-            if (KeyMouseReader.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Space))
+            if (ButtonManager.back)
             {
                 if (Submenu.Dota)
                 {
@@ -69,6 +72,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     gameChoose = ChooseGame.League;
                 }
+                ButtonManager.back = false;
                 submenu = new Submenu(ref gameChoose);
                 submenu.Show();
                 gameForm.Hide();

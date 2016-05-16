@@ -273,8 +273,8 @@ namespace UltimateHeroRandomizerV3
         public void DrawChampName(SpriteBatch spriteBatch)
         {
             //Ritar ut namnet på vald champion.
-            spriteBatch.DrawString(RandomizerManager.font, championName, new Vector2(40, 170), Color.Black);
-            spriteBatch.DrawString(RandomizerManager.font, roleName, new Vector2(40, 200), Color.Black);
+            spriteBatch.DrawString(RandomizerManager.font, championName, new Vector2(40, 170), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, roleName, new Vector2(40, 200), Color.White);
         }
 
         public void FilterChampions(ref FilterManager filterManager)
