@@ -83,6 +83,7 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap _1 {
             get {
                 object obj = ResourceManager.GetObject("_1", resourceCulture);
@@ -104,6 +105,9 @@ namespace UltimateHeroRandomizerV3.Properties {
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _1d {
+=======
+        internal static System.Drawing.Bitmap _110_morphling {
+>>>>>>> origin/master
             get {
                 object obj = ResourceManager.GetObject("_1d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -114,6 +118,7 @@ namespace UltimateHeroRandomizerV3.Properties {
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _2 {
+<<<<<<< HEAD
             get {
                 object obj = ResourceManager.GetObject("_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -174,6 +179,8 @@ namespace UltimateHeroRandomizerV3.Properties {
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _5 {
+=======
+>>>>>>> origin/master
             get {
                 object obj = ResourceManager.GetObject("_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,6 +250,7 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap _8d {
             get {
                 object obj = ResourceManager.GetObject("_8d", resourceCulture);
@@ -253,6 +261,8 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> origin/master
         internal static System.Drawing.Bitmap boss {
             get {
                 object obj = ResourceManager.GetObject("boss", resourceCulture);

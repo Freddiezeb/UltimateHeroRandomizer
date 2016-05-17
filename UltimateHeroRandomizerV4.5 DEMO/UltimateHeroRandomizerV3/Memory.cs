@@ -76,10 +76,14 @@ namespace UltimateHeroRandomizerV3
             {
                 foreach (Control x in this.Controls)
                 {
+<<<<<<< HEAD
                     if (x is PictureBox)
                     {
                         (x as PictureBox).Image = Properties.Resources._0d;
                     }
+=======
+                    (x as PictureBox).Image = Properties.Resources._0;
+>>>>>>> origin/master
                 }
             }
             if (Submenu.League)
@@ -102,7 +106,11 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
+<<<<<<< HEAD
                     (x as PictureBox).Tag = startPicture;
+=======
+                    (x as PictureBox).Tag = "0";
+>>>>>>> origin/master
                 }
             }
         }
@@ -130,7 +138,10 @@ namespace UltimateHeroRandomizerV3
                     textureArray[j] -= 8;
             }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
             int b = 0;
 
             foreach (Control x in this.Controls)
@@ -166,8 +177,13 @@ namespace UltimateHeroRandomizerV3
             {
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
+<<<<<<< HEAD
                 lastTexture.Image = Image.FromFile(tagPicture);
                 nextTexture.Image = Image.FromFile(tagPicture);
+=======
+                lastTexture.Image = Image.FromFile("0.png");
+                nextTexture.Image = Image.FromFile("0.png");
+>>>>>>> origin/master
             }
 
             if (remaining <= 0)
@@ -190,7 +206,11 @@ namespace UltimateHeroRandomizerV3
             //Vänder brickorna efter klick på texturrutorna
             PictureBox currentTexture = (sender as PictureBox);
 
+<<<<<<< HEAD
             currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + adamsEgnaVariabel);
+=======
+            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".png");
+>>>>>>> origin/master
 
             if (count == 0)
             {
@@ -203,7 +223,11 @@ namespace UltimateHeroRandomizerV3
                 {
                     MessageBox.Show("You Can't Do That!");
                     count = 0;
+<<<<<<< HEAD
                     texture.Image = Image.FromFile(tagPicture);
+=======
+                    texture.Image = Image.FromFile("0.png");
+>>>>>>> origin/master
                 }
                 else
                 {
@@ -220,7 +244,11 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
+<<<<<<< HEAD
                     (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + adamsEgnaVariabel);
+=======
+                    (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + ".png");
+>>>>>>> origin/master
                 }
             }
 
@@ -234,7 +262,11 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
+<<<<<<< HEAD
                     (x as PictureBox).Image = Image.FromFile(tagPicture);
+=======
+                    (x as PictureBox).Image = Image.FromFile("0.png");
+>>>>>>> origin/master
                 }
             }
         }
@@ -248,6 +280,7 @@ namespace UltimateHeroRandomizerV3
                     (x as PictureBox).Visible = true;
                 }
             }
+
             score = 0;
             ScoreLabel.Text = "Score: " + score.ToString() + " points";
         }

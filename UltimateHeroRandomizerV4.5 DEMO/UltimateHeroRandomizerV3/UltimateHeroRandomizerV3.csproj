@@ -208,6 +208,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\110-morphling.jpg" />
+<<<<<<< HEAD
     <Content Include="Resources\0d.jpg" />
     <Content Include="Resources\1d.jpg" />
     <Content Include="Resources\2d.jpg" />
@@ -217,6 +218,8 @@
     <Content Include="Resources\6d.jpg" />
     <Content Include="Resources\7d.jpg" />
     <Content Include="Resources\8d.jpg" />
+=======
+>>>>>>> origin/master
     <Content Include="Resources\boss.png" />
     <Content Include="Resources\boss1.png" />
     <Content Include="Resources\dice0.png" />
