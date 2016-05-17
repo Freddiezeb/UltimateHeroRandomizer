@@ -15,6 +15,7 @@ namespace UltimateHeroRandomizerV3
         Quiz quiz;
         Memory memory;
         SlidePuzzle slidePuzzle;
+        Dice dice;
 
         Form gameForm;
 
@@ -104,6 +105,10 @@ namespace UltimateHeroRandomizerV3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ActiveForm.Hide();
+
+            dice = new Dice();
+            dice.Show();
 
         }
 
