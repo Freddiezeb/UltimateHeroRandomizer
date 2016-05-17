@@ -888,3 +888,9 @@
 /processorParam:TextureFormat=Color
 /build:buttonNeutral.png
 
+#begin SelectionSounds/Wukong.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SelectionSounds/Wukong.wav
+

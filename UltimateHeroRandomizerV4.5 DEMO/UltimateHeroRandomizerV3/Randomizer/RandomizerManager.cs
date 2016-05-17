@@ -23,6 +23,7 @@ namespace UltimateHeroRandomizerV3
         ChampionManager champManager;
         ButtonManager buttonManager;
         FilterManager filterManager;
+        SoundManager soundManager;
 
         RandomizerMode randomizerMode = RandomizerMode.RandomizeWithAll;
 
@@ -53,6 +54,7 @@ namespace UltimateHeroRandomizerV3
 
             champManager = new ChampionManager();
             champManager.LoadChampions(Content);
+
 
             rnd = new Random();
 
@@ -143,7 +145,7 @@ namespace UltimateHeroRandomizerV3
 
                     if (buttonManager.randomize)
                     {
-                        champManager.RandomizeChampion(Window);
+                        champManager.RandomizeChampion(Window, Content);
                         buttonManager.randomize = false;
                     }
 
@@ -170,7 +172,7 @@ namespace UltimateHeroRandomizerV3
                     }
                     if (buttonManager.randomize)
                     {
-                        champManager.RandomizeChampion(Window);
+                        champManager.RandomizeChampion(Window, Content);
                         buttonManager.randomize = false;
                     }
 

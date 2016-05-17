@@ -208,15 +208,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\110-morphling.jpg" />
-    <Content Include="Resources\10.jpg" />
-    <Content Include="Resources\11.jpg" />
-    <Content Include="Resources\12.jpg" />
-    <Content Include="Resources\13.jpg" />
-    <Content Include="Resources\14.jpg" />
-    <Content Include="Resources\15.jpg" />
-    <Content Include="Resources\16.jpg" />
-    <Content Include="Resources\17.jpg" />
-    <Content Include="Resources\9.jpg" />
+    <Content Include="Resources\0d.jpg" />
+    <Content Include="Resources\1d.jpg" />
+    <Content Include="Resources\2d.jpg" />
+    <Content Include="Resources\3d.jpg" />
+    <Content Include="Resources\4d.jpg" />
+    <Content Include="Resources\5d.jpg" />
+    <Content Include="Resources\6d.jpg" />
+    <Content Include="Resources\7d.jpg" />
+    <Content Include="Resources\8d.jpg" />
     <Content Include="Resources\boss.png" />
     <Content Include="Resources\boss1.png" />
     <Content Include="Resources\dice0.png" />

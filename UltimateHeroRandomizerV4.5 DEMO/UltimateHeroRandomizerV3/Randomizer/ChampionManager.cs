@@ -121,10 +121,12 @@ namespace UltimateHeroRandomizerV3
             soundManager.LoadSounds(ref champions, Content);
         }
 
-        public void RandomizeChampion(GameWindow Window)
+        public void RandomizeChampion(GameWindow Window, ContentManager Content)
         {
             //Metod som slumpar en champion som har blivit vald(Selected). Den Hamnar i mitten av fönstret, den skalas upp och det spelas ett selection sound som tillhör karaktären. 
 
+
+            soundManager.LoadSounds(ref champions, Content);
 
             for (int i = 0; i < champions.Length; i++)
             {
@@ -139,8 +141,10 @@ namespace UltimateHeroRandomizerV3
                     if (pastInstance != null)
                     {
                         pastInstance.Pause();
+
                     }
                     pastIndex = i;
+
 
                     pastInstance = champions[pastIndex].selectionSound.CreateInstance();
                     soundEffectInstance = champions[i].selectionSound.CreateInstance();
@@ -148,11 +152,14 @@ namespace UltimateHeroRandomizerV3
                     pastInstance = soundEffectInstance;
                     soundEffectInstance.Volume = 0.1f;
 
+                    soundEffectInstance.Play();
+
+
                     champions[i].destRect = new Rectangle(40, 40, 125, 125);
                     champions[i].selected = false;
                     roleName = champions[i].role;
                     championName = champions[i].name;
-                    soundEffectInstance.Play();
+
                     break;
                 }
                 else

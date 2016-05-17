@@ -84,7 +84,7 @@ namespace UltimateHeroRandomizerV3
             champions[64].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Maokai");
             champions[65].selectionSound = Content.Load<SoundEffect>("SelectionSounds/MasterYi");
             champions[66].selectionSound = Content.Load<SoundEffect>("SelectionSounds/MissFortune");
-            champions[67].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Aatrox"); // WRONG
+            champions[67].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Wukong"); // WRONG
             champions[68].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Mordekaiser");
             champions[69].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Morgana");
             champions[70].selectionSound = Content.Load<SoundEffect>("SelectionSounds/Nami");
