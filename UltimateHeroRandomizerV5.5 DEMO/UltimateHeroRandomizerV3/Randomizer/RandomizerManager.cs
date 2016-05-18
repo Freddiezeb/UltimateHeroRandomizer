@@ -74,7 +74,7 @@ namespace UltimateHeroRandomizerV3
 
         public void Update(GameTime gameTime, GameWindow Window, ContentManager Content)
         {
-            KeyMouseReader.Update();
+            //KeyMouseReader.Update();
             buttonManager.ButtonUpdate(KeyMouseReader.mouseState);
 
             if (filterManager.clicked)
@@ -111,7 +111,7 @@ namespace UltimateHeroRandomizerV3
                     }
                     if (buttonManager.randomize)
                     {
-                        champManager.RandomizeAllChampions(Window);
+                        champManager.RandomizeAllChampions(Window, Content);
                         buttonManager.randomize = false;
                     }
 
@@ -143,7 +143,7 @@ namespace UltimateHeroRandomizerV3
 
                     if (buttonManager.randomize)
                     {
-                        champManager.RandomizeChampion(Window);
+                        champManager.RandomizeChampion(Window, Content);
                         buttonManager.randomize = false;
                     }
 
@@ -170,7 +170,7 @@ namespace UltimateHeroRandomizerV3
                     }
                     if (buttonManager.randomize)
                     {
-                        champManager.RandomizeChampion(Window);
+                        champManager.RandomizeChampion(Window, Content);
                         buttonManager.randomize = false;
                     }
 

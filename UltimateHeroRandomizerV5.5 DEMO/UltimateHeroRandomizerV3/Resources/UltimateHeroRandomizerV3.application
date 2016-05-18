@@ -7,14 +7,12 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="UltimateHeroRandomizerV3.exe.manifest" size="84318">
       <assemblyIdentity name="UltimateHeroRandomizerV3.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0HgTF2eP+SN+Q0vqrHc83VSCRQEg0KKVDjrnxW5FULo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

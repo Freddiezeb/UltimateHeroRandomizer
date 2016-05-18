@@ -23,6 +23,8 @@ namespace UltimateHeroRandomizerV3
 
         public static bool Dota, League;
 
+        public static bool Randomizer, Pong;
+
         public Submenu(ref ChooseGame game)
         {
             InitializeComponent();
@@ -83,6 +85,7 @@ namespace UltimateHeroRandomizerV3
 
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
+            Randomizer = true;
             ActiveForm.Hide();
             if (Dota)
             {
@@ -168,6 +171,27 @@ namespace UltimateHeroRandomizerV3
             ReturnButton.Show();
             MinigamesButton.Show();
             RandomizeButton.Show();
+        }
+
+        private void PongButton_Click(object sender, EventArgs e)
+        {
+            Pong = true;
+            ActiveForm.Hide();
+            if (Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (League)
+            {
+                gameSelected = ChooseGame.League;
+            }
+
+            using (var game = new Game1())
+            {
+                gameForm = Control.FromHandle(game.Window.Handle) as Form;
+                gameForm.ClientSize = new System.Drawing.Size(800, 480);
+                game.Run();
+            }    
         }
     }
 }

@@ -14,10 +14,13 @@ namespace UltimateHeroRandomizerV3
         ChooseGame gameChoose;
 
         RandomizerManager randomizerManager;
+        PongManager pongManager;
 
         Form gameForm;
 
         Submenu submenu;
+
+
 
         public Game1()
         {
@@ -31,12 +34,25 @@ namespace UltimateHeroRandomizerV3
 
             gameForm = Control.FromHandle(this.Window.Handle) as Form;
 
-            graphics.PreferredBackBufferHeight = 900;
-            graphics.PreferredBackBufferWidth = 1175;
-            graphics.ApplyChanges();
+            if (Submenu.Randomizer)
+            {
+                graphics.PreferredBackBufferHeight = 900;
+                graphics.PreferredBackBufferWidth = 1175;
+                graphics.ApplyChanges();
+
+                this.Window.Position = new Point(gameForm.DesktopBounds.X / 2, gameForm.DesktopBounds.Y / 6);
+            }
+
+            if (Submenu.Pong)
+            {
+                graphics.PreferredBackBufferHeight = 480;
+                graphics.PreferredBackBufferWidth = 800;
+                graphics.ApplyChanges();
+
+                this.Window.Position = new Point(gameForm.DesktopBounds.X / 2 +100 , gameForm.DesktopBounds.Y / 2);
+            }
 
 
-            this.Window.Position = new Point(gameForm.DesktopBounds.X / 2, gameForm.DesktopBounds.Y / 6);
 
             base.Initialize();
         }
@@ -46,8 +62,17 @@ namespace UltimateHeroRandomizerV3
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            randomizerManager = new RandomizerManager();
-            randomizerManager.LoadContent(Content);
+            if (Submenu.Pong)
+            {
+                pongManager = new PongManager();
+                pongManager.LoadContent(Content, graphics);
+            }
+
+            if (Submenu.Randomizer)
+            {
+                randomizerManager = new RandomizerManager();
+                randomizerManager.LoadContent(Content);
+            }
 
             IsMouseVisible = true;
         }
@@ -60,9 +85,20 @@ namespace UltimateHeroRandomizerV3
 
         protected override void Update(GameTime gameTime)
         {
-            randomizerManager.Update(gameTime, Window, Content);
 
-            if (ButtonManager.back)
+            KeyMouseReader.Update();
+
+            if (Submenu.Pong)
+            {
+                pongManager.Update(gameTime, graphics);
+            }
+
+            if (Submenu.Randomizer)
+            {
+                randomizerManager.Update(gameTime, Window, Content);
+            }
+
+            if (ButtonManager.back || Submenu.Pong == true && KeyMouseReader.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Space))
             {
                 if (Submenu.Dota)
                 {
@@ -72,6 +108,8 @@ namespace UltimateHeroRandomizerV3
                 {
                     gameChoose = ChooseGame.League;
                 }
+                Submenu.Pong = false;
+                Submenu.Randomizer = false;
                 ButtonManager.back = false;
                 submenu = new Submenu(ref gameChoose);
                 submenu.Show();
@@ -86,7 +124,15 @@ namespace UltimateHeroRandomizerV3
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
 
-            randomizerManager.Draw(spriteBatch);
+            if (Submenu.Pong)
+            {
+                pongManager.Draw(spriteBatch);
+            }
+
+            if (Submenu.Randomizer)
+            {
+                randomizerManager.Draw(spriteBatch);
+            }
 
             spriteBatch.End();
             base.Draw(gameTime);

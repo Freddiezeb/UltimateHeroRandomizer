@@ -26,7 +26,7 @@ namespace UltimateHeroRandomizerV3
             //Ritar ut Filterboxarna, om den är markerad så är den svart, annars vit.
             if (marked)
             {
-                spriteBatch.Draw(texture, rectangle, Color.Black);
+                spriteBatch.Draw(texture, rectangle, Color.Yellow);
             }
             else
             {

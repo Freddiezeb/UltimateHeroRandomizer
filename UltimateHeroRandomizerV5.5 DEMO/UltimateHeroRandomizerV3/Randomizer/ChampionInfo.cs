@@ -20,29 +20,33 @@ namespace UltimateHeroRandomizerV3
             //5 = Tank
             //6 = Support
 
-            string[] names = new string[130];
-
-            string[] role = new string[130];
-
-
-            using (StreamReader reader = new StreamReader("championNames.txt"))
+            if (Submenu.League)
             {
-                while (!reader.EndOfStream)
+                string[] names = new string[130];
+
+                string[] role = new string[130];
+
+
+                using (StreamReader reader = new StreamReader("championNames.txt"))
                 {
-                    for (int i = 0; i < 130; i++)
+                    while (!reader.EndOfStream)
                     {
-                        string str = reader.ReadLine();
+                        for (int i = 0; i < 130; i++)
+                        {
+                            string str = reader.ReadLine();
 
-                        string[] split_string = str.Split(',');
+                            string[] split_string = str.Split(',');
 
-                        string characterName = (split_string[0]);
-                        string characterRole = (split_string[1]);
+                            string characterName = (split_string[0]);
+                            string characterRole = (split_string[1]);
 
-                        champions[i].name = characterName;
-                        champions[i].role = characterRole;
+                            champions[i].name = characterName;
+                            champions[i].role = characterRole;
+                        }
                     }
                 }
             }
+
         }
     }
 }

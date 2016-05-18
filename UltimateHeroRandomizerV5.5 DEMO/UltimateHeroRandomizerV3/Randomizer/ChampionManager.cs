@@ -23,7 +23,7 @@ namespace UltimateHeroRandomizerV3
         int sourceX = 0;
         int sourceY = 0;
 
-        float volume = 0.2f;
+        float volume = 0.1f;
 
         string name;
         bool selected;
@@ -39,11 +39,16 @@ namespace UltimateHeroRandomizerV3
 
         Random rnd = new Random();
 
-        int pastIndex;
+        public int pastIndex;
 
         bool randomized;
         string role;
 
+
+        int sourceSize;
+        int arraySize;
+
+        Texture2D collageTexture;
 
         SoundEffect selectionSound;
 
@@ -51,10 +56,24 @@ namespace UltimateHeroRandomizerV3
 
         public ChampionManager()
         {
-            champions = new Champion[130];
+
+            if (Submenu.Dota)
+            {
+                arraySize = 110;
+                sourceSize = 80;
+                collageTexture = TextureManager.dotaCollage;
+            }
+
+            if (Submenu.League)
+            {
+                arraySize = 130;
+                sourceSize = 100;
+                collageTexture = TextureManager.championCollage;
+            }
 
             soundManager = new SoundManager();
             championInfo = new ChampionInfo();
+            champions = new Champion[arraySize];
         }
 
         public void LoadChampions(ContentManager Content)
@@ -66,23 +85,20 @@ namespace UltimateHeroRandomizerV3
             for (int i = 0; i < champions.Length; i++)
             {
                 destRect = new Rectangle(destX, destY, 75, 75);
-                sourceRect = new Rectangle(sourceX, sourceY, 100, 100);
+                sourceRect = new Rectangle(sourceX, sourceY, sourceSize, sourceSize);
 
-                champions[i] = new Champion(TextureManager.championCollage, destRect, sourceRect, ref name, ref selected, ref selectionSound, role, ref randomized);
+                champions[i] = new Champion(collageTexture, destRect, sourceRect, ref name, ref selected, ref selectionSound, ref role, ref randomized);
                 destX += 75;
-                sourceX += 100;
+                sourceX += sourceSize;
                 if (i == 12 || i == 25 || i == 38 || i == 51 || i == 64 || i == 77 || i == 90 || i == 103 || i == 116)
                 {
                     destX = 200;
                     destY += 75;
                     sourceX = 0;
-                    sourceY += 100;
+                    sourceY += sourceSize;
                 }
-
             }
-
             soundManager.LoadSounds(ref champions, Content);
-
         }
 
         public void ChampionSelected(ContentManager Content, GameTime gameTime)
@@ -117,19 +133,18 @@ namespace UltimateHeroRandomizerV3
             soundManager.LoadSounds(ref champions, Content);
         }
 
-        public void RandomizeChampion(GameWindow Window)
+        public void RandomizeChampion(GameWindow Window, ContentManager Content)
         {
             //Metod som slumpar en champion som har blivit vald(Selected). Den Hamnar i mitten av fönstret, den skalas upp och det spelas ett selection sound som tillhör karaktären. 
-
+            soundManager.LoadSounds(ref champions, Content);
 
             for (int i = 0; i < champions.Length; i++)
             {
 
-                i = rnd.Next(0, 130);
+                i = rnd.Next(0, arraySize);
 
                 if (champions[i].selected)
                 {
-
                     champions[pastIndex].destRect = keepRectangleInfo;
                     keepRectangleInfo = champions[i].destRect;
                     if (pastInstance != null)
@@ -142,7 +157,7 @@ namespace UltimateHeroRandomizerV3
                     soundEffectInstance = champions[i].selectionSound.CreateInstance();
 
                     pastInstance = soundEffectInstance;
-                    soundEffectInstance.Volume = 0.1f;
+                    soundEffectInstance.Volume = volume;
 
                     champions[i].destRect = new Rectangle(40, 40, 125, 125);
                     champions[i].selected = false;
@@ -157,12 +172,13 @@ namespace UltimateHeroRandomizerV3
                 }
             }
         }
-        public void RandomizeAllChampions(GameWindow Window)
+        public void RandomizeAllChampions(GameWindow Window, ContentManager Content)
         {
+            soundManager.LoadSounds(ref champions, Content);
             //Slumpa mellan alla karaktärer som finns
             int i;
 
-            i = rnd.Next(0, 130);
+            i = rnd.Next(0, arraySize);
 
             champions[pastIndex].destRect = keepRectangleInfo;
             keepRectangleInfo = champions[i].destRect;
@@ -176,7 +192,7 @@ namespace UltimateHeroRandomizerV3
             soundEffectInstance = champions[i].selectionSound.CreateInstance();
 
             pastInstance = soundEffectInstance;
-            soundEffectInstance.Volume = 0.1f;
+            soundEffectInstance.Volume = volume;
 
 
             champions[i].destRect = new Rectangle(40, 40, 125, 125);
@@ -185,6 +201,7 @@ namespace UltimateHeroRandomizerV3
             soundEffectInstance.Play();
 
         }
+
 
         public void CreateChampionFilter()
         {
@@ -231,7 +248,7 @@ namespace UltimateHeroRandomizerV3
 
                 sourceRect = new Rectangle(sourceX, sourceY, 100, 100);
 
-                champions[i] = new Champion(TextureManager.championCollage, destRect, sourceRect, ref name, ref selected, ref selectionSound, role, ref randomized);
+                champions[i] = new Champion(collageTexture, destRect, sourceRect, ref name, ref selected, ref selectionSound, ref role, ref randomized);
                 destX += 75;
                 sourceX += 100;
                 if (i == 12 || i == 25 || i == 38 || i == 51 || i == 64 || i == 77 || i == 90 || i == 103 || i == 116)

@@ -20,9 +20,12 @@ namespace UltimateHeroRandomizerV3
             ChampionInfo champInfo = new ChampionInfo();
             champInfo.GetChampionInfo(ref champions);
 
-            for (int i = 0; i < champions.Length; i++)
+            if (Submenu.League)
             {
-                champions[i].selectionSound = Content.Load<SoundEffect>("SelectionSounds/" + champions[i].name);
+                for (int i = 0; i < champions.Length; i++)
+                {
+                    champions[i].selectionSound = Content.Load<SoundEffect>("SelectionSounds/" + champions[i].name);
+                }
             }
 
         }

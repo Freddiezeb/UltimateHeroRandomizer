@@ -135,6 +135,7 @@
             this.PongButton.TabIndex = 6;
             this.PongButton.Text = "Pong";
             this.PongButton.UseVisualStyleBackColor = false;
+            this.PongButton.Click += new System.EventHandler(this.PongButton_Click);
             // 
             // DiceButton
             // 
@@ -150,14 +151,14 @@
             this.DiceButton.UseVisualStyleBackColor = false;
             this.DiceButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Back
+            // BackButton
             // 
             this.BackButton.BackColor = System.Drawing.Color.Transparent;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BackButton.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
             this.BackButton.Location = new System.Drawing.Point(761, 681);
-            this.BackButton.Name = "Back";
+            this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(231, 80);
             this.BackButton.TabIndex = 8;
             this.BackButton.Text = "Back";

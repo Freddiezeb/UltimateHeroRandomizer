@@ -22,7 +22,7 @@ namespace UltimateHeroRandomizerV3
 
         public string role;
 
-        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound, string role, ref bool randomized)
+        public Champion(Texture2D tex, Rectangle destRect, Rectangle sourceRect, ref string name, ref bool selected, ref SoundEffect selectionSound, ref string role, ref bool randomized)
         {
             this.tex = tex;
             this.destRect = destRect;
