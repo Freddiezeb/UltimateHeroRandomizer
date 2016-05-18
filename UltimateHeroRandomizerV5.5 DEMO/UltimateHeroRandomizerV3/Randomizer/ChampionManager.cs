@@ -217,7 +217,7 @@ namespace UltimateHeroRandomizerV3
                     champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                     destX += 75;
                     nr++;
-                    if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50)
+                    if (nr == 10 || nr == 20 || nr == 30 || nr == 40 || nr == 50) //Skapar rader för 10st i X-led när man skapar filter
                     {
                         destX = 200;
                         destY += 75;

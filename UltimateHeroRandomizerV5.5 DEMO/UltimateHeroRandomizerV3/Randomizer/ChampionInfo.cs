@@ -25,9 +25,12 @@ namespace UltimateHeroRandomizerV3
                 string[] names = new string[130];
 
                 string[] role = new string[130];
+            }
 
-
-                using (StreamReader reader = new StreamReader("championNames.txt"))
+            using (StreamReader reader = new StreamReader("championNames.txt"))
+            {
+                //Läser igenom textfilen via streamreader, sätter en split mellan dess roll och vilken champion det är
+                while (!reader.EndOfStream)
                 {
                     while (!reader.EndOfStream)
                     {
@@ -50,3 +53,4 @@ namespace UltimateHeroRandomizerV3
         }
     }
 }
+

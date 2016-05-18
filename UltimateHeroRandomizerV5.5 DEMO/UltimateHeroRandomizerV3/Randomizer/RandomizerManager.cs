@@ -13,7 +13,7 @@ namespace UltimateHeroRandomizerV3
     {
         RandomizeWithAll,
         RandomizePersonalFilter,
-        RandomizePremadeFilter,
+        RandomizePremadeFilter
     }
 
     class RandomizerManager
@@ -31,8 +31,6 @@ namespace UltimateHeroRandomizerV3
         Rectangle selectRect;
 
         bool visible = false;
-
-        Random rnd;
 
         public static SpriteFont font;
 
@@ -53,8 +51,6 @@ namespace UltimateHeroRandomizerV3
 
             champManager = new ChampionManager();
             champManager.LoadChampions(Content);
-
-            rnd = new Random();
 
             selectionRects = new SelectionRectangle[130];
 
@@ -120,9 +116,8 @@ namespace UltimateHeroRandomizerV3
                         champManager.ResetFilter();
                         buttonManager.restoreFilter = false;
                     }
-
-
                     break;
+
                 case RandomizerMode.RandomizePersonalFilter:
 
                     if (buttonManager.createFilter)
@@ -140,13 +135,11 @@ namespace UltimateHeroRandomizerV3
                         }
                     }
 
-
                     if (buttonManager.randomize)
                     {
                         champManager.RandomizeChampion(Window, Content);
                         buttonManager.randomize = false;
                     }
-
 
                     if (buttonManager.restoreFilter)
                     {
@@ -154,8 +147,8 @@ namespace UltimateHeroRandomizerV3
                         buttonManager.restoreFilter = false;
                         buttonManager.createFilter = false;
                     }
-
                     break;
+
                 case RandomizerMode.RandomizePremadeFilter:
 
                     if (filterManager.clicked)
@@ -190,12 +183,11 @@ namespace UltimateHeroRandomizerV3
                     break;
                 default:
                     break;
-            }
-
+                    
+            }     
 
             champManager.GetChampionRole();
             filterManager.FilterMarker();
-
         }
 
         public void Draw(SpriteBatch spriteBatch)

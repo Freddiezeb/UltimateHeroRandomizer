@@ -20,9 +20,7 @@ namespace UltimateHeroRandomizerV3
         int score = 0;
         int remaining = 8;
 
-        string adamsEgnaVariabel, tagPicture, startPicture;
-
-        string dota, lol;
+        string hiddenPicture, tagPicture, startPicture;
 
         public Memory()
         {
@@ -31,7 +29,7 @@ namespace UltimateHeroRandomizerV3
 
             if (Submenu.Dota)
             {
-                adamsEgnaVariabel = "d.jpg";
+                hiddenPicture = "d.jpg";
 
                 tagPicture = "0d.jpg";
 
@@ -40,7 +38,7 @@ namespace UltimateHeroRandomizerV3
 
             if (Submenu.League)
             {
-                adamsEgnaVariabel = ".png";
+                hiddenPicture = ".png";
 
                 tagPicture = "0.png";
 
@@ -104,11 +102,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-
                     (x as PictureBox).Tag = startPicture;
-
-                    (x as PictureBox).Tag = "0";
-
                 }
             }
         }
@@ -198,7 +192,7 @@ namespace UltimateHeroRandomizerV3
             PictureBox currentTexture = (sender as PictureBox);
 
 
-            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + adamsEgnaVariabel);
+            currentTexture.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + hiddenPicture);
 
 
             if (count == 0)
@@ -230,7 +224,7 @@ namespace UltimateHeroRandomizerV3
             {
                 if (x is PictureBox)
                 {
-                    (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + adamsEgnaVariabel);
+                    (x as PictureBox).Image = Image.FromFile(x.Tag.ToString() + hiddenPicture);
                 }
             }
 

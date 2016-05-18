@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="1918976">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="1922048">
       <assemblyIdentity name="UltimateHeroRandomizerV3" version="3.4.0.456" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gC9rAx3IToGAwic8faxFeiQZyG4zoR0YJw5Pr3CPN80=</dsig:DigestValue>
+        <dsig:DigestValue>FihdI2AP2xX6/mWnnwysj4qCatzKdfQPiRfDzk5iYaM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -292,6 +292,42 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>LD8M0XSsgQsScbg1QLoNmotAD+jLfSgt6qGflTV9igY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaCollage.png" size="2092735">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IZHJczj0oks/s06uDPSpagMfypfSp8dFBJaIbVr1APY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Images\PongBoll.xnb" size="6013">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D/eskhstnDwh0fYJXzHF7GmosuzhwdmF60FfCt2nbgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Images\PongPlatta.xnb" size="22733">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FfoKTL5DQGB34qZFOEet/dSRaQUunTT4oEWf9Z88ko8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Images\restart.xnb" size="40085">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lIUWwafFjdHiXKHWbPdUUgqoti2c+OWvCY5dayMgk20=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\myFont.xnb" size="21521">
@@ -1489,6 +1525,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>1rcL+p8VqKRAwrDGbcYScsiEe8K/3WvqsbeJCmhuFnM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\timeFont.xnb" size="21521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cbkvRkyN4Pqi4XTHbNcDbtzLAPgP+RuFaoQUUJ9oZGM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Transparent.xnb" size="39685">
