@@ -37,8 +37,6 @@ namespace UltimateHeroRandomizerV3
         public void DrawChamps(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(tex, destRect, sourceRect, Color.White);
-
-            //spriteBatch.DrawString(Game1.font, name, new Vector2(600, 50), Color.White);
         }
     }
 }

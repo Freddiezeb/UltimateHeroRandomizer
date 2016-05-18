@@ -27,6 +27,7 @@ namespace UltimateHeroRandomizerV3
 
             using (StreamReader reader = new StreamReader("championNames.txt"))
             {
+                //Läser igenom textfilen via streamreader, sätter en split mellan dess roll och vilken champion det är
                 while (!reader.EndOfStream)
                 {
                     for (int i = 0; i < 130; i++)
