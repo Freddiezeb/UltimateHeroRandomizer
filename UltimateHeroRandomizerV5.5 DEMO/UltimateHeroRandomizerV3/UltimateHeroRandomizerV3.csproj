@@ -221,9 +221,13 @@
     <Content Include="Resources\6d.jpg" />
     <Content Include="Resources\7d.jpg" />
     <Content Include="Resources\8d.jpg" />
+    <None Include="Resources\antimage.png" />
+    <None Include="Resources\agha.jpg" />
     <Content Include="Resources\boss.png" />
     <Content Include="Resources\boss1.png" />
+    <None Include="Resources\broodmother.png" />
     <Content Include="Resources\championNames.txt" />
+    <None Include="Resources\dendi1.jpg" />
     <Content Include="Resources\dice0.png" />
     <Content Include="Resources\dice1.png" />
     <Content Include="Resources\dice2.png" />
@@ -232,10 +236,12 @@
     <Content Include="Resources\dice5.png" />
     <Content Include="Resources\dice6.png" />
     <Content Include="Resources\dota2 menu3.jpeg" />
+    <None Include="Resources\fear.png" />
     <Content Include="Resources\gangplank.jpg" />
     <Content Include="Resources\heimer.jpg" />
     <Content Include="Resources\HeroNames.txt" />
     <Content Include="Resources\kindred.png" />
+    <None Include="Resources\kotl.png" />
     <Content Include="Resources\LeJhin.jpg" />
     <Content Include="Resources\lolquiz.jpeg" />
     <None Include="Resources\SPmorph1.png" />
@@ -258,6 +264,9 @@
     <Content Include="Resources\lucian7.jpg" />
     <Content Include="Resources\lucian8.jpg" />
     <Content Include="Resources\morgana.jpg" />
+    <None Include="Resources\nightstalker.jpg" />
+    <None Include="Resources\qop.png" />
+    <None Include="Resources\techies.png" />
     <Content Include="Resources\Teemo.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

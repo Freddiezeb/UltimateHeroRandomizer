@@ -113,7 +113,54 @@ namespace UltimateHeroRandomizerV3
 
             if (Quiz.dotaQuestions)
             {
-                
+                questions[0] = new Question("Which of these heroes are a pusher?", "Phantom Assassin", "Natures Prophet", "Zeus", "Pudge", ref answered, 2, null);
+                questions[1] = new Question("How long is Roshan's respawn time?", "8-11 sec", "5-9 min", "8-11 min", "8-10 min", ref answered, 3, null);
+                questions[2] = new Question("After which death does Roshan start to drop cheese?", "his 1st death", "his 2nd death", "his 3rd death", "his 4th death", ref answered, 3, null);
+                questions[3] = new Question("Which hero has has the spell \n\"Lightning Bolt?\"", "Zeus", "Io", "Storm Spirit", "Arc Warden", ref answered, 1, null);
+                questions[4] = new Question("What does the cheese give you?", "100 gold", "Full hp and mana", "250 gold", "3 sec invulnerability", ref answered, 2, null);
+
+                questions[5] = new Question("Who has the highest base armor?", "Techies", "Ogre Magi", "Dark Seer", "Terrorblade", ref answered, 4, null);
+                questions[6] = new Question("What's it called when you wipe a team?", "Nothing", "Rampage", "Ownage", "Genocide", ref answered, 1, null);
+                questions[7] = new Question("The first kill is called?", "Bloodbath", "Nothing special", "Bloodlust", "First Blood", ref answered, 4, null);
+                questions[8] = new Question("A five man kill is called?", "Penta Kill", "Annihilation", "Rampage", "Onslaught", ref answered, 3, null);
+                questions[9] = new Question("Which hero has the toss ability?", "Tidehunter", "Tiny", "Tony", "Tinker", ref answered, 2, null);
+
+                questions[10] = new Question("How many heroes are there?", "111", "112", "115", "118", ref answered, 1, null);
+                questions[11] = new Question("What is Dota based on?", "Sims", "LoL", "Call of Duty", "Warcraft", ref answered, 4, null);
+                questions[12] = new Question("Tiny's attribute is what?", "Strength", "Intelligence", "Agility", "Power", ref answered, 1, null);
+                questions[13] = new Question("This team won The International 5", "Evil Geniuses", "CDEC", "Newbee", "Fnatic", ref answered, 1, null);
+                questions[14] = new Question("Spells cost what?", "Spellpower", "Energy", "Mana", "Juice", ref answered, 3, null);
+
+                questions[15] = new Question("Who has the highest MMR?", "Miracle", "talleN", "Owlen", "Matumbaman", ref answered, 2, null);
+                questions[16] = new Question("What is this hero called?", "Doom", "Undying", "Lifestealer", "Night Stalker", ref answered, 4, ImageManager.nightstalker);
+                questions[17] = new Question("There are most ... type heroes", "Intelligence", "Strength", "Agility", "Power", ref answered, 1, null);
+                questions[18] = new Question("How long does Observer Wards last?", "4 min", "5 min", "6 min", "7 min", ref answered, 3, null);
+                questions[19] = new Question("What role is IO?", "Tank", "Support", "Carry", "Disabler", ref answered, 2, null);
+
+                questions[20] = new Question("When is the first night?", "4 min", "5 min", "7 min", "10 min", ref answered, 1, null);
+                questions[21] = new Question("How many neutral camps in each jungle?", "3", "5", "6", "7", ref answered, 2, null);
+                questions[22] = new Question("Reaching level 2 requires ... XP", "100", "200", "300", "400", ref answered, 2, null);
+                questions[23] = new Question("First Roshan has how much HP?", "2500", "5000", "7500", "10 000", ref answered, 3, null);
+                questions[24] = new Question("What is the maximum movement speed?", "322 ms", "522 ms", "525 ms", "550 ms", ref answered, 2, null);
+
+                questions[25] = new Question("How long does Windrunners Shackleshot success stun for at level 3?", "1.5", "3.75", "6", "3", ref answered, 4, null);
+                questions[26] = new Question("How much does a Healing Salve heal for?", "300", "400", "500", "600", ref answered, 2, null);
+                questions[27] = new Question("Which of these heroes are a pusher?", "Phantom Assassin", "Natures Prophet", "Zeus", "Pudge", ref answered, 2, null);
+                questions[28] = new Question("How much damage is Fissure level 3?", "160", "190", "210", "320", ref answered, 3, null);
+                questions[29] = new Question("What is the max range of Meat Hook?", "1200", "1300", "1400", "1500", ref answered, 2,null);
+
+                questions[30] = new Question("What is the name of Drow Ranger's ulti?", "Marksmanship", "Marksman", "Precision Aura", "Dismember", ref answered, 1,null);
+                questions[31] = new Question("Who is this hero?", "Anti-Christ", "Anti-Mage", "Anti-Terrorist", "Anti-Hero", ref answered, 2, ImageManager.antimage);
+                questions[32] = new Question("What item is this?", "Aghanims Staff", "Magic Scepter", "Almighty Staff", "Aghanims Scepter", ref answered, 2, ImageManager.agha);
+                questions[33] = new Question("What Hero is this?", "Queen of Qop", "Queen of Hell", "Queen of Pain", "Queen of Pop", ref answered, 3, ImageManager.qop);
+                questions[34] = new Question("Who is this man?", "Keeper of the Staff", "Gandalf", "Keeper of the Light", "Sauroman", ref answered, 3, ImageManager.kotl);
+
+                questions[35] = new Question("Who's spell is 'Spin Web'?", "Spiderman", "Spidermother", "Broodmother", "Black Widow", ref answered, 3, ImageManager.broodmother);
+                questions[36] = new Question("Who's spell is 'Suicide Squad, Attack'?", "Osama bin Laden", "Terrorist", "Techer", "Techies", ref answered, 4, ImageManager.techies);
+                questions[37] = new Question("What TI did sweden win?", "TI1", "TI3", "TI5", "TI8", ref answered, 2, null);
+                questions[38] = new Question("What player is this?", "Dendo", "Dendi", "Denda", "Deadi", ref answered, 2, ImageManager.dendi);
+                questions[39] = new Question("What player is this?", "Air", "Dare", "Tear", "Fear", ref answered, 4, ImageManager.fear);
+
             }
 
 

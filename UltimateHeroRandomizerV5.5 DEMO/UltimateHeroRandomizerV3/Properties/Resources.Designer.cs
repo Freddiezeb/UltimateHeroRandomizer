@@ -253,6 +253,26 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agha {
+            get {
+                object obj = ResourceManager.GetObject("agha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap antimage {
+            get {
+                object obj = ResourceManager.GetObject("antimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boss {
             get {
                 object obj = ResourceManager.GetObject("boss", resourceCulture);
@@ -266,6 +286,26 @@ namespace UltimateHeroRandomizerV3.Properties {
         internal static System.Drawing.Bitmap boss1 {
             get {
                 object obj = ResourceManager.GetObject("boss1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap broodmother {
+            get {
+                object obj = ResourceManager.GetObject("broodmother", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dendi1 {
+            get {
+                object obj = ResourceManager.GetObject("dendi1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +393,16 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fear {
+            get {
+                object obj = ResourceManager.GetObject("fear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gangplank {
             get {
                 object obj = ResourceManager.GetObject("gangplank", resourceCulture);
@@ -376,6 +426,16 @@ namespace UltimateHeroRandomizerV3.Properties {
         internal static System.Drawing.Bitmap kindred {
             get {
                 object obj = ResourceManager.GetObject("kindred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kotl {
+            get {
+                object obj = ResourceManager.GetObject("kotl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +583,26 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nightstalker {
+            get {
+                object obj = ResourceManager.GetObject("nightstalker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qop {
+            get {
+                object obj = ResourceManager.GetObject("qop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SPmorph1 {
             get {
                 object obj = ResourceManager.GetObject("SPmorph1", resourceCulture);
@@ -616,6 +696,16 @@ namespace UltimateHeroRandomizerV3.Properties {
         internal static System.Drawing.Bitmap SPwhite {
             get {
                 object obj = ResourceManager.GetObject("SPwhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap techies {
+            get {
+                object obj = ResourceManager.GetObject("techies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
