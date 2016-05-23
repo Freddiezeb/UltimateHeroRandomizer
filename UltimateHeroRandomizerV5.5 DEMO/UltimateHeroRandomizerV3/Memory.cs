@@ -38,6 +38,7 @@ namespace UltimateHeroRandomizerV3
                 tagPicture = "0d.jpg";
 
                 startPicture = "0d";
+                this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
             }
 
             if (Submenu.League)
