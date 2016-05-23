@@ -14,9 +14,10 @@ namespace UltimateHeroRandomizerV3
         RadioButton correctButton;
         QuestionManager qManager;
         Submenu subMenu;
+        UploadHighscore upLoadHighscore;
 
         ChooseGame gameSelected;
-        int score = 0;
+        public static int quizScore = 0;
         int comboBoxValue;
 
         int ticks = 30;
@@ -27,13 +28,14 @@ namespace UltimateHeroRandomizerV3
         Image image;
         ImageManager imageManager;
 
-        public static bool leagueQuestions, dotaQuestions;
+        public static bool leagueQuestions, dotaQuestions, isQuizPlaying;
 
         string qText, answer1, answer2, answer3, answer4;
 
         public Quiz(ref ChooseGame gameSelected)
         {
             imageManager = new ImageManager();
+            upLoadHighscore = new UploadHighscore();
             InitializeComponent();
 
 
@@ -80,16 +82,16 @@ namespace UltimateHeroRandomizerV3
             if (correctButton.Checked)
             {
                 // Lägger till poängen för varje korrekt svar
-                score = score + 10;
-                ScoreLabel.Text = "Score:" + score.ToString() + " points";
+                quizScore = quizScore + 10;
+                ScoreLabel.Text = "Score:" + quizScore.ToString() + " points";
                 MessageBox.Show("NICEU");
                 CheckReset();
             }
             else
             {
                 MessageBox.Show("Wrong answer!");
-                score = score - 5;
-                ScoreLabel.Text = "Score:" + score.ToString() + " points";
+                quizScore = quizScore - 5;
+                ScoreLabel.Text = "Score:" + quizScore.ToString() + " points";
                 CheckReset();
                 Console.WriteLine("WATTTT");
             }
@@ -210,13 +212,15 @@ namespace UltimateHeroRandomizerV3
         {
             if (questionCount == comboBoxValue || ticks < 1)
             {
-                MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + score);
+                MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + quizScore);
+                isQuizPlaying = true;
                 HideButtons();
                 NormalModeButton.Show();
                 SpeedModeButton.Show();
+                upLoadHighscore.Show();
                 ticks = 30;
                 questionCount = 0;
-                score = 0;
+                //quizScore = 0;
                 label1.Show();
                 label1.Text = "";
                 qManager.ReviveQuestions();
@@ -232,7 +236,7 @@ namespace UltimateHeroRandomizerV3
             if (ticks < 1)
             {
                 timer1.Stop();
-                MessageBox.Show("Time's up! Your score: " + score);
+                MessageBox.Show("Time's up! Your score: " + quizScore);
                 ResetQuiz();
             }
         }

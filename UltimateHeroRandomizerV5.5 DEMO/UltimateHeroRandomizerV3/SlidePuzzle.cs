@@ -17,7 +17,7 @@ namespace UltimateHeroRandomizerV3
 
         public static int ticks;
         int timerTicks = 6;
-        bool isPressed, isShowing, isCounting;
+        bool isPressed, isShowing, isCounting, isSPplaying;
         bool pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9;
 
         public SlidePuzzle()
