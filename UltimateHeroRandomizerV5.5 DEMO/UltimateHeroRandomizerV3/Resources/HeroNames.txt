@@ -1,0 +1,110 @@
+Earthshacker,Disabler
+Sven,Carry
+Tiny,Carry
+Kunkka,Carry
+Beastmaster,Pusher
+Dragon Knight,Carry
+Clockwerk,Initiator
+Antimage,Carry
+Drow Ranger,Carry
+Juggernaut,Carry
+Mirana,Nuker
+Morphling,Carry
+Phantom Lancer,Carry
+Omniknight,Support
+Huskar,Carry
+Alchemist,Carry
+Brewmaster,Initiator
+Treant Protector,Initiator
+Io,Support
+Centaur,Initiator
+Riki,Disabler
+Sniper,Carry
+Templar Assassin,Carry
+Luna,Carry
+Bounty Hunter,Nuker
+Ursa,Carry
+Timbersaw,Nuker
+Bristleback,Initiator
+Tusk,Nuker
+Elder Titan,Support
+Legion Commander,Carry
+Earth Spirit,Initiator
+Phoenix,Initiator
+Lone Driud,Pusher
+Naga Siren,Carry
+Troll Warlord,Carry
+Ember Spirit,Carry
+Medusa,Carry
+Terrorblade,Carry
+Axe,Initiator
+Pudge,Disabler
+Sand king,Initiator
+Slardar,Carry
+Tidehunter,Initiator
+Wraith King,Carry
+Lifestealer,Carry
+Bloodseeker,Carry
+Shadow Fiend,Nuker
+Razor,Carry
+Venomancer,Support
+Faceless Void,Carry
+Phandom Assassin,Carry
+Night Stalker,Carry
+Doom,Disabler
+Spirit Breaker,Initiator
+Lycan,Carry
+Chaos Knight,Carry
+Undying,Initiator
+Magnus,Initiator
+Clinkz,Carry
+Broodmother,Pusher
+Weaver,Carry
+Spectre,Carry
+Meepo,Carry
+Nyx Assassin,Carry
+Ancient Apparition,Support
+Invoker,Nuker
+Outworld Devourer,Carry
+Shadow Demon,Support
+Visage,Support
+Vengeful Spirit,Support
+Crystal Maiden,Support
+Puck,Carry
+Storm Spirit,Carry
+Windranger,Carry
+Zeuz,Nuker
+Lina,Nuker
+Shadow Shaman,Disabler
+Gyrocopter,Carry
+Tinker,Nuker
+Natures Prophet,Carry
+Enchantress,Carry
+Jakiro,Support
+Chen,Support
+Silencer,Carry
+Oger Magi,Disabler
+Abbadon,Support
+Rubick,Support
+Disrupter,Support
+Keeper Of The Light,Support
+Skywrath Mage,Nuker
+Oracle,Nuker
+Techies,Nuker
+Winter Wyvern,Support
+Viper,Carry
+Bane,Disabler
+Lich,Support
+Lion,Disabler
+Witch Docter,Support
+Enigma,Pusher
+Necrophos,Carry
+Warlock,Pusher
+Slark,Carry
+Queen Of Pain,Nuker
+Death Prophet,Carry
+Pugna,Pusher
+Dazzle,Support
+Leshrac,Nuker
+Dark Seer,Pusher
+Batrider,Disabler

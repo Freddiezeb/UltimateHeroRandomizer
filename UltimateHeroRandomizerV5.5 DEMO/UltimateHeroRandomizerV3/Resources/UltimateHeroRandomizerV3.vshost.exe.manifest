@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="1922048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2003456">
       <assemblyIdentity name="UltimateHeroRandomizerV3" version="3.4.0.456" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FihdI2AP2xX6/mWnnwysj4qCatzKdfQPiRfDzk5iYaM=</dsig:DigestValue>
+        <dsig:DigestValue>Olqtrugw47tr9iv4o1V8SdWzSQZ2FAONuWfGzhU+ce4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1734,6 +1734,51 @@
       <dsig:DigestValue>8VY4ZYzZ21GiyIwaoTxYuYuD62JGzaN7aSmAstJS4lE=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Resources\gangplank.jpg" size="9267">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ypWKlzXFHIiX2TH/aFYKvBFA5QwA/es2Gst6PyX2an4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\heimer.jpg" size="8474">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JE09PeDQdRwXRS2hT3qKwxbXv8tujewvCgfYn9z3GWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HeroNames.txt" size="1991">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J5fO+FCO2dKYDhh3hV2XGreZz57bJjq9s87s7D2LjCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\kindred.png" size="40647">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xn5NIdyMBymR/iMHw5CwsJ+1J6/Gx4bVuRLABldI/tA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\LeJhin.jpg" size="8707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tavLlcT6Rj+bcrKJB5OZ/8xmM2RsRQN6ugxNA0JUeUU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Resources\lolquiz.jpeg" size="109968">
     <hash>
       <dsig:Transforms>
@@ -1822,6 +1867,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>KYkFG1u6xxPuqEL9/He08VzfjJHXXblpNaeSKAwPm6M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\morgana.jpg" size="9595">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Afnuwg80mGSrA245KblqFPidqOpmsnhQk68OjfIbRUA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Teemo.jpg" size="13122">

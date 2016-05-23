@@ -40,7 +40,7 @@ namespace UltimateHeroRandomizerV3
             //Markerar ett filter som bestämmer vilka och aktiverar en bool som säger vilken karaktärstyp som ska visas // UNDER CONSTRUCTION
             for (int i = 0; i < filterBoxes.Length; i++)
             {
-                
+
                 if (filterBoxes[i].rectangle.Contains(KeyMouseReader.mouseState.X, KeyMouseReader.mouseState.Y) && KeyMouseReader.mouseState.LeftButton == ButtonState.Pressed && KeyMouseReader.oldMouseState.LeftButton == ButtonState.Released)
                 {
                     if (i == 0 && !filterBoxes[0].marked)
@@ -203,11 +203,30 @@ namespace UltimateHeroRandomizerV3
                 filterBoxes[i].Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(RandomizerManager.font, "Marksman", new Vector2(50, 249), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Mage", new Vector2(50, 309), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Assassin", new Vector2(50, 368), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Fighter", new Vector2(50, 428), Color.White);
-            spriteBatch.DrawString(RandomizerManager.font, "Tank", new Vector2(50, 488), Color.White);
+            string box1 = null, box2 = null, box3 = null, box4 = null, box5 = null;
+
+            if (Submenu.League)
+            {
+                box1 = "Marksman";
+                box2 = "Mage";
+                box3 = "Assassin";
+                box4 = "Fighter";
+                box5 = "Tank";
+            }
+
+            if (Submenu.Dota)
+            {
+                box1 = "Carry";
+                box2 = "Disabler";
+                box3 = "Nuker";
+                box4 = "Pusher";
+                box5 = "Initiator";
+            }
+            spriteBatch.DrawString(RandomizerManager.font, box1, new Vector2(50, 249), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, box2, new Vector2(50, 309), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, box3, new Vector2(50, 368), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, box4, new Vector2(50, 428), Color.White);
+            spriteBatch.DrawString(RandomizerManager.font, box5, new Vector2(50, 488), Color.White);
             spriteBatch.DrawString(RandomizerManager.font, "Support", new Vector2(50, 548), Color.White);
 
         }

@@ -32,6 +32,7 @@ namespace UltimateHeroRandomizerV3
 
         void CheckWin()
         {
+            
             if (pictureBox1.Image == Properties.Resources.SPmorph9)
             {
                 pic1 = true;
@@ -445,6 +446,7 @@ namespace UltimateHeroRandomizerV3
             //pictureBox7.Image = Properties.Resources.SPmorph2;
             //pictureBox8.Image = Properties.Resources.SPmorph7;
             //pictureBox9.Image = Properties.Resources.SPmorph6;
+
 
             if (pictureBox1.Image == Properties.Resources.SPmorph9)
             {

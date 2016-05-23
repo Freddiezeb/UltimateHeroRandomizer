@@ -353,6 +353,46 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gangplank {
+            get {
+                object obj = ResourceManager.GetObject("gangplank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heimer {
+            get {
+                object obj = ResourceManager.GetObject("heimer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kindred {
+            get {
+                object obj = ResourceManager.GetObject("kindred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeJhin {
+            get {
+                object obj = ResourceManager.GetObject("LeJhin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lolmeny3 {
             get {
                 object obj = ResourceManager.GetObject("lolmeny3", resourceCulture);
@@ -466,6 +506,16 @@ namespace UltimateHeroRandomizerV3.Properties {
         internal static System.Drawing.Bitmap mainBackground {
             get {
                 object obj = ResourceManager.GetObject("mainBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap morgana {
+            get {
+                object obj = ResourceManager.GetObject("morgana", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

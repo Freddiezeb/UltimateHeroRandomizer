@@ -12,6 +12,9 @@ namespace UltimateHeroRandomizerV3
 {
     public partial class Highscore : Form
     {
+
+        MainMenu menu;
+
         public Highscore()
         {
             InitializeComponent();
@@ -64,6 +67,14 @@ namespace UltimateHeroRandomizerV3
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            menu = new MainMenu();
+
+            menu.Show();
         }
     }
 }

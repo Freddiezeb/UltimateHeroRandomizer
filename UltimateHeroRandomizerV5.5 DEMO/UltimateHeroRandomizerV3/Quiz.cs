@@ -308,6 +308,8 @@ namespace UltimateHeroRandomizerV3
         {
             label1.Text = "See how many questions you can answer\ncorrect in 30 seconds!";
         }
+
+
     }
 }
 

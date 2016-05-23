@@ -19,22 +19,38 @@ namespace UltimateHeroRandomizerV3
             //4 = Fighter
             //5 = Tank
             //6 = Support
+            string fileName = "";
+            int amount = 0;
 
             if (Submenu.League)
             {
                 string[] names = new string[130];
 
                 string[] role = new string[130];
+
+                amount = 130;
+
+                fileName = "championNames.txt";
+            }
+            if (Submenu.Dota)
+            {
+                string[] names = new string[110];
+
+                string[] role = new string[110];
+
+                amount = 110;
+
+                fileName = "heroNames.txt";
             }
 
-            using (StreamReader reader = new StreamReader("championNames.txt"))
+            using (StreamReader reader = new StreamReader(fileName))
             {
                 //Läser igenom textfilen via streamreader, sätter en split mellan dess roll och vilken champion det är
                 while (!reader.EndOfStream)
                 {
                     while (!reader.EndOfStream)
                     {
-                        for (int i = 0; i < 130; i++)
+                        for (int i = 0; i < amount; i++)
                         {
                             string str = reader.ReadLine();
 

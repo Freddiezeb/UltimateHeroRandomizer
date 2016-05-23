@@ -232,6 +232,11 @@
     <Content Include="Resources\dice5.png" />
     <Content Include="Resources\dice6.png" />
     <Content Include="Resources\dota2 menu3.jpeg" />
+    <Content Include="Resources\gangplank.jpg" />
+    <Content Include="Resources\heimer.jpg" />
+    <Content Include="Resources\HeroNames.txt" />
+    <Content Include="Resources\kindred.png" />
+    <Content Include="Resources\LeJhin.jpg" />
     <Content Include="Resources\lolquiz.jpeg" />
     <None Include="Resources\SPmorph1.png" />
     <None Include="Resources\SPmorph2.png" />
@@ -252,7 +257,10 @@
     <Content Include="Resources\lucian6.jpg" />
     <Content Include="Resources\lucian7.jpg" />
     <Content Include="Resources\lucian8.jpg" />
-    <Content Include="Resources\Teemo.jpg" />
+    <Content Include="Resources\morgana.jpg" />
+    <Content Include="Resources\Teemo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Content\myFont.spritefont">
       <SubType>Designer</SubType>
     </None>

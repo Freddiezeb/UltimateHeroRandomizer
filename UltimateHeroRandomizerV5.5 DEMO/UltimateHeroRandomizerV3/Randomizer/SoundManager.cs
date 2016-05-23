@@ -28,6 +28,14 @@ namespace UltimateHeroRandomizerV3
                 }
             }
 
+            //if (Submenu.Dota)
+            //{
+            //    for (int i = 0; i < champions.Length; i++)
+            //    {
+            //        champions[i].selectionSound = Content.Load<SoundEffect>("SelectionSoundsDota/" + champions[i].name);
+            //    }
+            //}
+
         }
     }
 }

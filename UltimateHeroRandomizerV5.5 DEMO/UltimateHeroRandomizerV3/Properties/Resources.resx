@@ -274,4 +274,19 @@
   <data name="_8d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gangplank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gangplank.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heimer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kindred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kindred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeJhin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeJhin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="morgana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\morgana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
