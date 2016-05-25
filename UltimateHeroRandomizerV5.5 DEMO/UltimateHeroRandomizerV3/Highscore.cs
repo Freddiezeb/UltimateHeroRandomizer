@@ -19,8 +19,57 @@ namespace UltimateHeroRandomizerV3
         {
             InitializeComponent();
             load_spTable();
+            load_qTable();
+            load_mTable();
         }
 
+        void load_mTable()
+        {
+            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory ;", conDataBase);
+
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmdDataBase;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                BindingSource bsource = new BindingSource();
+
+                bsource.DataSource = dbdataset;
+                m_dataGridView1.DataSource = bsource;
+                sda.Update(dbdataset);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void load_qTable()
+        {
+            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.quiz ;", conDataBase);
+
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmdDataBase;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                BindingSource bsource = new BindingSource();
+
+                bsource.DataSource = dbdataset;
+                q_dataGridView1.DataSource = bsource;
+                sda.Update(dbdataset);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         void load_spTable()
         {
             string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
@@ -75,6 +124,54 @@ namespace UltimateHeroRandomizerV3
             menu = new MainMenu();
 
             menu.Show();
+        }
+
+        private void q_buttonUpdate_Click(object sender, EventArgs e)
+        {
+            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.quiz ;", conDataBase);
+
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmdDataBase;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                BindingSource bsource = new BindingSource();
+
+                bsource.DataSource = dbdataset;
+                q_dataGridView1.DataSource = bsource;
+                sda.Update(dbdataset);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void m_buttonUpdate_Click(object sender, EventArgs e)
+        {
+            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory ;", conDataBase);
+
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmdDataBase;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                BindingSource bsource = new BindingSource();
+
+                bsource.DataSource = dbdataset;
+                m_dataGridView1.DataSource = bsource;
+                sda.Update(dbdataset);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

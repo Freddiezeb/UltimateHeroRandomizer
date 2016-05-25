@@ -14,10 +14,13 @@ namespace UltimateHeroRandomizerV3
         PictureBox texture;
 
         Submenu subMenu;
+        UploadHighscore upLoadHighscore;
         ChooseGame gameSelected;
 
+        public static bool isMemoryPlaying;
+
         int count = 0;
-        int score = 0;
+        public static int memoryScore = 0;
         int remaining = 8;
 
         string hiddenPicture, tagPicture, startPicture;
@@ -26,6 +29,7 @@ namespace UltimateHeroRandomizerV3
         {
             // Lägger till transparent bakgrund till bilderna
             InitializeComponent();
+            upLoadHighscore = new UploadHighscore();
 
             if (Submenu.Dota)
             {
@@ -34,6 +38,7 @@ namespace UltimateHeroRandomizerV3
                 tagPicture = "0d.jpg";
 
                 startPicture = "0d";
+                this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
             }
 
             if (Submenu.League)
@@ -45,7 +50,7 @@ namespace UltimateHeroRandomizerV3
                 startPicture = "0";
             }
 
-            ScoreLabel.Text = "Score: " + score.ToString() + " points";
+            ScoreLabel.Text = "Score: " + memoryScore.ToString() + " points";
             label1.Text = "Remaining Pairs: " + remaining.ToString();
 
             pictureBox1.BackColor = Color.Transparent;
@@ -158,8 +163,8 @@ namespace UltimateHeroRandomizerV3
                 remaining--;
                 label1.Text = "Remaining Pairs: " + remaining.ToString();
 
-                score = score + 10;
-                ScoreLabel.Text = "Score: " + score.ToString() + " points";
+                memoryScore = memoryScore + 10;
+                ScoreLabel.Text = "Score: " + memoryScore.ToString() + " points";
             }
 
             else
@@ -174,6 +179,8 @@ namespace UltimateHeroRandomizerV3
             if (remaining <= 0)
             {
                 MessageBox.Show("Congratulations!\nRestart or Exit the Game");
+                isMemoryPlaying = true;
+                upLoadHighscore.Show();
             }
         }
 
@@ -228,8 +235,8 @@ namespace UltimateHeroRandomizerV3
                 }
             }
 
-            score = score - 5;
-            ScoreLabel.Text = "Score: " + score.ToString() + " points";
+            memoryScore = memoryScore - 5;
+            ScoreLabel.Text = "Score: " + memoryScore.ToString() + " points";
         }
         private void HidePictures()
         {
@@ -253,8 +260,8 @@ namespace UltimateHeroRandomizerV3
                 }
             }
 
-            score = 0;
-            ScoreLabel.Text = "Score: " + score.ToString() + " points";
+            memoryScore = 0;
+            ScoreLabel.Text = "Score: " + memoryScore.ToString() + " points";
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -284,7 +291,7 @@ namespace UltimateHeroRandomizerV3
             count = 0;
             remaining = 8;
             label1.Text = "Remaining Pairs: " + remaining.ToString();
-            score = 0;
+            memoryScore = 0;
         }
 
         private void button4_Click(object sender, EventArgs e)
