@@ -331,7 +331,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolquiz;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1196, 717);
+            this.ClientSize = new System.Drawing.Size(1184, 782);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.button4);

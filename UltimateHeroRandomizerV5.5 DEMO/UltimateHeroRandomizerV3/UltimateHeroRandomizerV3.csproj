@@ -214,6 +214,7 @@
     <None Include="Resources\110-morphling.jpg" />
     <Content Include="Resources\0d.jpg" />
     <Content Include="Resources\1d.jpg" />
+    <None Include="Resources\250px-DotA2.jpg" />
     <Content Include="Resources\2d.jpg" />
     <Content Include="Resources\3d.jpg" />
     <Content Include="Resources\4d.jpg" />
@@ -243,6 +244,7 @@
     <Content Include="Resources\kindred.png" />
     <None Include="Resources\kotl.png" />
     <Content Include="Resources\LeJhin.jpg" />
+    <Content Include="Resources\logolol.png" />
     <Content Include="Resources\lolquiz.jpeg" />
     <None Include="Resources\SPmorph1.png" />
     <None Include="Resources\SPmorph2.png" />
@@ -302,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Submenu.resx">
       <DependentUpon>Submenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadHighscore.resx">
+      <DependentUpon>UploadHighscore.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,14 @@ namespace UltimateHeroRandomizerV3
         public UploadHighscore()
         {
             InitializeComponent();
+            if (Submenu.League)
+            {
+                pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources.logolol;
+            }
+            if (Submenu.Dota)
+            {
+                pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250px_DotA2;
+            }
             System.Diagnostics.Debug.WriteLine(SlidePuzzle.ticks);
         }
 
@@ -42,5 +50,12 @@ namespace UltimateHeroRandomizerV3
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -52,9 +52,9 @@ namespace UltimateHeroRandomizerV3
                     this.answerButton2.Location = new System.Drawing.Point(133, 245);
                     this.answerButton3.Location = new System.Drawing.Point(133, 264);
                     this.answerButton4.Location = new System.Drawing.Point(133, 283);
-                    this.ScoreLabel.Location = new System.Drawing.Point(125, 350);
+                    this.ScoreLabel.Location = new System.Drawing.Point(103, 350);
                     this.AnswerButton.Location = new System.Drawing.Point(135, 310);
-                    this.pictureBox1.Location = new System.Drawing.Point(100,50);
+                    this.pictureBox1.Location = new System.Drawing.Point(100, 50);
                     this.TimerLabel.Location = new System.Drawing.Point(103, 400);
 
                     this.StartQuizButton.Location = new System.Drawing.Point(140, 250);
@@ -100,9 +100,7 @@ namespace UltimateHeroRandomizerV3
             ResetQuiz();
             LoadQuestions();
 
-            if (gameSelected == ChooseGame.Dota)
-            {
-                            if (image != null)
+            if(leagueQuestions && image != null)
             {
                 this.questionLabel.Location = new System.Drawing.Point(514, 165);
                 this.answerButton1.Location = new System.Drawing.Point(514, 316);
@@ -111,8 +109,10 @@ namespace UltimateHeroRandomizerV3
                 this.answerButton4.Location = new System.Drawing.Point(514, 373);
                 this.ScoreLabel.Location = new System.Drawing.Point(514, 450);
                 this.AnswerButton.Location = new System.Drawing.Point(514, 410);
+                this.TimerLabel.Location = new System.Drawing.Point(514, 500);
+
             }
-            else
+            else if (leagueQuestions && image == null)
             {
                 this.questionLabel.Location = new System.Drawing.Point(474, 198);
                 this.answerButton1.Location = new System.Drawing.Point(514, 244);
@@ -121,8 +121,9 @@ namespace UltimateHeroRandomizerV3
                 this.answerButton4.Location = new System.Drawing.Point(514, 301);
                 this.ScoreLabel.Location = new System.Drawing.Point(483, 416);
                 this.AnswerButton.Location = new System.Drawing.Point(523, 335);
+                this.TimerLabel.Location = new System.Drawing.Point(483, 461); 
             }
-            }
+
 
 
         }

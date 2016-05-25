@@ -170,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolmeny3;
-            this.ClientSize = new System.Drawing.Size(1184, 762);
+            this.ClientSize = new System.Drawing.Size(1184, 782);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.DiceButton);
             this.Controls.Add(this.PongButton);

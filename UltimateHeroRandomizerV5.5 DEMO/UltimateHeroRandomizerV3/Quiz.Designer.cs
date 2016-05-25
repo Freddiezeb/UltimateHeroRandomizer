@@ -262,7 +262,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolquiz;
-            this.ClientSize = new System.Drawing.Size(1184, 762);
+            this.ClientSize = new System.Drawing.Size(1184, 786);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SpeedModeButton);
             this.Controls.Add(this.NormalModeButton);
@@ -279,6 +279,7 @@
             this.Controls.Add(this.answerButton2);
             this.Controls.Add(this.answerButton1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League of Quiz";
