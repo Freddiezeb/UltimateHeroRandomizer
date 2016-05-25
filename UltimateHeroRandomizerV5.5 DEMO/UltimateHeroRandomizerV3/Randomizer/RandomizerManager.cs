@@ -84,6 +84,9 @@ namespace UltimateHeroRandomizerV3
             if (buttonManager.restoreFilter)
             {
                 randomizerMode = RandomizerMode.RandomizeWithAll;
+                filterManager.UnmarkFilters();              
+                filterManager.clicked = false;
+                filterManager.filterMarked = false;
             }
 
 
@@ -105,6 +108,7 @@ namespace UltimateHeroRandomizerV3
                             }
                         }
                     }
+
                     if (buttonManager.randomize)
                     {
                         champManager.RandomizeAllChampions(Window, Content);
@@ -114,6 +118,10 @@ namespace UltimateHeroRandomizerV3
                     if (buttonManager.restoreFilter)
                     {
                         champManager.ResetFilter();
+                        for (int i = 0; i < selectionRects.Length; i++)
+                        {
+                            selectionRects[i].visible = false;
+                        }
                         buttonManager.restoreFilter = false;
                     }
                     break;
@@ -172,10 +180,13 @@ namespace UltimateHeroRandomizerV3
                         champManager.ResetFilter();
                         buttonManager.restoreFilter = false;
                         buttonManager.createFilter = false;
+
+
                     }
 
                     if (filterManager.reset)
                     {
+                        buttonManager.restoreFilter = true;
                         champManager.ResetFilter();
                         filterManager.reset = false;
                     }

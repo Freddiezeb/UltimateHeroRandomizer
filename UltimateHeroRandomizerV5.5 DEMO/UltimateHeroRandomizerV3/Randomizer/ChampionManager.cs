@@ -40,6 +40,7 @@ namespace UltimateHeroRandomizerV3
         Random rnd = new Random();
 
         public int pastIndex;
+        int role1Index, role2Index, role3Index, role4Index, role5Index, role6Index;
 
         bool randomized;
         string role;
@@ -62,6 +63,12 @@ namespace UltimateHeroRandomizerV3
                 arraySize = 110;
                 sourceSize = 80;
                 collageTexture = TextureManager.dotaCollage;
+                role1Index = 2;
+                role2Index = 0;
+                role3Index = 10;
+                role4Index = 4;
+                role5Index = 6;
+                role6Index = 14;
             }
 
             if (Submenu.League)
@@ -69,6 +76,12 @@ namespace UltimateHeroRandomizerV3
                 arraySize = 130;
                 sourceSize = 100;
                 collageTexture = TextureManager.championCollage;
+                role1Index = 7;
+                role2Index = 1;
+                role3Index = 2;
+                role4Index = 0;
+                role5Index = 3;
+                role6Index = 10;
             }
 
             soundManager = new SoundManager();
@@ -181,24 +194,27 @@ namespace UltimateHeroRandomizerV3
             i = rnd.Next(0, arraySize);
 
             champions[pastIndex].destRect = keepRectangleInfo;
+            
             keepRectangleInfo = champions[i].destRect;
+
             if (pastInstance != null)
             {
                 pastInstance.Pause();
             }
+            
             pastIndex = i;
 
-            //pastInstance = champions[pastIndex].selectionSound.CreateInstance();
-            //soundEffectInstance = champions[i].selectionSound.CreateInstance();
+            pastInstance = champions[pastIndex].selectionSound.CreateInstance();
+            soundEffectInstance = champions[i].selectionSound.CreateInstance();
 
-            //pastInstance = soundEffectInstance;
-            //soundEffectInstance.Volume = volume;
+            pastInstance = soundEffectInstance;
+            soundEffectInstance.Volume = volume;
 
 
             champions[i].destRect = new Rectangle(40, 40, 125, 125);
             championName = champions[i].name;
             roleName = champions[i].role;
-            //soundEffectInstance.Play();
+            soundEffectInstance.Play();
 
         }
 
@@ -207,9 +223,15 @@ namespace UltimateHeroRandomizerV3
         {
             // Skapar ett filter för alla champions som blivit valda(Selected) // UNDER CONSTRUCTION
 
+            championName = "";
+            roleName = "";
+
             int nr = 0;
             destX = 200;
             destY = 0;
+
+            keepRectangleInfo = new Rectangle(-600, 0, 75, 75);
+
             for (int i = 0; i < champions.Length; i++)
             {
                 if (champions[i].selected)
@@ -234,6 +256,9 @@ namespace UltimateHeroRandomizerV3
         {
 
             //Återskapar ursprungsfiltret där alla karaktärer finns med.
+
+            pastIndex = 0;
+            keepRectangleInfo = new Rectangle(200, 0, 75, 75);
 
             championName = "";
             roleName = "";
@@ -295,14 +320,22 @@ namespace UltimateHeroRandomizerV3
             //Håller koll på vilket förskapat filter som används. UNDER CONSTRUCTION
             destX = 200;
             destY = 0;
+
+            championName = "";
+            roleName = "";
+            keepRectangleInfo = new Rectangle(200, 0, 75, 75);
+
             int nr = 0;
+
             for (int i = 0; i < champions.Length; i++)
             {
                 champions[i].selected = false;
                 if (filterManager.marksman)
                 {
+
                     if (champions[i].role == "Marksman" || champions[i].role == "Carry")
                     {
+                        pastIndex = role1Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
@@ -323,6 +356,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     if (champions[i].role == "Mage" || champions[i].role == "Disabler")
                     {
+                        pastIndex = role2Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
@@ -344,6 +378,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     if (champions[i].role == "Assassin" || champions[i].role == "Nuker")
                     {
+                        pastIndex = role3Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
@@ -365,6 +400,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     if (champions[i].role == "Fighter" || champions[i].role == "Pusher")
                     {
+                        pastIndex = role4Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
@@ -388,6 +424,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     if (champions[i].role == "Tank" || champions[i].role == "Initiator")
                     {
+                        pastIndex = role5Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;
@@ -409,6 +446,7 @@ namespace UltimateHeroRandomizerV3
                 {
                     if (champions[i].role == "Support")
                     {
+                        pastIndex = role6Index;
                         champions[i].selected = true;
                         champions[i].destRect = new Rectangle(destX, destY, 75, 75);
                         destX += 75;

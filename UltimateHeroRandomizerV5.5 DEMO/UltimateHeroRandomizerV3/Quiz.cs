@@ -54,6 +54,8 @@ namespace UltimateHeroRandomizerV3
                     this.answerButton4.Location = new System.Drawing.Point(133, 283);
                     this.ScoreLabel.Location = new System.Drawing.Point(125, 350);
                     this.AnswerButton.Location = new System.Drawing.Point(135, 310);
+                    this.pictureBox1.Location = new System.Drawing.Point(100,50);
+                    this.TimerLabel.Location = new System.Drawing.Point(103, 400);
 
                     this.StartQuizButton.Location = new System.Drawing.Point(140, 250);
                     this.questionAmountBox.Location = new System.Drawing.Point(140, 220);
@@ -98,7 +100,9 @@ namespace UltimateHeroRandomizerV3
             ResetQuiz();
             LoadQuestions();
 
-            if (image != null)
+            if (gameSelected == ChooseGame.Dota)
+            {
+                            if (image != null)
             {
                 this.questionLabel.Location = new System.Drawing.Point(514, 165);
                 this.answerButton1.Location = new System.Drawing.Point(514, 316);
@@ -118,6 +122,8 @@ namespace UltimateHeroRandomizerV3
                 this.ScoreLabel.Location = new System.Drawing.Point(483, 416);
                 this.AnswerButton.Location = new System.Drawing.Point(523, 335);
             }
+            }
+
 
         }
 

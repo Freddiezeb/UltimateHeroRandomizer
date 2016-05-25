@@ -60,7 +60,7 @@ namespace UltimateHeroRandomizerV3
         {
             if (Quiz.leagueQuestions)
             {
-                questions[0] = new Question("What champion has poision darts?", "Teemo", "Olaf", "Zed", "Jayce", ref answered, 1,null);
+                questions[0] = new Question("What champion has poison darts?", "Teemo", "Olaf", "Zed", "Jayce", ref answered, 1,null);
                 questions[1] = new Question("What champion was relased first?", "Yorick", "Gnar", "Jhin", "Renekton", ref answered, 4,null);
                 questions[2] = new Question("What champion is also known as \n\"the Card Master?\"", "Yasuo", "Jayce", "Talon", "Twisted Fate", ref answered, 4,null);
                 questions[3] = new Question("What character has an ability to \n\" heal teammates?\"", "Zilean", "Soraka", "Riven", "Ryze", ref answered, 2,null);

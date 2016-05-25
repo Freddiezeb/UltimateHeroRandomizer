@@ -196,6 +196,14 @@ namespace UltimateHeroRandomizerV3
 
         }
 
+        public void UnmarkFilters()
+        {
+            for (int i = 0; i < filterBoxes.Length; i++)
+            {
+                filterBoxes[i].marked = false;
+            }
+        }
+
         public void DrawBoxes(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < filterBoxes.Length; i++)
