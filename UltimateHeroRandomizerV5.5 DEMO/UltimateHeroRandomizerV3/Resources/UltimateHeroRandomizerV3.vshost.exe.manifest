@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2375168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2375680">
       <assemblyIdentity name="UltimateHeroRandomizerV3" version="3.4.0.456" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2sYv5JvaI+8mjlOCos/9cv+wtzEMJ9Y4o3C2muOb6D8=</dsig:DigestValue>
+        <dsig:DigestValue>hj3ZRMF3dIUZXa21U7ww53wBN3IWc9KC9z/c9rPUfiY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -27,7 +27,10 @@ namespace UltimateHeroRandomizerV3
             timer1.Start();
             windowTimer.Start();
             //CheckWin();
-
+            if (Submenu.League)
+            {
+                this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.lolmeny3;
+            }
         }
 
         void CheckWin()
@@ -490,7 +493,7 @@ namespace UltimateHeroRandomizerV3
             //    isShowing = true;
             //    Application.Exit();
             //}
-            if (ticks >= 5)
+            if (ticks >= 60)
             {
                 isPressed = false;
                 uploadHighscore = new UploadHighscore();

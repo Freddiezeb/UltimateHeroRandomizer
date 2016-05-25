@@ -155,6 +155,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(85, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
@@ -170,12 +172,15 @@
             // 
             // startbutton
             // 
+            this.startbutton.BackColor = System.Drawing.Color.Transparent;
+            this.startbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.startbutton.ForeColor = System.Drawing.Color.White;
             this.startbutton.Location = new System.Drawing.Point(76, 24);
             this.startbutton.Name = "startbutton";
             this.startbutton.Size = new System.Drawing.Size(75, 23);
             this.startbutton.TabIndex = 16;
             this.startbutton.Text = "Start Game";
-            this.startbutton.UseVisualStyleBackColor = true;
+            this.startbutton.UseVisualStyleBackColor = false;
             this.startbutton.Click += new System.EventHandler(this.startbutton_Click);
             // 
             // pictureBox10
@@ -189,12 +194,15 @@
             // 
             // windowButton
             // 
+            this.windowButton.BackColor = System.Drawing.Color.Transparent;
+            this.windowButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.windowButton.ForeColor = System.Drawing.Color.White;
             this.windowButton.Location = new System.Drawing.Point(456, 24);
             this.windowButton.Name = "windowButton";
             this.windowButton.Size = new System.Drawing.Size(82, 23);
             this.windowButton.TabIndex = 18;
             this.windowButton.Text = "Show picture";
-            this.windowButton.UseVisualStyleBackColor = true;
+            this.windowButton.UseVisualStyleBackColor = false;
             this.windowButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // windowTimer
@@ -213,38 +221,48 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(344, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 20;
             this.button1.Text = "Rage Quit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(201, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 21;
             this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkButton
             // 
+            this.checkButton.BackColor = System.Drawing.Color.Transparent;
+            this.checkButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.checkButton.ForeColor = System.Drawing.Color.White;
             this.checkButton.Location = new System.Drawing.Point(271, 41);
             this.checkButton.Name = "checkButton";
             this.checkButton.Size = new System.Drawing.Size(75, 23);
             this.checkButton.TabIndex = 22;
             this.checkButton.Text = "Check Win";
-            this.checkButton.UseVisualStyleBackColor = true;
+            this.checkButton.UseVisualStyleBackColor = false;
             this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
             // 
             // SlidePuzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
             this.ClientSize = new System.Drawing.Size(614, 561);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.button2);
