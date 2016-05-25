@@ -29,7 +29,6 @@ namespace UltimateHeroRandomizerV3
 
         public void LoadButtons()
         {
-
             buttons = new Button[4];
 
             for (int i = 0; i < buttons.Length; i++)
@@ -37,7 +36,6 @@ namespace UltimateHeroRandomizerV3
                 rect = new Rectangle(200 + i * 300, 810, 150, 60);
                 buttons[i] = new Button(tex, rect);
             }
-
         }
 
         public void ButtonUpdate(MouseState mouse)
@@ -69,9 +67,6 @@ namespace UltimateHeroRandomizerV3
                     buttons[3].Clicked = false;
                 }
             }
-
-            
-
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -85,10 +80,24 @@ namespace UltimateHeroRandomizerV3
 
             buttonFont = TextureManager.buttonFont;
 
+            string restoreString = "";
+            Vector2 restoreVector = new Vector2();
+
+            if (Submenu.Dota)
+            {
+                restoreString = "Restore Heros";
+                restoreVector = new Vector2(623, 830);
+            }
+            if (Submenu.League)
+            {
+                restoreString = "Restore Champions";
+                restoreVector = new Vector2(607, 830);
+            }
+
             //Text till knappar
             spriteBatch.DrawString(buttonFont, "Create Filter", new Vector2(230, 830), Color.White);
             spriteBatch.DrawString(buttonFont, "Randomize!", new Vector2(433, 830), Color.White);
-            spriteBatch.DrawString(buttonFont, "Restore Champions", new Vector2(607, 830), Color.White);
+            spriteBatch.DrawString(buttonFont, restoreString, restoreVector, Color.White);
             spriteBatch.DrawString(buttonFont, "Back", new Vector2(853, 830), Color.White);
 
         }

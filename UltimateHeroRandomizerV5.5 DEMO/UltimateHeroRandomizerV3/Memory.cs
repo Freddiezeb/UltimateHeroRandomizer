@@ -298,8 +298,18 @@ namespace UltimateHeroRandomizerV3
         {
             ActiveForm.Hide();
 
+            if (Submenu.Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (Submenu.League)
+            {
+                gameSelected = ChooseGame.League;
+            }
+
             subMenu = new Submenu(ref gameSelected);
             subMenu.Show();
         }
     }
 }
+

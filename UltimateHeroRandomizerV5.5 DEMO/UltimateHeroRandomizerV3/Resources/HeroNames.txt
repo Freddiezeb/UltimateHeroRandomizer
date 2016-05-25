@@ -31,7 +31,7 @@ Elder Titan,Support
 Legion Commander,Carry
 Earth Spirit,Initiator
 Phoenix,Initiator
-Lone Driud,Pusher
+Lone Druid,Pusher
 Naga Siren,Carry
 Troll Warlord,Carry
 Ember Spirit,Carry
@@ -49,7 +49,7 @@ Shadow Fiend,Nuker
 Razor,Carry
 Venomancer,Support
 Faceless Void,Carry
-Phandom Assassin,Carry
+Phantom Assassin,Carry
 Night Stalker,Carry
 Doom,Disabler
 Spirit Breaker,Initiator
@@ -83,10 +83,10 @@ Enchantress,Carry
 Jakiro,Support
 Chen,Support
 Silencer,Carry
-Oger Magi,Disabler
+Ogre Magi,Disabler
 Abbadon,Support
 Rubick,Support
-Disrupter,Support
+Disruptor,Support
 Keeper Of The Light,Support
 Skywrath Mage,Nuker
 Oracle,Nuker
@@ -96,7 +96,7 @@ Viper,Carry
 Bane,Disabler
 Lich,Support
 Lion,Disabler
-Witch Docter,Support
+Witch Doctor,Support
 Enigma,Pusher
 Necrophos,Carry
 Warlock,Pusher

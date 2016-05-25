@@ -71,7 +71,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250pxDotA2;
+            this.pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250px_DotA2;
             this.pictureBox1.Location = new System.Drawing.Point(21, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(241, 99);

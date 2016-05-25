@@ -166,17 +166,23 @@ namespace UltimateHeroRandomizerV3
                     }
                     pastIndex = i;
 
-                    pastInstance = champions[pastIndex].selectionSound.CreateInstance();
-                    soundEffectInstance = champions[i].selectionSound.CreateInstance();
+                    if (champions[pastIndex].selectionSound != null)
+                    {
+                        pastInstance = champions[pastIndex].selectionSound.CreateInstance();
+                    }
+                    if (champions[i].selectionSound != null)
+                    {
+                        soundEffectInstance = champions[i].selectionSound.CreateInstance();
+                        pastInstance = soundEffectInstance;
+                        soundEffectInstance.Volume = volume;
+                        soundEffectInstance.Play();
+                    }
 
-                    pastInstance = soundEffectInstance;
-                    soundEffectInstance.Volume = volume;
 
                     champions[i].destRect = new Rectangle(40, 40, 125, 125);
                     champions[i].selected = false;
                     roleName = champions[i].role;
                     championName = champions[i].name;
-                    soundEffectInstance.Play();
                     break;
                 }
                 else
@@ -204,18 +210,21 @@ namespace UltimateHeroRandomizerV3
             
             pastIndex = i;
 
-            pastInstance = champions[pastIndex].selectionSound.CreateInstance();
-            soundEffectInstance = champions[i].selectionSound.CreateInstance();
-
-            pastInstance = soundEffectInstance;
-            soundEffectInstance.Volume = volume;
-
+            if (champions[pastIndex].selectionSound != null)
+            {
+                pastInstance = champions[pastIndex].selectionSound.CreateInstance();
+            }
+            if (champions[i].selectionSound != null)
+            {
+                soundEffectInstance = champions[i].selectionSound.CreateInstance();
+                pastInstance = soundEffectInstance;
+                soundEffectInstance.Volume = volume;
+                soundEffectInstance.Play();
+            }
 
             champions[i].destRect = new Rectangle(40, 40, 125, 125);
             championName = champions[i].name;
             roleName = champions[i].role;
-            soundEffectInstance.Play();
-
         }
 
 

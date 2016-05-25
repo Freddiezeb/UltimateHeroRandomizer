@@ -307,7 +307,7 @@
   <data name="dice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="250pxDotA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="_250px_DotA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\250px-DotA2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lucian4" type="System.Resources.ResXFileRef, System.Windows.Forms">

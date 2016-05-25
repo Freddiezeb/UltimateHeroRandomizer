@@ -22,7 +22,7 @@ namespace UltimateHeroRandomizerV3
 
         int ticks = 30;
 
-        int questionInterval = 2;
+        int questionInterval = 3;
 
         int correctAnswer;
         int questionCount;
@@ -349,7 +349,7 @@ namespace UltimateHeroRandomizerV3
             {
                 LoadQuestions();
                 timer2.Stop();
-                questionInterval = 2;
+                questionInterval = 3;
                 answerButton1.ForeColor = System.Drawing.Color.White;
                 answerButton2.ForeColor = System.Drawing.Color.White;
                 answerButton3.ForeColor = System.Drawing.Color.White;

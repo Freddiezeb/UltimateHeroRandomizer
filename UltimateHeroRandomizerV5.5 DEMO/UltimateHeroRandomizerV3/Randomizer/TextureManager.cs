@@ -16,16 +16,17 @@ namespace UltimateHeroRandomizerV3
         public static Texture2D backgroundTexture;
         public static Texture2D filterButton;
         public static SpriteFont buttonFont;
+        public static Texture2D randomizedRect;
 
         public static void LoadTextures(ContentManager Content)
         {
             championCollage = Content.Load<Texture2D>("COMPLETECOLLAGE");
-            dotaCollage = Content.Load<Texture2D>("DotaCollage");
+            dotaCollage = Content.Load<Texture2D>("DotaCollage2");
             buttonTexture = Content.Load<Texture2D>("buttonWhite");
             buttonNeutral = Content.Load<Texture2D>("buttonNeutral");
             backgroundTexture = Content.Load<Texture2D>("black_background");
             filterButton = Content.Load<Texture2D>("radioButton");
-
+            randomizedRect = Content.Load<Texture2D>("randomizedRect");
             buttonFont = Content.Load<SpriteFont>("buttonFont");
 
         }

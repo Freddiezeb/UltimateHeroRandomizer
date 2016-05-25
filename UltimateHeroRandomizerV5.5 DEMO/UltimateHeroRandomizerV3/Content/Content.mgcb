@@ -927,3 +927,624 @@
 /processorParam:TextureFormat=Compressed
 /build:timeFont.spritefont
 
+#begin DotaCollage2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:DotaCollage2.png
+
+#begin DotaSounds/Abbadon.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Abbadon.wav
+
+#begin DotaSounds/Alchemist.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Alchemist.wav
+
+#begin DotaSounds/Ancient Apparition.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Ancient Apparition.wav
+
+#begin DotaSounds/Antimage.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Antimage.wav
+
+#begin DotaSounds/Axe.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Axe.wav
+
+#begin DotaSounds/Bane.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Bane.wav
+
+#begin DotaSounds/Batrider.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Batrider.wav
+
+#begin DotaSounds/Beastmaster.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Beastmaster.wav
+
+#begin DotaSounds/Bloodseeker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Bloodseeker.wav
+
+#begin DotaSounds/Bounty Hunter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Bounty Hunter.wav
+
+#begin DotaSounds/Brewmaster.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Brewmaster.wav
+
+#begin DotaSounds/Bristleback.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Bristleback.wav
+
+#begin DotaSounds/Broodmother.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Broodmother.wav
+
+#begin DotaSounds/Centaur.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Centaur.wav
+
+#begin DotaSounds/Chaos Knight.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Chaos Knight.wav
+
+#begin DotaSounds/Chen.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Chen.wav
+
+#begin DotaSounds/Clinkz.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Clinkz.wav
+
+#begin DotaSounds/Dark Seer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Dark Seer.wav
+
+#begin DotaSounds/Dazzle.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Dazzle.wav
+
+#begin DotaSounds/Death Prophet.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Death Prophet.wav
+
+#begin DotaSounds/Disruptor.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Disruptor.wav
+
+#begin DotaSounds/Doom.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Doom.wav
+
+#begin DotaSounds/Dragon Knight.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Dragon Knight.wav
+
+#begin DotaSounds/Drow Ranger.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Drow Ranger.wav
+
+#begin DotaSounds/Elder Titan.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Elder Titan.wav
+
+#begin DotaSounds/Enchantress.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Enchantress.wav
+
+#begin DotaSounds/Enigma.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Enigma.wav
+
+#begin DotaSounds/Faceless Void.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Faceless Void.wav
+
+#begin DotaSounds/Gyrocopter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Gyrocopter.wav
+
+#begin DotaSounds/Huskar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Huskar.wav
+
+#begin DotaSounds/Invoker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Invoker.wav
+
+#begin DotaSounds/Io.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Io.wav
+
+#begin DotaSounds/Jakiro.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Jakiro.wav
+
+#begin DotaSounds/Juggernaut.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Juggernaut.wav
+
+#begin DotaSounds/Keeper of the Light.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Keeper of the Light.wav
+
+#begin DotaSounds/Kunkka.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Kunkka.wav
+
+#begin DotaSounds/Leshrac.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Leshrac.wav
+
+#begin DotaSounds/Lich.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lich.wav
+
+#begin DotaSounds/Lifestealer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lifestealer.wav
+
+#begin DotaSounds/Lina.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lina.wav
+
+#begin DotaSounds/Lion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lion.wav
+
+#begin DotaSounds/Lone Druid.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lone Druid.wav
+
+#begin DotaSounds/Luna.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Luna.wav
+
+#begin DotaSounds/Lycan.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Lycan.wav
+
+#begin DotaSounds/Magnus.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Magnus.wav
+
+#begin DotaSounds/Medusa.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Medusa.wav
+
+#begin DotaSounds/Meepo.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Meepo.wav
+
+#begin DotaSounds/Mirana.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Mirana.wav
+
+#begin DotaSounds/Morphling.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Morphling.wav
+
+#begin DotaSounds/Naga Siren.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Naga Siren.wav
+
+#begin DotaSounds/Natures Prophet.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Natures Prophet.wav
+
+#begin DotaSounds/Necrophos.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Necrophos.wav
+
+#begin DotaSounds/Night Stalker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Night Stalker.wav
+
+#begin DotaSounds/Nyx Assassin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Nyx Assassin.wav
+
+#begin DotaSounds/Ogre Magi.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Ogre Magi.wav
+
+#begin DotaSounds/Phantom Assassin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Phantom Assassin.wav
+
+#begin DotaSounds/Phantom Lancer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Phantom Lancer.wav
+
+#begin DotaSounds/Puck.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Puck.wav
+
+#begin DotaSounds/Pudge.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Pudge.wav
+
+#begin DotaSounds/Pugna.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Pugna.wav
+
+#begin DotaSounds/Queen of Pain.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Queen of Pain.wav
+
+#begin DotaSounds/Razor.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Razor.wav
+
+#begin DotaSounds/Riki.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Riki.wav
+
+#begin DotaSounds/Rubick.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Rubick.wav
+
+#begin DotaSounds/Sand King.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Sand King.wav
+
+#begin DotaSounds/Shadow Demon.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Shadow Demon.wav
+
+#begin DotaSounds/Shadow Fiend.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Shadow Fiend.wav
+
+#begin DotaSounds/Shadow Shaman.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Shadow Shaman.wav
+
+#begin DotaSounds/Silencer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Silencer.wav
+
+#begin DotaSounds/Skywrath Mage.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Skywrath Mage.wav
+
+#begin DotaSounds/Slardar.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Slardar.wav
+
+#begin DotaSounds/Slark.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Slark.wav
+
+#begin DotaSounds/Sniper.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Sniper.wav
+
+#begin DotaSounds/Spirit Breaker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Spirit Breaker.wav
+
+#begin DotaSounds/Storm Spirit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Storm Spirit.wav
+
+#begin DotaSounds/Sven.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Sven.wav
+
+#begin DotaSounds/Templar Asasssin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Templar Asasssin.wav
+
+#begin DotaSounds/Tidehunter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Tidehunter.wav
+
+#begin DotaSounds/Timbersaw.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Timbersaw.wav
+
+#begin DotaSounds/Tinker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Tinker.wav
+
+#begin DotaSounds/Tiny.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Tiny.wav
+
+#begin DotaSounds/Troll Warlord.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Troll Warlord.wav
+
+#begin DotaSounds/Tusk.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Tusk.wav
+
+#begin DotaSounds/Undying.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Undying.wav
+
+#begin DotaSounds/Ursa.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Ursa.wav
+
+#begin DotaSounds/Warlock.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Warlock.wav
+
+#begin DotaSounds/Weaver.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Weaver.wav
+
+#begin DotaSounds/Vengeful Spirit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Vengeful Spirit.wav
+
+#begin DotaSounds/Venomancer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Venomancer.wav
+
+#begin DotaSounds/Windranger.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Windranger.wav
+
+#begin DotaSounds/Viper.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Viper.wav
+
+#begin DotaSounds/Visage.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Visage.wav
+
+#begin DotaSounds/Witch Doctor.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Witch Doctor.wav
+
+#begin DotaSounds/Wraith King.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Wraith King.wav
+
+#begin DotaSounds/Zeuz.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Zeuz.wav
+
+#begin DotaSounds/Earthshacker.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Earthshacker.wav
+
+#begin DotaSounds/Treant Protector.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Treant Protector.wav
+
+#begin DotaSounds/Outworld Devourer.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DotaSounds/Outworld Devourer.wav
+
+#begin randomizedRect.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:randomizedRect.png
+
+#begin randomizedRect2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:randomizedRect2.png
+

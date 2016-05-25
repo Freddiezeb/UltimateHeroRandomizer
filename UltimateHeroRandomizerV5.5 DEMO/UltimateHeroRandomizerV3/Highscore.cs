@@ -21,6 +21,14 @@ namespace UltimateHeroRandomizerV3
             load_spTable();
             load_qTable();
             load_mTable();
+
+            //DataGridViewColumn newColumn = m_dataGridView1.;
+
+            //m_dataGridView1.SortedColumn
+
+            //m_dataGridView1.Sort(newColumn,ListSortDirection.Ascending);
+
+            //this.m_dataGridView1.Sort(this.dataGridView3, ListSortDirection.Ascending);
         }
 
         void load_mTable()

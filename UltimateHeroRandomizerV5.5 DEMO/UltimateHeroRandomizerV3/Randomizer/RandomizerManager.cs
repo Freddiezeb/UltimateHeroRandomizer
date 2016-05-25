@@ -29,6 +29,7 @@ namespace UltimateHeroRandomizerV3
         Texture2D selectTex;
 
         Rectangle selectRect;
+        Rectangle randomizedRect;
 
         bool visible = false;
 
@@ -51,6 +52,8 @@ namespace UltimateHeroRandomizerV3
 
             champManager = new ChampionManager();
             champManager.LoadChampions(Content);
+
+            randomizedRect = new Rectangle(40, 40, 125, 125);
 
             selectionRects = new SelectionRectangle[130];
 
@@ -220,6 +223,8 @@ namespace UltimateHeroRandomizerV3
 
             buttonManager.Draw(spriteBatch);
             champManager.DrawChampName(spriteBatch);
+
+            spriteBatch.Draw(TextureManager.randomizedRect, randomizedRect, Color.White);
 
         }
 

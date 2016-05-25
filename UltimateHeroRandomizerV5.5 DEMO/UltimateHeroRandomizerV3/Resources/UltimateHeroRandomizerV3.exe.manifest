@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2374656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2375168">
       <assemblyIdentity name="UltimateHeroRandomizerV3" version="3.4.0.456" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OS3ImZimTt6TkZjpSbmZ5fRP5HngLa90YHS46A98kM8=</dsig:DigestValue>
+        <dsig:DigestValue>CJNETWphUKO4ANnJYHu4Xv+EoV0v5jjX0fqESZ0OnSk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -294,13 +294,895 @@
       <dsig:DigestValue>LD8M0XSsgQsScbg1QLoNmotAD+jLfSgt6qGflTV9igY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\DotaCollage.png" size="2092735">
+  <file name="Content\DotaCollage2.xnb" size="2975781">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>IZHJczj0oks/s06uDPSpagMfypfSp8dFBJaIbVr1APY=</dsig:DigestValue>
+      <dsig:DigestValue>LXC3u4I9pZ2BR1LRPnNEPbWLgD+5/fE+p3rVQa8DD1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Abbadon.xnb" size="428649">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qwZc4H5+rfv6XGu+jMCfrtKiUf/1T8HMBA4tVu4QouE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Alchemist.xnb" size="460905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3SJQ3q5v5BRvpd68m63QByaRRqsPuC/ViJH7Fxfryow=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Ancient Apparition.xnb" size="497769">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>I7T9/j44QUJVxs93b1b/AjSw7J3VagkSlV/jkKjQUk4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Antimage.xnb" size="299625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vk3Hah8SOyM1aQqfh+vx/0zmxPLKgqAjUcRbAUOEGns=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Axe.xnb" size="465513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AWFFaLZbIJ0FrlGAw90YqbruCAzUF+ufKHAIh6eQ6UA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Bane.xnb" size="516201">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9XnvDpdBVULYD/2g5A1HZfaG+oMefNmkKKpVSbto3AA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Batrider.xnb" size="700521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4NhuneYNbXs3tgCbYtDPahkm/i+hedBw4xRI3el2QU4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Beastmaster.xnb" size="714345">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QU7G7QoRO7PlB+i98EQkz5PZ1N57p24gKBIZ7HP2Cmg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Bloodseeker.xnb" size="460905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rbv4Full8HbuYs9uBbeiXtmwokN45ZsgoQB/zjznW2o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Bounty Hunter.xnb" size="1009257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9dsvNWP7xTLHP3iqyAXCY+7ls/n4R3OpT3shYgnDlvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Brewmaster.xnb" size="594537">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+r845cNRdDceiZDu99/s57Qpq+776Y3NVIHI34Sw/2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Bristleback.xnb" size="391785">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KLbNbx2j8ilW06v2EMqK/9cIQLuCPAP69DYSY27mTzE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Broodmother.xnb" size="594537">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SC2B2Ow8g+njnyW49/aU2aZX2I1tpstqrwQVFXA1ju4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Centaur.xnb" size="608361">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qtJKbFH9um+Gbow/qV7YsV9OVZkOrQTr4eokDvfd4J0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Chaos Knight.xnb" size="917097">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>prS7TYVe2V5n+m1nlVuBq0xpJeUPovBEn48NK+SPUP8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Chen.xnb" size="483945">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OQpWCQBt4U6i8QFQMDGxZb3Eed94GCOM9dEGSgVSA/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Clinkz.xnb" size="414825">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5mLGYMuxZ6D/971XQOxTDS/UGeRm5/ZX8KYz8aUPsns=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Dark Seer.xnb" size="543849">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vZdATPcuqcQC0FYSUaKoCiUJzOdF7ntlAnbcLzjuiQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Dazzle.xnb" size="271977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w+bLZMcQYZuEEgEMMhisWhZnjfh2ScqifqaNyNrMa50=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Death Prophet.xnb" size="511593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lUkRChXVFYxoVfC1x+u8kjbxQTDf5m/S+hhaBvLoS24=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Disruptor.xnb" size="207465">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1VF6PQR+fEQky2Qw+6P4/uptTsIvYzp3kuedpNOhjfI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Doom.xnb" size="235113">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VT1y03/jGqd8E+Tqj+mfCnQCskvPOdiYn5Ar3Z2xcLc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Dragon Knight.xnb" size="230505">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PC5D3UxyO70+qT2LWcgpaBN4gbFoVgbsS6obet1T0aA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Drow Ranger.xnb" size="364137">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tYuPEn1p6cvVIahPtaPdTiVl45zJP1X2JDZPEIOoPs8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Earthshacker.xnb" size="267369">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7nYcrV1yT3iLcJrqxhI3glYkrSpbikNYuM6G6d3QH+A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Elder Titan.xnb" size="318057">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bxsnt6/I8aqpalt8etdlm7R/m48myRxaht3z2Kbq1DU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Enchantress.xnb" size="299625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QYZuhvQ/gQPiZKhS+GG5i9TkJHetgtDFiG42pHenvIs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Enigma.xnb" size="373353">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fiXlbHAJ2ujCWrfZ/yF79VaWHZ+SdqU8zKLgg5mgSn4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Faceless Void.xnb" size="359529">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FdTzcWB0TuuhDCX4jU3rkHfCClS3LQEUr0T9YSIxxM0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Gyrocopter.xnb" size="295017">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YT40U2yG75lj2EEGqOWukUTHA+jt+n/Ra2rf1aklsQ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Huskar.xnb" size="235113">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x48McaRWMxiaudiHhNV/J1Os9zqTMAKfE23JGkbtZT4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Invoker.xnb" size="442473">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MZSoom5iMoligXuD9twCMGsC9sj3Zpc1KoxpTKyKVNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Io.xnb" size="425577">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yXhd7XH539As6RoliYWwirPmFYwFbRXWB5zCu1LZ3gU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Jakiro.xnb" size="345705">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3/Ux35DUb0aC3ELo9RgE3Wc3iNeUrrvpDtkC4YxVF+4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Juggernaut.xnb" size="396393">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qhHkLDYtso46X7i7mYcbLUlDdEnqU5OMAv6uG21dhsk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Keeper of the Light.xnb" size="377961">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eRfKCC9T6KooJGxuTM2Dp5+tTRfjnMHLrphMlxTFcE4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Kunkka.xnb" size="271977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>21n65/6Aj93TMqz+akBBoJIenvGglNld0SHsBK546eU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Leshrac.xnb" size="202857">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RsHi11+IKCNd7bMeGJcetW4PcjItCW1FLLc0L98Efjg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lich.xnb" size="322665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9hpSRT7RQv3QudA6v8O9hR7LSNyB/pPxCShGlF7UG1k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lifestealer.xnb" size="322665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UO/IYrRgnxIyJjXyZfOanQ7+is3A84JRwp3ymZdZhco=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lina.xnb" size="179817">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BrrXW4rw02WM9nM29tj9zCAFB+khrlxYSK6gmbgfZFc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lion.xnb" size="225897">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oDSZ+lW4rmMVR+77Z26NmY5esVc8tzKrqut6wHqSEpA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lone Druid.xnb" size="460905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R7+9V73bugBqWzi+yABmoRIW0LFeqK5K34I2S2UGS1c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Luna.xnb" size="124521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jtGYHxtDDrCuYCL0v83cMuRnvlEfhtRrtE5ugpsXE7A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Lycan.xnb" size="410217">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nyQO2e10JSOul6h5aTv/evHhTF4jH6CEKBKQ+aAp+3c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Magnus.xnb" size="391785">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MHqCLEY0dDFC4hGk+6wHhsniSKniddN8dhl/if5E2ZM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Medusa.xnb" size="695913">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UAj7HxPn+5b5bg5nt7Zcc+kfy1iqaBQTHCH8+jBnWh8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Meepo.xnb" size="295017">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WnpKomVt7bWE5GIs2ZidbcanlJTphhlWxSsUmUPgnCA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Mirana.xnb" size="465513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vxY8mC9+cjmg7y8LwgNj365EoJlYlbLhy4Mwv6MGimM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Morphling.xnb" size="626793">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U/qVH07z4QcdFA4VOa+/rRZE3npJ/fbv/pRIje0Pgrk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Naga Siren.xnb" size="682089">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gtVoYEeckYJkENOGTl/Cn7bHT6gS9ufcsJLR0+pnD7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Natures Prophet.xnb" size="645225">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZAvCAfYciY3EXHetuQrCu0K+pEt4EbCO0/wHUaoKWuU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Necrophos.xnb" size="820329">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CAnCv+fyfc4o7lYPtOkxy+QNvdTglM5cY0gg2dNHnz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Night Stalker.xnb" size="672873">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wAKnBCuwRibjxGDFMqRQHT+rSRaZogUd46jk45XmOKg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Nyx Assassin.xnb" size="308841">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XYuxoqNeoahn+S3DriWdfU6M5MWMueBmY5RB3/d+jCc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Ogre Magi.xnb" size="405609">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tGoHJs2cTIMRxCoz+5hRJGDWS93fZiTUr+ELzGppddQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Outworld Devourer.xnb" size="506985">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qecdV37xhUCpRLw1f5cM+CMw6rEvmX5ui5pKuerjFgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Phantom Assassin.xnb" size="428649">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R8j8kDB7Omn7Hpp4aTO8rNlO+hkIwxpqjWl8wi5GPHo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Phantom Lancer.xnb" size="806505">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wGOiz2k2M/jO+65Y2uiaEFNVS9+ijGPIZRbzgtsK9cE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Puck.xnb" size="792681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nSZ4e7mwkdKagbg3JeCI7469QtwveVsjNclPtV56HfY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Pudge.xnb" size="649833">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IClSgw9wDmgSQzXq5RaKbgWu0He8eVIAhcFkE+A6BhE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Pugna.xnb" size="1331817">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ewMfN/OJMTHTc3NjBhM1JxvxrOnAWZ1ZZ1KpB0ogdjY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Queen of Pain.xnb" size="1304169">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>16F/tvpLZVoNCENw0mlb2W6H95njmCmNglgB8cHIODY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Razor.xnb" size="718953">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ogg1Ki0z0S8TA3xDjiequ3RlHYaaY/+H0TIS/tnFVX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Riki.xnb" size="396393">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NN8PXfMtWNfH5hdV68DFleYIzrBYaqncRZLbuLeJAcU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Rubick.xnb" size="861801">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gDTDfGPc3tafif5FMNdeY4QxjhbB0w0Sne1MlNK4qHs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Sand King.xnb" size="354921">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lUYEDn8OFN1iMsCGNk2CCZ0ib3GKGoC4voSJ2/nq4xw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Shadow Demon.xnb" size="967785">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EtNDSjo7Zig/NfbK0/fl3gR9A3wkzQ7noWbOx3lPhH0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Shadow Fiend.xnb" size="659049">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u1pMAnoDqVvcM5hja4z9py0ybzWIOhK4D4kcDYRtoAM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Shadow Shaman.xnb" size="548457">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YxwlVymPzSlF+XVrWNhmvR50nHJY2Tw7EU1VOx0xIG4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Silencer.xnb" size="709737">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6fjeI8hUy2pBqmw1kbCErYmRJv6ekF4MJdu2a7LUN5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Skywrath Mage.xnb" size="1059945">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8jlHaRzphjCwHV3CCCiz9QpQI2ohB7wKOW80+bJLgvo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Slardar.xnb" size="847977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JaaD1fYLEd1I1TmDvbmXYSSMIURUZoaGfqrLnmf3M60=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Slark.xnb" size="732777">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RuNlCnu8Qc4ba6ekSUEFwh5glMkm5gERzoGcZsDBKM8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Sniper.xnb" size="608361">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rbovFEjHr86eI3gp1PpWfCnWMmgzCFzweVo82Gevcms=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Spirit Breaker.xnb" size="705129">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MtgK5DgRToAG5brCbxos2sqp8J2FKXPXjfv/+ZzqXGI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Storm Spirit.xnb" size="626793">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/uWOYlObQ/5Xn2lVLHaotgJdXmiChkFkGVlzilxVw8c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Sven.xnb" size="424041">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZnAvkK9J8QgJiOAH+JAKjHCtDww2nH5l1AMwU/ikJOY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Templar Asasssin.xnb" size="576105">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ybjYkkqCYA5CZU8QtffzhGGrevDApI5pJLF4KmYHWnw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Tidehunter.xnb" size="424041">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UJrmQJD+VWpmqD5j/dSTR3S0LYdsswqAQrczxi9wBuw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Timbersaw.xnb" size="290409">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0+NNcblv7kY/LTKv5rWeIB1s65R/17R9HyD/sSS3aL8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Tinker.xnb" size="488553">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>soH1uQ4uPxG2YLAhVnon0cBdiRjjDAZEGkk8ldJVAR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Tiny.xnb" size="617577">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gpdKVGAXtYm6cAO5xYs+nOBfUvvaqygLUZtcYVUzlH4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Treant Protector.xnb" size="267369">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FJEV0tzvHke+gHLT1DXs6K3ezFq+26ZsRj+IY0O9XgA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Troll Warlord.xnb" size="377961">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O4WwMwAfnyqC+1FEI3qi9PkXYI1tud2OxfIbwqHDO/I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Tusk.xnb" size="221289">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Twv5qWCEOnpxFIDzRtDrx4LqcoNQR1gNba7g5JxH9VA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Undying.xnb" size="474729">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3WPNKP7hBfcdXr0YhEplrdii4drD5zKxJhrYT0OJSRo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Ursa.xnb" size="248937">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gRB5E3rvn+WObygFxprySQzmxTXhyxBox3tTibaWfBM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Warlock.xnb" size="534633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LVFvML9GU7GzoKGYv4Bz+H3EKtVYSVSI1kx2YEbGWNo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Weaver.xnb" size="248937">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XUUxBYExU1R+TphZnrgmHEvXRbYNaIyQ798N8RXcOx8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Vengeful Spirit.xnb" size="405609">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6bzT1+03HW1Ypc/UIvwZUeHM4pTCrkfVZEtRKVXkXzY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Venomancer.xnb" size="341097">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oO+C5tDncfcvIJD9S2qgoTF58jxytc3CV5Cgl1KWY8I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Windranger.xnb" size="304233">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F4v2JzkWZKrli8pMRV7UUD/41si54NKILy7Sgxks0oA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Viper.xnb" size="271977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YAJ1Zet8JI86+JHqVn3vTDuUhmPn41fjJGuFKzkP3FM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Visage.xnb" size="566889">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qjA8aJcrRp3FcQPwAjQrv/A2epgfLJoprERuF/yDTWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Witch Doctor.xnb" size="396393">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/e0GcUn2UvAwJfirgMnjCrmQtYO/mm7c26i7Pebex0g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Wraith King.xnb" size="631401">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BKwL2pxXSaG+RqPiLQhTvOuK/XmG4f4Wi3ljXaK+VVA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\DotaSounds\Zeuz.xnb" size="184425">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RJz+Pz62nxGqnzzK/s6nws+qJXmeOG/Ctvhpkcp2QH0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Images\PongBoll.xnb" size="6013">
@@ -346,6 +1228,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>6akNRyDUhwYC8SRanwf6b7g90bEcf1SUVamTwLcCxrA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\randomizedRect.xnb" size="62585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>frPPgPagIhrZTQmoZfSLulmr7vO4e4/pD2g4PZemasQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\randomizedRect2.xnb" size="62585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+wAtE+vXTgRoBxTjIBzKNbLv/Jfm7lcSKcwWr23alMc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\SelectionSounds\Aatrox.xnb" size="961061">
@@ -1758,7 +2658,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>J5fO+FCO2dKYDhh3hV2XGreZz57bJjq9s87s7D2LjCs=</dsig:DigestValue>
+      <dsig:DigestValue>eB8+rVM1yfNQD2+9LurusGeyweh+AGXFQQWhRZtVuMI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\kindred.png" size="40647">

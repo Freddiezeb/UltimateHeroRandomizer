@@ -284,6 +284,8 @@
             this.Controls.Add(this.answerButton1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximumSize = new System.Drawing.Size(1200, 820);
+            this.MinimumSize = new System.Drawing.Size(1200, 820);
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League of Quiz";
