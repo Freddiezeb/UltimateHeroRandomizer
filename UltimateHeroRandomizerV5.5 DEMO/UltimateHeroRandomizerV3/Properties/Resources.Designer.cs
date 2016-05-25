@@ -123,9 +123,9 @@ namespace UltimateHeroRandomizerV3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _250px_DotA2 {
+        internal static System.Drawing.Bitmap _250pxDotA2 {
             get {
-                object obj = ResourceManager.GetObject("250px-DotA2", resourceCulture);
+                object obj = ResourceManager.GetObject("250pxDotA2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

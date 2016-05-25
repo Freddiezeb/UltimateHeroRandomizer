@@ -22,6 +22,8 @@ namespace UltimateHeroRandomizerV3
 
         int ticks = 30;
 
+        int questionInterval = 2;
+
         int correctAnswer;
         int questionCount;
 
@@ -35,7 +37,7 @@ namespace UltimateHeroRandomizerV3
         public Quiz(ref ChooseGame gameSelected)
         {
             imageManager = new ImageManager();
-            upLoadHighscore = new UploadHighscore();
+
             InitializeComponent();
 
 
@@ -49,15 +51,15 @@ namespace UltimateHeroRandomizerV3
                     dotaQuestions = true;
                     leagueQuestions = false;
                     this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
-                    this.questionLabel.Location = new System.Drawing.Point(103, 186);
-                    this.answerButton1.Location = new System.Drawing.Point(133, 226);
-                    this.answerButton2.Location = new System.Drawing.Point(133, 245);
-                    this.answerButton3.Location = new System.Drawing.Point(133, 264);
-                    this.answerButton4.Location = new System.Drawing.Point(133, 283);
-                    this.ScoreLabel.Location = new System.Drawing.Point(103, 350);
-                    this.AnswerButton.Location = new System.Drawing.Point(135, 310);
-                    this.pictureBox1.Location = new System.Drawing.Point(100, 50);
-                    this.TimerLabel.Location = new System.Drawing.Point(103, 400);
+                    this.questionLabel.Location = new System.Drawing.Point(60, 160);
+                    this.answerButton1.Location = new System.Drawing.Point(100, 220);
+                    this.answerButton2.Location = new System.Drawing.Point(100, 260);
+                    this.answerButton3.Location = new System.Drawing.Point(100, 300);
+                    this.answerButton4.Location = new System.Drawing.Point(100, 340);
+                    this.ScoreLabel.Location = new System.Drawing.Point(220, 370);
+                    this.AnswerButton.Location = new System.Drawing.Point(100, 380);
+                    this.pictureBox1.Location = new System.Drawing.Point(270, 200);
+                    this.TimerLabel.Location = new System.Drawing.Point(220, 420);
 
                     this.StartQuizButton.Location = new System.Drawing.Point(140, 250);
                     this.questionAmountBox.Location = new System.Drawing.Point(140, 220);
@@ -81,53 +83,55 @@ namespace UltimateHeroRandomizerV3
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (correctButton.Checked)
             {
                 // Lägger till poängen för varje korrekt svar
                 quizScore = quizScore + 10;
-                ScoreLabel.Text = "Score:" + quizScore.ToString() + " points";
-                MessageBox.Show("NICEU");
+                ScoreLabel.Text = "Score: " + quizScore.ToString() + " points";
                 CheckReset();
+                correctButton.ForeColor = System.Drawing.Color.Green;
+
             }
             else
             {
-                MessageBox.Show("Wrong answer!");
-                quizScore = quizScore - 5;
-                ScoreLabel.Text = "Score:" + quizScore.ToString() + " points";
+                correctButton.ForeColor = System.Drawing.Color.Green;
+                CheckWrongMarker();
+                if (quizScore > 0)
+                {
+                    quizScore = quizScore - 5;
+                }
+                ScoreLabel.Text = "Score: " + quizScore.ToString() + " points";
                 CheckReset();
-                Console.WriteLine("WATTTT");
             }
+
+            timer2.Start();
 
             questionCount++;
             ResetQuiz();
-            LoadQuestions();
 
-            if(leagueQuestions && image != null)
+
+        }
+
+
+        private void CheckWrongMarker()
+        {
+            if (answerButton1.Checked == true && answerButton1 != correctButton)
             {
-                this.questionLabel.Location = new System.Drawing.Point(514, 165);
-                this.answerButton1.Location = new System.Drawing.Point(514, 316);
-                this.answerButton2.Location = new System.Drawing.Point(514, 335);
-                this.answerButton3.Location = new System.Drawing.Point(514, 354);
-                this.answerButton4.Location = new System.Drawing.Point(514, 373);
-                this.ScoreLabel.Location = new System.Drawing.Point(514, 450);
-                this.AnswerButton.Location = new System.Drawing.Point(514, 410);
-                this.TimerLabel.Location = new System.Drawing.Point(514, 500);
-
+                answerButton1.ForeColor = System.Drawing.Color.Red;
             }
-            else if (leagueQuestions && image == null)
+            if (answerButton2.Checked == true && answerButton2 != correctButton)
             {
-                this.questionLabel.Location = new System.Drawing.Point(474, 198);
-                this.answerButton1.Location = new System.Drawing.Point(514, 244);
-                this.answerButton2.Location = new System.Drawing.Point(514, 263);
-                this.answerButton3.Location = new System.Drawing.Point(514, 282);
-                this.answerButton4.Location = new System.Drawing.Point(514, 301);
-                this.ScoreLabel.Location = new System.Drawing.Point(483, 416);
-                this.AnswerButton.Location = new System.Drawing.Point(523, 335);
-                this.TimerLabel.Location = new System.Drawing.Point(483, 461); 
+                answerButton2.ForeColor = System.Drawing.Color.Red;
             }
-
-
-
+            if (answerButton3.Checked == true && answerButton3 != correctButton)
+            {
+                answerButton3.ForeColor = System.Drawing.Color.Red;
+            }
+            if (answerButton4.Checked == true && answerButton4 != correctButton)
+            {
+                answerButton4.ForeColor = System.Drawing.Color.Red;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -150,7 +154,15 @@ namespace UltimateHeroRandomizerV3
             this.answerButton2.Text = answer2;
             this.answerButton3.Text = answer3;
             this.answerButton4.Text = answer4;
-            this.pictureBox1.Image = image;
+            if (image != null)
+            {
+                this.pictureBox1.Image = image;
+                pictureBox1.Show();
+            }
+            else
+            {
+                pictureBox1.Hide();
+            }
         }
 
         private void CheckReset()
@@ -169,6 +181,9 @@ namespace UltimateHeroRandomizerV3
         private void ReturnButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
+
+            timer1.Stop();
+            timer2.Stop();
 
             if (dotaQuestions)
             {
@@ -219,15 +234,14 @@ namespace UltimateHeroRandomizerV3
         {
             if (questionCount == comboBoxValue || ticks < 1)
             {
+                pictureBox1.Hide();
                 MessageBox.Show("Well Done, The Quiz Is Finished!\nYour Score:" + quizScore);
                 isQuizPlaying = true;
                 HideButtons();
                 NormalModeButton.Show();
                 SpeedModeButton.Show();
-                upLoadHighscore.Show();
                 ticks = 30;
                 questionCount = 0;
-                //quizScore = 0;
                 label1.Show();
                 label1.Text = "";
                 qManager.ReviveQuestions();
@@ -243,8 +257,9 @@ namespace UltimateHeroRandomizerV3
             if (ticks < 1)
             {
                 timer1.Stop();
-                MessageBox.Show("Time's up! Your score: " + quizScore);
                 ResetQuiz();
+                upLoadHighscore = new UploadHighscore();
+                upLoadHighscore.Show();
             }
         }
 
@@ -300,6 +315,8 @@ namespace UltimateHeroRandomizerV3
             NormalModeButton.Hide();
             SpeedModeButton.Hide();
             label1.Hide();
+            quizScore = 0;
+            ScoreLabel.Text = "Score: " + quizScore.ToString() + " points";
         }
 
         private void SpeedMode_Click(object sender, EventArgs e)
@@ -308,6 +325,9 @@ namespace UltimateHeroRandomizerV3
             NormalModeButton.Hide();
             SpeedModeButton.Hide();
             label1.Hide();
+            quizScore = 0;
+            comboBoxValue = 1000;
+            ScoreLabel.Text = "Score: " + quizScore.ToString() + " points";
         }
 
         private void button3_MouseHover(object sender, EventArgs e)
@@ -318,6 +338,23 @@ namespace UltimateHeroRandomizerV3
         private void button4_MouseHover(object sender, EventArgs e)
         {
             label1.Text = "See how many questions you can answer\ncorrect in 30 seconds!";
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            questionInterval--;
+
+
+            if (questionInterval < 0)
+            {
+                LoadQuestions();
+                timer2.Stop();
+                questionInterval = 2;
+                answerButton1.ForeColor = System.Drawing.Color.White;
+                answerButton2.ForeColor = System.Drawing.Color.White;
+                answerButton3.ForeColor = System.Drawing.Color.White;
+                answerButton4.ForeColor = System.Drawing.Color.White;
+            }
         }
 
 

@@ -71,7 +71,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250px_DotA2;
+            this.pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250pxDotA2;
             this.pictureBox1.Location = new System.Drawing.Point(21, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(241, 99);
@@ -102,6 +102,7 @@
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.button1);
             this.Name = "UploadHighscore";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UploadHighscore";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

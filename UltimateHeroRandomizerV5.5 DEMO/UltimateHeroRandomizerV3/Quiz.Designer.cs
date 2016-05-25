@@ -44,8 +44,9 @@
             this.TimerLabel = new System.Windows.Forms.Label();
             this.NormalModeButton = new System.Windows.Forms.Button();
             this.SpeedModeButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,9 +54,9 @@
             // 
             this.answerButton1.AutoSize = true;
             this.answerButton1.BackColor = System.Drawing.Color.Transparent;
-            this.answerButton1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton1.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerButton1.ForeColor = System.Drawing.Color.White;
-            this.answerButton1.Location = new System.Drawing.Point(514, 244);
+            this.answerButton1.Location = new System.Drawing.Point(469, 222);
             this.answerButton1.Name = "answerButton1";
             this.answerButton1.Size = new System.Drawing.Size(14, 13);
             this.answerButton1.TabIndex = 0;
@@ -65,9 +66,9 @@
             // 
             this.answerButton2.AutoSize = true;
             this.answerButton2.BackColor = System.Drawing.Color.Transparent;
-            this.answerButton2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton2.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerButton2.ForeColor = System.Drawing.Color.White;
-            this.answerButton2.Location = new System.Drawing.Point(514, 263);
+            this.answerButton2.Location = new System.Drawing.Point(469, 262);
             this.answerButton2.Name = "answerButton2";
             this.answerButton2.Size = new System.Drawing.Size(14, 13);
             this.answerButton2.TabIndex = 1;
@@ -78,9 +79,9 @@
             // 
             this.answerButton3.AutoSize = true;
             this.answerButton3.BackColor = System.Drawing.Color.Transparent;
-            this.answerButton3.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton3.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerButton3.ForeColor = System.Drawing.Color.White;
-            this.answerButton3.Location = new System.Drawing.Point(514, 282);
+            this.answerButton3.Location = new System.Drawing.Point(469, 302);
             this.answerButton3.Name = "answerButton3";
             this.answerButton3.Size = new System.Drawing.Size(14, 13);
             this.answerButton3.TabIndex = 2;
@@ -90,9 +91,9 @@
             // 
             this.answerButton4.AutoSize = true;
             this.answerButton4.BackColor = System.Drawing.Color.Transparent;
-            this.answerButton4.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton4.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerButton4.ForeColor = System.Drawing.Color.White;
-            this.answerButton4.Location = new System.Drawing.Point(514, 301);
+            this.answerButton4.Location = new System.Drawing.Point(469, 342);
             this.answerButton4.Name = "answerButton4";
             this.answerButton4.Size = new System.Drawing.Size(14, 13);
             this.answerButton4.TabIndex = 3;
@@ -102,22 +103,22 @@
             // 
             this.questionLabel.AutoSize = true;
             this.questionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.questionLabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questionLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.questionLabel.ForeColor = System.Drawing.Color.White;
-            this.questionLabel.Location = new System.Drawing.Point(474, 198);
+            this.questionLabel.Location = new System.Drawing.Point(445, 163);
             this.questionLabel.Name = "questionLabel";
-            this.questionLabel.Size = new System.Drawing.Size(0, 20);
+            this.questionLabel.Size = new System.Drawing.Size(0, 23);
             this.questionLabel.TabIndex = 4;
             // 
             // AnswerButton
             // 
             this.AnswerButton.BackColor = System.Drawing.Color.Transparent;
             this.AnswerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AnswerButton.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerButton.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerButton.ForeColor = System.Drawing.Color.White;
-            this.AnswerButton.Location = new System.Drawing.Point(523, 335);
+            this.AnswerButton.Location = new System.Drawing.Point(469, 389);
             this.AnswerButton.Name = "AnswerButton";
-            this.AnswerButton.Size = new System.Drawing.Size(69, 33);
+            this.AnswerButton.Size = new System.Drawing.Size(95, 48);
             this.AnswerButton.TabIndex = 5;
             this.AnswerButton.Text = "Answer";
             this.AnswerButton.UseVisualStyleBackColor = false;
@@ -127,11 +128,11 @@
             // 
             this.ScoreLabel.AutoSize = true;
             this.ScoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ScoreLabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreLabel.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.ScoreLabel.Location = new System.Drawing.Point(483, 416);
+            this.ScoreLabel.Location = new System.Drawing.Point(587, 381);
             this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(50, 20);
+            this.ScoreLabel.Size = new System.Drawing.Size(67, 26);
             this.ScoreLabel.TabIndex = 6;
             this.ScoreLabel.Text = "Score:";
             // 
@@ -165,7 +166,6 @@
             // 
             // questionAmountBox
             // 
-            this.questionAmountBox.FormattingEnabled = true;
             this.questionAmountBox.Items.AddRange(new object[] {
             5,
             10,
@@ -199,11 +199,11 @@
             // 
             this.TimerLabel.AutoSize = true;
             this.TimerLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TimerLabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimerLabel.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.Color.White;
-            this.TimerLabel.Location = new System.Drawing.Point(483, 461);
+            this.TimerLabel.Location = new System.Drawing.Point(587, 426);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(70, 20);
+            this.TimerLabel.Size = new System.Drawing.Size(92, 26);
             this.TimerLabel.TabIndex = 11;
             this.TimerLabel.Text = "Time Left:";
             // 
@@ -237,6 +237,19 @@
             this.SpeedModeButton.Click += new System.EventHandler(this.SpeedMode_Click);
             this.SpeedModeButton.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(619, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 120);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -247,15 +260,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(523, 194);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 120);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // Quiz
             // 
@@ -306,8 +310,9 @@
         private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.Button NormalModeButton;
         private System.Windows.Forms.Button SpeedModeButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label1;
 
     }
 }

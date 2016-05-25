@@ -23,7 +23,7 @@ namespace UltimateHeroRandomizerV3
             }
             if (Submenu.Dota)
             {
-                pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250px_DotA2;
+                pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250pxDotA2;
             }
             System.Diagnostics.Debug.WriteLine(SlidePuzzle.ticks);
 
