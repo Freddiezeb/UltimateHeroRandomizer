@@ -18,7 +18,7 @@ namespace UltimateHeroRandomizerV3
 
         ChooseGame gameSelected;
 
-        bool Dota, League;
+        public static bool Dota, League;
 
         public Submenu(ref ChooseGame game)
         {
@@ -28,19 +28,21 @@ namespace UltimateHeroRandomizerV3
             {
                 case ChooseGame.League:
                     League = true;
+                    Dota = false;
                     break;
                 case ChooseGame.Dota:
                     Dota = true;
+                    League = false;
                     this.BackgroundImage = global::UltimateHeroRandomizerV3.Properties.Resources.dota2_menu3;
                     this.RandomizeButton.Location = new System.Drawing.Point(108, 192);
                     this.MinigamesButton.Location = new System.Drawing.Point(108, 294);
                     this.ReturnButton.Location = new System.Drawing.Point(108, 397);
-
-                    QuizButton.Location = new System.Drawing.Point(108, 140);
-                    MemoryButton.Location = new System.Drawing.Point(108, 240);
-                    SlidePuzzleButton.Location = new System.Drawing.Point(108, 340);
-                    PongButton.Location = new System.Drawing.Point(108, 440);
-                    DiceButton.Location = new System.Drawing.Point(108, 540);
+                    QuizButton.Location = new System.Drawing.Point(108, 100);
+                    MemoryButton.Location = new System.Drawing.Point(108, 200);
+                    SlidePuzzleButton.Location = new System.Drawing.Point(108, 300);
+                    PongButton.Location = new System.Drawing.Point(108, 400);
+                    DiceButton.Location = new System.Drawing.Point(108, 500);
+                    BackButton.Location = new System.Drawing.Point(108, 600);
                     break;
                 default:
                     break;
@@ -50,6 +52,7 @@ namespace UltimateHeroRandomizerV3
             SlidePuzzleButton.Hide();
             PongButton.Hide();
             DiceButton.Hide();
+            BackButton.Hide();
 
         }
 
@@ -78,27 +81,19 @@ namespace UltimateHeroRandomizerV3
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
-
+            if (Dota)
+            {
+                gameSelected = ChooseGame.Dota;
+            }
+            if (League)
+            {
+                gameSelected = ChooseGame.League;
+            }
 
             using (var game = new Game1())
                 game.Run();
         }
 
-
-        public void GetEnumInfo(ref ChooseGame state)
-        {
-            switch (state)
-            {
-                case ChooseGame.League:
-                    break;
-                case ChooseGame.Dota:
-
-
-                    break;
-                default:
-                    break;
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -112,6 +107,7 @@ namespace UltimateHeroRandomizerV3
             SlidePuzzleButton.Show();
             PongButton.Show();
             DiceButton.Show();
+            BackButton.Show();
 
             ReturnButton.Hide();
             MinigamesButton.Hide();
@@ -139,5 +135,18 @@ namespace UltimateHeroRandomizerV3
             slidePuzzle.Show();
         }
 
+        private void Back_Click(object sender, EventArgs e)
+        {
+            QuizButton.Hide();
+            MemoryButton.Hide();
+            SlidePuzzleButton.Hide();
+            PongButton.Hide();
+            DiceButton.Hide();
+            BackButton.Hide();
+
+            ReturnButton.Show();
+            MinigamesButton.Show();
+            RandomizeButton.Show();
+        }
     }
 }

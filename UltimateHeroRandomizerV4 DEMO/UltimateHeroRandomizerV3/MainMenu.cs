@@ -19,7 +19,7 @@ namespace UltimateHeroRandomizerV3
     public partial class MainMenu : Form
     {
         Submenu submenu;
-
+        Highscore highScore;
 
         ChooseGame gameSelected;
 
@@ -68,6 +68,13 @@ namespace UltimateHeroRandomizerV3
         private void MainMenu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void highscoreButton_Click_1(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            highScore = new Highscore();
+            highScore.Show();
         }
     }
 }
