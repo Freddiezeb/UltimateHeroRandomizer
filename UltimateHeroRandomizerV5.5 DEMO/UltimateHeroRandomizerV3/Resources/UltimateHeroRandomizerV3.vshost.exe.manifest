@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2374656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UltimateHeroRandomizerV3.exe" size="2366920">
       <assemblyIdentity name="UltimateHeroRandomizerV3" version="3.4.0.456" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OS3ImZimTt6TkZjpSbmZ5fRP5HngLa90YHS46A98kM8=</dsig:DigestValue>
+        <dsig:DigestValue>BR66ji39lgQSIoe79jki4f5KY2yg4kpDsAKOMOvRMxw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -255,7 +255,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FvEv65fBRmybvXLBVXsDtVjQqvDwTVITOC4e9z+dijw=</dsig:DigestValue>
+      <dsig:DigestValue>thDcfouSGDkipAeqSRsq3a3Wk3IIwIomK0Ck3KSm3/U=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\buttonNeutral.xnb" size="35085">
@@ -336,7 +336,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>+efyfFyoBjDm/LJgqcd6qLOCb4HipCogXN4oMzCGxMg=</dsig:DigestValue>
+      <dsig:DigestValue>Nopo3UlSq4zPvSqNQpy8eIVL6vg5KPx2HawUfj5fwyQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\radioButton.xnb" size="1685">
