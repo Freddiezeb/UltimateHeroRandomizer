@@ -17,7 +17,6 @@ namespace UltimateHeroRandomizerV3
         public UploadHighscore()
         {
             InitializeComponent();
-<<<<<<< HEAD
             if (Submenu.League)
             {
                 pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources.logolol;
@@ -27,9 +26,7 @@ namespace UltimateHeroRandomizerV3
                 pictureBox1.Image = global::UltimateHeroRandomizerV3.Properties.Resources._250px_DotA2;
             }
             System.Diagnostics.Debug.WriteLine(SlidePuzzle.ticks);
-=======
 
->>>>>>> origin/master
         }
 
         private void button1_Click(object sender, EventArgs e)
