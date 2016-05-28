@@ -46,7 +46,7 @@ namespace UltimateHeroRandomizerV3
             {
                 buttons[i].Update();
 
-                if (buttons[0].Clicked)
+                if (buttons[0].Clicked && RandomizerManager.showCreateFilterButton)
                 {
                     createFilter = true;
                     buttons[0].Clicked = false;
@@ -72,7 +72,14 @@ namespace UltimateHeroRandomizerV3
         public void Draw(SpriteBatch spriteBatch)
         {
             //Ritar ut knappar
-            for (int i = 0; i < buttons.Length; i++)
+            if (RandomizerManager.showCreateFilterButton)
+            {
+                rect = new Rectangle(200, 810, 150, 60);
+                buttons[0].Draw(spriteBatch, rect);
+                spriteBatch.DrawString(buttonFont, "Create Filter", new Vector2(230, 830), Color.White);
+            }
+
+            for (int i = 1; i < buttons.Length; i++)
             {
                 rect = new Rectangle(200 + i * 200, 810 , 150, 60);
                 buttons[i].Draw(spriteBatch, rect);
@@ -95,7 +102,7 @@ namespace UltimateHeroRandomizerV3
             }
 
             //Text till knappar
-            spriteBatch.DrawString(buttonFont, "Create Filter", new Vector2(230, 830), Color.White);
+
             spriteBatch.DrawString(buttonFont, "Randomize!", new Vector2(433, 830), Color.White);
             spriteBatch.DrawString(buttonFont, restoreString, restoreVector, Color.White);
             spriteBatch.DrawString(buttonFont, "Back", new Vector2(853, 830), Color.White);

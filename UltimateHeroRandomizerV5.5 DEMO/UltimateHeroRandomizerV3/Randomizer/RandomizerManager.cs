@@ -32,11 +32,13 @@ namespace UltimateHeroRandomizerV3
         Rectangle randomizedRect;
 
         bool visible = false;
+        public static bool showCreateFilterButton = false;
 
         public static SpriteFont font;
 
         int x = 0, y = 200;
 
+        int markCount;
 
         public void LoadContent(ContentManager Content)
         {
@@ -76,6 +78,17 @@ namespace UltimateHeroRandomizerV3
             //KeyMouseReader.Update();
             buttonManager.ButtonUpdate(KeyMouseReader.mouseState);
 
+
+
+            if (markCount > 1)
+            {
+                showCreateFilterButton = true;
+            }
+            else
+            {
+                showCreateFilterButton = false;
+            }
+
             if (filterManager.clicked)
             {
                 randomizerMode = RandomizerMode.RandomizePremadeFilter;
@@ -90,7 +103,9 @@ namespace UltimateHeroRandomizerV3
                 filterManager.UnmarkFilters();              
                 filterManager.clicked = false;
                 filterManager.filterMarked = false;
+                markCount = 0;
             }
+
 
 
             switch (randomizerMode)
@@ -104,6 +119,7 @@ namespace UltimateHeroRandomizerV3
                             if (!rect.visible)
                             {
                                 rect.visible = true;
+                                markCount++;
                             }
                             else
                             {
@@ -111,7 +127,6 @@ namespace UltimateHeroRandomizerV3
                             }
                         }
                     }
-
                     if (buttonManager.randomize)
                     {
                         champManager.RandomizeAllChampions(Window, Content);
@@ -161,7 +176,7 @@ namespace UltimateHeroRandomizerV3
                     break;
 
                 case RandomizerMode.RandomizePremadeFilter:
-
+                    markCount = 0;
                     if (filterManager.clicked)
                     {
                         champManager.FilterChampions(ref filterManager);
