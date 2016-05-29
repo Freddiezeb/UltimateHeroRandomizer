@@ -22,20 +22,38 @@ namespace UltimateHeroRandomizerV3
             load_qTable();
             load_mTable();
 
-            //DataGridViewColumn newColumn = m_dataGridView1.;
+            foreach (DataGridViewColumn column in sp_dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
 
-            //m_dataGridView1.SortedColumn
+            foreach (DataGridViewColumn column in q_dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
 
-            //m_dataGridView1.Sort(newColumn,ListSortDirection.Ascending);
+            foreach (DataGridViewColumn column in m_dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
 
-            //this.m_dataGridView1.Sort(this.dataGridView3, ListSortDirection.Ascending);
         }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        } 
 
         void load_mTable()
         {
             string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory ;", conDataBase);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory order by score desc;", conDataBase);
 
             try
             {
@@ -53,13 +71,15 @@ namespace UltimateHeroRandomizerV3
             {
                 MessageBox.Show(ex.Message);
             }
+
+
         }
 
         void load_qTable()
         {
             string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.quiz ;", conDataBase);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.quiz order by score desc;", conDataBase);
 
             try
             {
@@ -82,31 +102,7 @@ namespace UltimateHeroRandomizerV3
         {
             string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.slidepuzzle ;", conDataBase);
-
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cmdDataBase;
-                DataTable dbdataset = new DataTable();
-                sda.Fill(dbdataset);
-                BindingSource bsource = new BindingSource();
-
-                bsource.DataSource = dbdataset;
-                sp_dataGridView1.DataSource = bsource;
-                sda.Update(dbdataset);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void sp_buttonUpdate_Click(object sender, EventArgs e)
-        {
-            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.slidepuzzle ;", conDataBase);
+            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.slidepuzzle order by score desc;", conDataBase);
 
             try
             {
@@ -130,56 +126,11 @@ namespace UltimateHeroRandomizerV3
         {
             ActiveForm.Hide();
             menu = new MainMenu();
-
             menu.Show();
         }
 
-        private void q_buttonUpdate_Click(object sender, EventArgs e)
-        {
-            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.quiz ;", conDataBase);
 
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cmdDataBase;
-                DataTable dbdataset = new DataTable();
-                sda.Fill(dbdataset);
-                BindingSource bsource = new BindingSource();
 
-                bsource.DataSource = dbdataset;
-                q_dataGridView1.DataSource = bsource;
-                sda.Update(dbdataset);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
-        private void m_buttonUpdate_Click(object sender, EventArgs e)
-        {
-            string constring = "datasource=195.178.232.16;username=AF7302;password=Freddie95";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory ;", conDataBase);
-
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cmdDataBase;
-                DataTable dbdataset = new DataTable();
-                sda.Fill(dbdataset);
-                BindingSource bsource = new BindingSource();
-
-                bsource.DataSource = dbdataset;
-                m_dataGridView1.DataSource = bsource;
-                sda.Update(dbdataset);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }
