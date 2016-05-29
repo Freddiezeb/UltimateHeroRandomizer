@@ -19,6 +19,7 @@ namespace UltimateHeroRandomizerV3
         int timerTicks = 6;
         bool isPressed, isShowing, isCounting, isSPplaying;
         bool pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9;
+        int correct;
 
         public SlidePuzzle()
         {
@@ -163,6 +164,7 @@ namespace UltimateHeroRandomizerV3
                 pictureBox3.BackColor = Color.Aqua;
                 pictureBox2.Image = Properties.Resources.SPwhite;
                 pictureBox2.BackColor = Color.White;
+                int correct = 1;
             }
 
             if (pictureBox5.BackColor == Color.White)
@@ -350,11 +352,6 @@ namespace UltimateHeroRandomizerV3
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isPressed == true)
@@ -367,11 +364,6 @@ namespace UltimateHeroRandomizerV3
 
             if (isShowing == false)
                 this.Size = new Size(630, 600);
-        }
-
-        private void label1_MouseClick(object sender, MouseEventArgs e)
-        {
-
         }
 
         private void startbutton_Click(object sender, EventArgs e)
@@ -387,16 +379,6 @@ namespace UltimateHeroRandomizerV3
         {
             isShowing = true;
             isCounting = true;
-        }
-
-        private void SlidePuzzle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SlidePuzzle_ChangeUICues(object sender, UICuesEventArgs e)
-        {
-
         }
 
         private void windowTimer_Tick(object sender, EventArgs e)
