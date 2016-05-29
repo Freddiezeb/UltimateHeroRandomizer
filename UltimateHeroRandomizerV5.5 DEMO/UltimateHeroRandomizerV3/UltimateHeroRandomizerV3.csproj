@@ -173,6 +173,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\Black_background.jpg" />
     <Content Include="Content\championNames.txt" />
     <Content Include="Content\COMPLETECOLLAGE.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

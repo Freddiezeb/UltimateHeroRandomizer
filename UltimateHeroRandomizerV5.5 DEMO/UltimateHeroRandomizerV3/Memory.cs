@@ -174,6 +174,9 @@ namespace UltimateHeroRandomizerV3
 
                 lastTexture.Image = Image.FromFile(tagPicture);
                 nextTexture.Image = Image.FromFile(tagPicture);
+
+                memoryScore = memoryScore - 2;
+                ScoreLabel.Text = "Score: " + memoryScore.ToString() + " points";
             }
 
             if (remaining <= 0)

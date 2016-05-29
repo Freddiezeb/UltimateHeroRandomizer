@@ -162,8 +162,6 @@
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Timer: 0";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label1_MouseClick);
             // 
             // timer1
             // 
@@ -285,8 +283,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.SlidePuzzle_Click);
-            this.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.SlidePuzzle_ChangeUICues);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
