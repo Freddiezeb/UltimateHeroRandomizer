@@ -182,6 +182,8 @@ namespace UltimateHeroRandomizerV3
                     break;
             }
 
+            spriteBatch.DrawString(timeFont, "Press 'Space' To Back", new Vector2(300,0), Color.Black);
+
 
         }
     }

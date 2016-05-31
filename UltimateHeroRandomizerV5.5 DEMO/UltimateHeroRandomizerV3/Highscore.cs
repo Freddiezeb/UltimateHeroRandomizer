@@ -55,6 +55,8 @@ namespace UltimateHeroRandomizerV3
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(" select * from af7302.memory order by score desc;", conDataBase);
 
+
+
             try
             {
                 MySqlDataAdapter sda = new MySqlDataAdapter();

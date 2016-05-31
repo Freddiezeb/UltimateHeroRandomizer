@@ -12,6 +12,8 @@ namespace UltimateHeroRandomizerV3
 {
     public partial class Dice : Form
     {
+        Submenu menu;
+        ChooseGame chooseGame;
             #region Declaration
 
         Image[] diceImages;
@@ -113,6 +115,24 @@ namespace UltimateHeroRandomizerV3
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+
+            if (Submenu.Dota)
+            {
+                chooseGame = ChooseGame.Dota;
+            }
+
+            if (Submenu.League)
+            {
+                chooseGame = ChooseGame.League;
+            }
+
+            menu = new Submenu(ref chooseGame);
+            menu.Show();
         }
     }
 }

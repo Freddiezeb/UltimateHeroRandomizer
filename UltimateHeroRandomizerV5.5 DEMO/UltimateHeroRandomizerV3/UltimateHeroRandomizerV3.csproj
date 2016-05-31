@@ -280,6 +280,9 @@
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dice.resx">
+      <DependentUpon>Dice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
     </EmbeddedResource>

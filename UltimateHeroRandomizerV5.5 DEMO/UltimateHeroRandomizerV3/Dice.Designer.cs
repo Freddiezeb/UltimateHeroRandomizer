@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dice));
             this.btn_p1RollDice = new System.Windows.Forms.Button();
             this.lbl_p1DisplayResults = new System.Windows.Forms.Label();
             this.lbl_title = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_bossHP = new System.Windows.Forms.Label();
             this.healthBar = new System.Windows.Forms.ProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +110,7 @@
             // 
             // lbl_p1Dice5
             // 
-            this.lbl_p1Dice5.Image = Properties.Resources.dice5;
+            this.lbl_p1Dice5.Image = global::UltimateHeroRandomizerV3.Properties.Resources.dice5;
             this.lbl_p1Dice5.Location = new System.Drawing.Point(503, 590);
             this.lbl_p1Dice5.Name = "lbl_p1Dice5";
             this.lbl_p1Dice5.Size = new System.Drawing.Size(50, 50);
@@ -118,7 +118,7 @@
             // 
             // lbl_p1Dice4
             // 
-            this.lbl_p1Dice4.Image = Properties.Resources.dice4;
+            this.lbl_p1Dice4.Image = global::UltimateHeroRandomizerV3.Properties.Resources.dice4;
             this.lbl_p1Dice4.Location = new System.Drawing.Point(447, 590);
             this.lbl_p1Dice4.Name = "lbl_p1Dice4";
             this.lbl_p1Dice4.Size = new System.Drawing.Size(50, 50);
@@ -126,7 +126,7 @@
             // 
             // lbl_p1Dice3
             // 
-            this.lbl_p1Dice3.Image = Properties.Resources.dice3;
+            this.lbl_p1Dice3.Image = global::UltimateHeroRandomizerV3.Properties.Resources.dice3;
             this.lbl_p1Dice3.Location = new System.Drawing.Point(391, 590);
             this.lbl_p1Dice3.Name = "lbl_p1Dice3";
             this.lbl_p1Dice3.Size = new System.Drawing.Size(50, 50);
@@ -134,9 +134,7 @@
             // 
             // lbl_p1Dice2
             // 
-
-
-            this.lbl_p1Dice2.Image = Properties.Resources.dice2;
+            this.lbl_p1Dice2.Image = global::UltimateHeroRandomizerV3.Properties.Resources.dice2;
             this.lbl_p1Dice2.Location = new System.Drawing.Point(335, 590);
             this.lbl_p1Dice2.Name = "lbl_p1Dice2";
             this.lbl_p1Dice2.Size = new System.Drawing.Size(50, 50);
@@ -144,7 +142,7 @@
             // 
             // lbl_p1Dice1
             // 
-            this.lbl_p1Dice1.Image = Properties.Resources.dice1;
+            this.lbl_p1Dice1.Image = global::UltimateHeroRandomizerV3.Properties.Resources.dice1;
             this.lbl_p1Dice1.Location = new System.Drawing.Point(279, 590);
             this.lbl_p1Dice1.Name = "lbl_p1Dice1";
             this.lbl_p1Dice1.Size = new System.Drawing.Size(50, 50);
@@ -182,12 +180,23 @@
             this.healthBar.TabIndex = 23;
             this.healthBar.Value = 100;
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(754, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 39);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Back\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Dice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.ClientSize = new System.Drawing.Size(884, 662);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.healthBar);
             this.Controls.Add(this.lbl_bossHP);
             this.Controls.Add(this.label2);
@@ -206,7 +215,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 700);
             this.MinimumSize = new System.Drawing.Size(900, 700);
-            this.Name = "Form1";
+            this.Name = "Dice";
             this.Text = "Ultimate Dice Hero";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -233,5 +242,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_bossHP;
         private System.Windows.Forms.ProgressBar healthBar;
+        private System.Windows.Forms.Button button1;
     }
 }
